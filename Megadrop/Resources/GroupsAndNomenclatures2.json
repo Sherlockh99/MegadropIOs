@@ -1,0 +1,516 @@
+[
+    {
+        "IDGroup": "00000002758",
+        "NameGroup": "ОДЕЖДА",
+        "Nomenclatures": [
+            {
+                "IDNomenclature": "00000004554",
+                "Nomenklature": "Домашняя одежда (пижама) фисташковый",
+                "Image": "",
+                "Price": 920,
+                "VendorCode": "01671",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000004555",
+                "Nomenklature": "Домашняя одежда (пижама) серый",
+                "Image": "",
+                "Price": 920,
+                "VendorCode": "01672",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000004556",
+                "Nomenklature": "Домашняя одежда (пижама) горчичный",
+                "Image": "",
+                "Price": 920,
+                "VendorCode": "01673",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000004557",
+                "Nomenklature": "Длинное платье из фактурного трикотажа черный",
+                "Image": "",
+                "Price": 655,
+                "VendorCode": "01674",
+                "Available": true
+            }
+        ]
+    },
+    {
+        "IDGroup": "00000009360",
+        "NameGroup": "СУМКИ РЮКЗАКИ",
+        "Nomenclatures": [
+            {
+                "IDNomenclature": "00000004566",
+                "Nomenklature": "РЮКЗАК с карманами 5 в 1 брелок в комплекте черный",
+                "Image": "",
+                "Price": 340,
+                "VendorCode": "1888",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000004567",
+                "Nomenklature": "РЮКЗАК с карманами 5 в 1 брелок в комплекте синий",
+                "Image": "",
+                "Price": 340,
+                "VendorCode": "1889",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000004568",
+                "Nomenklature": "РЮКЗАК 4 в 1 брелок в комплекте розовый",
+                "Image": "",
+                "Price": 340,
+                "VendorCode": "1892",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000004569",
+                "Nomenklature": "РЮКЗАК 4 в 1 брелок в комплекте фиолетовый",
+                "Image": "",
+                "Price": 340,
+                "VendorCode": "1893",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000004588",
+                "Nomenklature": "РЮКЗАК с карманами 5 в 1 брелок в комплекте зеленый",
+                "Image": "",
+                "Price": 340,
+                "VendorCode": "1890",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000004589",
+                "Nomenklature": "РЮКЗАК с карманами 5 в 1 брелок в комплекте розовый",
+                "Image": "",
+                "Price": 340,
+                "VendorCode": "1891",
+                "Available": false
+            }
+        ]
+    },
+    {
+        "IDGroup": "00000007311",
+        "NameGroup": "ФОНАРИКИ ЛАМПЫ ГИРЛЯНДЫ",
+        "Nomenclatures": [
+            {
+                "IDNomenclature": "00000004639",
+                "Nomenklature": "Отпугиватель животных с мощным фонариком Kelin K95",
+                "Image": "",
+                "Price": 240,
+                "VendorCode": "1894",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000004658",
+                "Nomenklature": "Система автономного освещения с Панелью FL 3272(функция ПаверБанка)",
+                "Image": "",
+                "Price": 1980,
+                "VendorCode": "1903",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000005232",
+                "Nomenklature": "Фонарь прожекторный  с аккумулятором Panther PT-7757S",
+                "Image": "",
+                "Price": 675,
+                "VendorCode": "1964",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000005334",
+                "Nomenklature": "Новогодняя Гирлянда Штора с 12 фигурами Колокольчик, Елка, Олень 220V",
+                "Image": "",
+                "Price": 315,
+                "VendorCode": "1976",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005358",
+                "Nomenklature": "Аккумуляторный LED фонарь-прожектор + функция Power Bank",
+                "Image": "",
+                "Price": 475,
+                "VendorCode": "1977",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000005364",
+                "Nomenklature": "Настольная лампа Игра в кальмара",
+                "Image": "",
+                "Price": 265,
+                "VendorCode": "1981",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005365",
+                "Nomenklature": "Настольная лампа-фонарь беспроводная с power bank",
+                "Image": "",
+                "Price": 215,
+                "VendorCode": "1982",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005369",
+                "Nomenklature": "Фонарь аккумуляторный ручной 2 в 1",
+                "Image": "",
+                "Price": 235,
+                "VendorCode": "1985",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005370",
+                "Nomenklature": "Фонарь ручной Panther PT-8895 USB аккумуляторная боковая подсветка",
+                "Image": "",
+                "Price": 710,
+                "VendorCode": "1986",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000005375",
+                "Nomenklature": "Лампа настольная светодиодная LED 800мАч шарнирная ",
+                "Image": "",
+                "Price": 245,
+                "VendorCode": "1987",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005381",
+                "Nomenklature": "Фонарь кемпинговый светодиодный переносной ZJ-1990T с солнечной панелью на аккумуляторе",
+                "Image": "",
+                "Price": 520,
+                "VendorCode": "1992",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005383",
+                "Nomenklature": "Фонарь HS-5207 на аккумуляторе 50 см 90-LED 6W",
+                "Image": "",
+                "Price": 740,
+                "VendorCode": "1994",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005384",
+                "Nomenklature": "Фонарь HS-5206 на аккумуляторе 35 см 60-LED 4W",
+                "Image": "",
+                "Price": 550,
+                "VendorCode": "1995",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005385",
+                "Nomenklature": "Компактный МИНИ ручной фонарик BL-511 на аккумуляторе в кейсе",
+                "Image": "",
+                "Price": 75,
+                "VendorCode": "1996",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005387",
+                "Nomenklature": "Аварийный знак светящийся с фонариком на аккумуляторе",
+                "Image": "",
+                "Price": 570,
+                "VendorCode": "1998",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005403",
+                "Nomenklature": "Уличный настенный фонарь на солнечной батарее",
+                "Image": "",
+                "Price": 120,
+                "VendorCode": "2007",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005407",
+                "Nomenklature": "Аккумуляторный фонарь прожектор Panther PT-7747",
+                "Image": "",
+                "Price": 405,
+                "VendorCode": "2011",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005408",
+                "Nomenklature": "Фонарь-прожектор аккумуляторный Panther PT-7758",
+                "Image": "",
+                "Price": 405,
+                "VendorCode": "2012",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005443",
+                "Nomenklature": "Бензиновый генератор GreeLite GE-4500 (номинал 2.2кВт алюминиевая обмотка)",
+                "Image": "",
+                "Price": 0,
+                "VendorCode": "2038",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005462",
+                "Nomenklature": "Налобный фонарь BL 1805 COB XPE 18620 usb charger",
+                "Image": "",
+                "Price": 180,
+                "VendorCode": "2057",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000005464",
+                "Nomenklature": "Фонарик multi fuction portable lamp водонепроницаемый светильник для рыбалки",
+                "Image": "",
+                "Price": 210,
+                "VendorCode": "2059",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005465",
+                "Nomenklature": "Фонарь налобный универсальный с датчиком движения",
+                "Image": "",
+                "Price": 270,
+                "VendorCode": "2060",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005536",
+                "Nomenklature": "Фонарь XO YH02 1200mAh",
+                "Image": "",
+                "Price": 355,
+                "VendorCode": "2070",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005537",
+                "Nomenklature": "Светодиодная лента LED 3528 RGB Комплект, Светодиодная гибкая лента, Разноцветная",
+                "Image": "",
+                "Price": 200,
+                "VendorCode": "2071",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005538",
+                "Nomenklature": "Светодиодная лента 5050RGB цветная, SMD Лента 5 метров + пульт, блок питания,12w , 60 LEDS",
+                "Image": "",
+                "Price": 285,
+                "VendorCode": "2072",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005545",
+                "Nomenklature": "Прожектор-фонарь светодиодный аккумуляторный HEL-6866T на 48 Led 3600 mAh 45W",
+                "Image": "",
+                "Price": 670,
+                "VendorCode": "2079",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005562",
+                "Nomenklature": "Лампа диодная день-ночь видеокамера для наблюдения CL-877A",
+                "Image": "",
+                "Price": 275,
+                "VendorCode": "2080",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005592",
+                "Nomenklature": "Светодиодная настольная лампа с перезаряжаемой батареей",
+                "Image": "",
+                "Price": 165,
+                "VendorCode": "2088",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000005596",
+                "Nomenklature": "Фонарь с солнечной панелью Hurry Bolt HB-2678",
+                "Image": "",
+                "Price": 210,
+                "VendorCode": "2092",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000005640",
+                "Nomenklature": "Лампа фонарь для кемпинга портативная CL-V50 USB 30W",
+                "Image": "",
+                "Price": 165,
+                "VendorCode": "2094",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005645",
+                "Nomenklature": "Фонарь аккумуляторный Solar Energy светодиодный портативный USB с повербанком на природу и дома",
+                "Image": "",
+                "Price": 165,
+                "VendorCode": "2097",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005761",
+                "Nomenklature": "Светодиодный аварийный фонарь LL-6801",
+                "Image": "",
+                "Price": 155,
+                "VendorCode": "2113",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005763",
+                "Nomenklature": "Аккумуляторный Фонарь светодиодный LL-7603 (2 режима)",
+                "Image": "",
+                "Price": 200,
+                "VendorCode": "2115",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005843",
+                "Nomenklature": "Аварийный знак С СОЛНЕЧНОЙ ЗАРЯДКОЙ прожектор ФОНАРЬ Hurry bolt HB-6608",
+                "Image": "",
+                "Price": 230,
+                "VendorCode": "2145",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005799",
+                "Nomenklature": "Умная настольная светодиодная лампа 3 в1 со встроенным аккумулятором и PowerBank белая",
+                "Image": "",
+                "Price": 385,
+                "VendorCode": "2129",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000005809",
+                "Nomenklature": "Фонарь ручной аккумуляторный до 200 м, с USB-зарядкой, X-509-4LED+COB",
+                "Image": "",
+                "Price": 220,
+                "VendorCode": "2137",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005810",
+                "Nomenklature": "Лампочка со встроенной колонкой LED Football UFO Lamp EL-2357 40 Вт",
+                "Image": "",
+                "Price": 210,
+                "VendorCode": "2138",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005811",
+                "Nomenklature": "Фонарь Многофункциональный LED Gdtimes GD-101 с солнечной панелью / 3 лампочки / powerBank",
+                "Image": "",
+                "Price": 565,
+                "VendorCode": "2139",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005812",
+                "Nomenklature": "Солнечная панель трансформер CcLamp CL-670 7Вт зарядка от солнца Solar Panel",
+                "Image": "",
+                "Price": 365,
+                "VendorCode": "2140",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005813",
+                "Nomenklature": "Солнечная панель CcLamp CL-630 с подставкой портативная с USB-кабелем с разными входами 3 W",
+                "Image": "",
+                "Price": 195,
+                "VendorCode": "2141",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005808",
+                "Nomenklature": "Фонарь ручной с СОЛНЕЧНОЙ ЗАРЯДКОЙ много функциональній  GL2289",
+                "Image": "",
+                "Price": 205,
+                "VendorCode": "2136",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005845",
+                "Nomenklature": "Фонарь кемпенговый многофункциональный HB-6678C солнечная панель, power bank",
+                "Image": "",
+                "Price": 235,
+                "VendorCode": "2147",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000005846",
+                "Nomenklature": "Фонарь ручной на солнечной батарее повербанк Solar multilight HS-8029-7-A",
+                "Image": "",
+                "Price": 215,
+                "VendorCode": "2148",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000006000",
+                "Nomenklature": "LED лампа с аккумулятором 1300 мАч для кемпинга 200W аварийная",
+                "Image": "",
+                "Price": 185,
+                "VendorCode": "2169",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000006416",
+                "Nomenklature": "Аккумуляторный МИНИ фонарь на 4 светодиода LY- 8816A",
+                "Image": "",
+                "Price": 150,
+                "VendorCode": "2192",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000007002",
+                "Nomenklature": "ПРОЕКЦИОННАЯ ЛАМПА RGB-СВЕТИЛЬНИК SUNSET 20 РЕЖИМОВ С ПУЛЬТОМ ДУ. ЛАМПА LED ДЛЯ СЕЛФИ AL08",
+                "Image": "",
+                "Price": 480,
+                "VendorCode": "2214",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000007414",
+                "Nomenklature": "Настольная лампа светодиодная аккумуляторная LED HLV OJ-880",
+                "Image": "",
+                "Price": 147,
+                "VendorCode": "2241",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000000097",
+                "Nomenklature": "Фонарик тактический, велофонарь",
+                "Image": "",
+                "Price": 215,
+                "VendorCode": "0059",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000000381",
+                "Nomenklature": "Настольная лампа-трансформер iPLED 5S ЛЕД ",
+                "Image": "",
+                "Price": 133,
+                "VendorCode": "0369",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000000551",
+                "Nomenklature": "Фонарь налобный АККУМУЛЯТОРНЫЙ светодиодный для рыбалки велосипеда",
+                "Image": "",
+                "Price": 163,
+                "VendorCode": "0075",
+                "Available": false
+            },
+            {
+                "IDNomenclature": "00000000664",
+                "Nomenklature": "УЛЬТРА ОТПУГИВАТЕЛЬ СОБАК AOKEMAN ",
+                "Image": "",
+                "Price": 145,
+                "VendorCode": "0489",
+                "Available": true
+            },
+            {
+                "IDNomenclature": "00000000698",
+                "Nomenklature": "АКЦИЯ Фонарь Police+батарейки в подарок, Велофонарь",
+                "Image": "",
+                "Price": 50,
+                "VendorCode": "0231",
+                "Available": false
+            }
+        ]
+    }
+]
