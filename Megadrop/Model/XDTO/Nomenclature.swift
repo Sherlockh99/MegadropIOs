@@ -11,8 +11,9 @@ struct Nomenclature: Codable, Hashable, Identifiable{
     var id: String {IDNomenclature}
     var IDNomenclature: String
     var Nomenklature: String
-    var Image: String
+    var Image: String?
     var Price: Int
     var VendorCode: String
     var Available: Bool
+    var Details: String! = ""
 }
