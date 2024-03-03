@@ -8,37 +8,44 @@
 import SwiftUI
 
 struct MainView: View {
-    @State private var selection: Tab = .main
-    
-    enum Tab {
-        case main
-        case catalog
-        case basket
-        case cabinet
-    }
+    @State private var selection: Tab = .login
+    @State private var logged = false
     
     var body: some View {
-        TabView(selection: $selection){
-            HomePageView()
-                .tabItem {
-                    Label("Home", systemImage: "star")
-                }
-                .tag(Tab.main)
-            CatalogView()
-                .tabItem {
-                    Label("Catalog", systemImage: "")
-                }
-                .tag(Tab.catalog)
-            BasketView()
-                .tabItem {
-                    Label("Basket", systemImage: "basket")
-                }
-                .tag(Tab.basket)
-            CabinetView()
-                .tabItem {
-                    Label("Cabinet", systemImage: "cabinet")
-                }
-                .tag(Tab.cabinet)
+        @EnvironmentObject var viewModel: YourViewModel
+        //if(selection == .login){
+        if(logged){
+        //    MainLoginView(selection: $selection)
+        //} else {
+            TabView(selection: $selection){
+                HomePageView()
+                    .environmentObject(HomePageVM())
+                    .tabItem {
+                        //Label("Home", systemImage: "star")
+                        Label("Home", systemImage: "homekit")
+                    }
+                    .tag(Tab.main)
+                
+                CatalogView()
+                    .tabItem {
+                        Label("Catalog", systemImage: "square.grid.2x2")
+                    }
+                    .tag(Tab.catalog)
+                
+                BasketView()
+                    .tabItem {
+                        Label("Basket", systemImage: "basket")
+                    }
+                    .tag(Tab.basket)
+                
+                CabinetView(isLogged: $logged)
+                    .tabItem {
+                        Label("Cabinet", systemImage: "gearshape")
+                    }
+                    .tag(Tab.cabinet)
+            }
+        }else{
+            MainLoginView(isLogged: $logged)
         }
     }
 }

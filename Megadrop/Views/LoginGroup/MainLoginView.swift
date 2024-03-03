@@ -7,14 +7,43 @@
 
 import SwiftUI
 
-struct LoginView: View {
-    @State private var isLinkActive = false
-    @State public var isShowNewView = false
+struct MainLoginView: View {
+    @Binding var isLogged: Bool
     
     var body: some View {
-        if isShowNewView {
-            MainView()
-        } else {
+        ZStack {
+            CustomBackgroundView()
+            
+            VStack {
+                LogoCircleImage(image: Image("logo"))
+                ProfileLoginView().padding()
+                
+                Button {
+                    //ACTION:  Generate a random number
+                    //print("The button was pressed!")
+                    isLogged = true
+                } label: {
+                    Text("Login")
+                        .font(.title2)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [
+                                    .customGreenLight,
+                                    .customGreenMedium
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                        .shadow(color: .black.opacity(0.25), radius: 0.25, x: 1, y: 2)
+                }
+                .buttonStyle(GradientButton())
+            }
+            
+        }
+        .frame(width: 350,height: 700)
+        /*
             NavigationView {
                 VStack(alignment: .leading){
                     HStack{
@@ -25,7 +54,9 @@ struct LoginView: View {
                     
                     ProfileLoginView().padding()
                     Button{
-                        isShowNewView = checkCondition()
+                        //selection = .main
+                        isLogged = true
+                        //isShowNewView = checkCondition()
                     } label: {
                         HStack{
                             Spacer()
@@ -37,8 +68,9 @@ struct LoginView: View {
                     Spacer()
                 }
             }
-        }
+         */
     }
+    
     
     func checkCondition() -> Bool {
         // Здесь реализуйте ваш алгоритм проверки
@@ -48,5 +80,6 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView()
+    @State var logged = false
+    return MainLoginView(isLogged: $logged)
 }

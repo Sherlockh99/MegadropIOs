@@ -8,11 +8,67 @@
 import SwiftUI
 
 struct CabinetView: View {
-    var body: some View {
-        Text("Cabinet")
-    }
-}
+    @State private var selection: TabCabinet = .main
+    @Binding var isLogged: Bool
 
-#Preview {
-    CabinetView()
+    enum TabCabinet {
+        case main
+        case myOrders
+        case catalog
+        case basket
+        case cabinet
+        case settings
+    }
+
+    var body: some View {
+        //if(selection == .settings){
+        //    SettingsView(isLogged: $isLogged)
+        //}else{
+            NavigationSplitView{
+                LogoImage(image: Image("logo"))
+                Text("Cabinet")
+                NavigationLink{
+                    MyOrdersView()
+                }label: {
+                    Text("Мои заказы")
+                }
+                NavigationLink{
+                    BalanceView()
+                }label: {
+                    Text("Баланс")
+                }
+                NavigationLink{
+                    //NomenclatureView(nomenclature: nom)
+                }label: {
+                    Text("Получить прайс")
+                }
+                NavigationLink{
+                    //NomenclatureView(nomenclature: nom)
+                }label: {
+                    Text("Взаиморасчеты")
+                }
+                NavigationLink{
+                    SettingsView(isLogged: $isLogged)
+                }label: {
+                    Text("Настройки")
+                }
+                /*
+                Button{
+                    selection = .settings
+                } label: {
+                    //HStack{
+                    //    Spacer()
+                        Text("Настройки")
+                    //    Spacer()
+                    //}
+                    //.font(.system(.title2, design: .rounded, weight: .bold))
+                }
+                 */
+                Spacer()
+            }detail: {
+                Text("!")
+            }
+            .font(.system(.title, design: .rounded, weight: .bold))
+        //}
+    }
 }

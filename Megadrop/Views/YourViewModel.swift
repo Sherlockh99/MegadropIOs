@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class YourViewModel: ObservableObject{
+    @Published var isLoggedIn: Bool
+    
+    init() {
+        self.isLoggedIn = false
+    }
+}

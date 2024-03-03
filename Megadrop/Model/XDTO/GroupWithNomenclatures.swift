@@ -14,6 +14,6 @@ struct GroupWithNomenclatures: Codable, Hashable, Identifiable{
     var IDGroup: String
     var NameGroup: String
     
-    var Nomenclatures: [Nomenclature]
+    var Nomenclatures: [Nomenclature2]
     
 }

@@ -19,29 +19,17 @@ struct MegadropApp: App {
     }
 }
 
-class YourViewModel: ObservableObject{
-    @Published var isLoggedIn: Bool = true
-    
-    init() {
-        self.isLoggedIn = false
-        //self.isLoggedIn = true
-    }
-}
-
 struct ContentViewModel: View{
     @EnvironmentObject var viewModel: YourViewModel
     
     var body: some View{
+        /*
         if viewModel.isLoggedIn {
-            MainViewNew()
+            MainView()
         }else{
-            LoginView()
+            MainLoginView(isShowNewView: false)
         }
-    }
-}
-
-struct MainViewNew: View {
-    var body: some View {
-        Text("Main page")
+         */
+        MainView()
     }
 }

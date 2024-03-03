@@ -12,7 +12,6 @@ class ModelData{
     var groupsWithNomenclatures: [GroupWithNomenclatures] = load("GroupsAndNomenclatures2.json")
 }
 
-
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
     

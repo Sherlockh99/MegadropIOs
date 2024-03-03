@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView1: View {
 
     @State private var authorization: Tab = .dropToApp
     @State private var action: Int? = 0
@@ -25,11 +25,11 @@ struct ContentView: View {
             VStack(alignment: .leading){
                 HStack{
                     Spacer()
-                    CircleImage(image: Image("logo"))
+                    LogoCircleImage(image: Image("logo"))
                     Spacer()
                 }
                 
-                ProfileLogin().padding()
+                ProfileLoginView().padding()
 
                 NavigationLink{
                     SecondContentView()
@@ -62,6 +62,6 @@ struct SecondContentView:View {
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView()
+//}

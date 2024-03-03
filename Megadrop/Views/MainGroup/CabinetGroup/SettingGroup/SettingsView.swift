@@ -8,11 +8,52 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @Binding var isLogged: Bool
+    @State private var showFavoritesOnly = false
+    //@State private var isExit = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        //if (isExit) {
+            //MainLoginView()
+        //}else{
+            NavigationSplitView{
+                Text("Settings")
+                Spacer()
+                Toggle(isOn: $showFavoritesOnly) {
+                    Text("Только доступные")
+                }
+                NavigationLink{
+                    //MyOrdersView()
+                }label: {
+                    Text("Изменить язык приложения")
+                }
+                Spacer()
+                Button{
+                    isLogged = false
+                } label: {
+                    HStack{
+                        Spacer()
+                        Text("Выйти")
+                        Spacer()
+                    }
+                    //.font(.system(.title2, design: .rounded, weight: .bold))
+                }
+                NavigationLink{
+                    AboutView()
+                }label: {
+                    Text("О приложении")
+                }
+                
+            }detail: {
+                Text("!")
+            }
+            .padding()
+        //}
     }
 }
 
-#Preview {
-    SettingsView()
-}
+/*
+ #Preview {
+ SettingsView(isLogged: Binding<true>)
+ }
+ */

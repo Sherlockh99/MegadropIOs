@@ -8,15 +8,27 @@
 import SwiftUI
 
 struct HomePageListNomenclature: View {
-    var nomenclatures: [Nomenclature]
+    @State var nomenclatures: [Nomenclature2]
     
     var body: some View {
         VStack(alignment: .leading){            
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(alignment: .top, spacing: 0){
                     ForEach(nomenclatures){ nom in
-                        //Text(nom.IDNomenclature)
-                        HomePageNomenclature(nomenclature: nom)
+                        /*
+                        Button {
+                            NomenclatureView(nomenclature: nom)
+                        }label: {
+                            HomePageNomenclature(nomenclature: nom)
+                        }
+                        .buttonStyle(.plain)
+                        */
+                        NavigationLink{
+                            NomenclatureView(nomenclature: nom)
+                        }label: {
+                            HomePageNomenclature(nomenclature: nom)
+                        }
+                        
                     }
                 }
             }

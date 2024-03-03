@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+enum Tab {
+    case login
+    case main
+    case catalog
+    case basket
+    case cabinet
+}
+

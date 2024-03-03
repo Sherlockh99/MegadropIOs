@@ -7,33 +7,29 @@
 
 import SwiftUI
 
-struct ProfileLogin: View {
+struct ProfileLoginView: View {
     @ObservedObject var profile = Profile.profileShared
     
     var body: some View {
-        //NavigationView {
-            //List{
-                HStack{
-                    Text("Username")
-                    Spacer()
-                    TextField("Username", text: $profile.username)
-                        .foregroundStyle(.secondary)
-                        .multilineTextAlignment(.trailing)
-                }
+        HStack{
             
-                HStack{
-                    Text("Password")
-                    Spacer()
-                    SecureField("password", text: $profile.password)
-                        .foregroundStyle(.secondary)
-                        .multilineTextAlignment(.trailing)
-                }
-            //}
-            //.font(.title2)
-        //}
+            Text("Username")
+            Spacer()
+            TextField("Username", text: $profile.username)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.trailing)
+        }
+            
+        HStack{
+            Text("Password")
+            Spacer()
+            SecureField("password", text: $profile.password)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.trailing)
+        }
     }
 }
 
 #Preview {
-    ProfileLogin()
+    ProfileLoginView()
 }

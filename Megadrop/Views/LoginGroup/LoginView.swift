@@ -9,7 +9,28 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack(alignment: .leading){
+                HStack{
+                    Spacer()
+                    LogoCircleImage(image: Image("logo"))
+                    Spacer()
+                }
+                
+                ProfileLoginView().padding()
+                Button{
+                    //isShowNewView = checkCondition()
+                } label: {
+                    HStack{
+                        Spacer()
+                        Text("ЛОГИН")
+                        Spacer()
+                    }
+                    .font(.system(.title2, design: .rounded, weight: .bold))
+                }
+                Spacer()
+            }
+        }
     }
 }
 
