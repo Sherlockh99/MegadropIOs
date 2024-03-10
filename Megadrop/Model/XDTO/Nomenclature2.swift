@@ -17,6 +17,13 @@ struct Nomenclature2: Codable, Hashable, Identifiable{
     var Details: String!=""
     var Favorite: Bool?
     var Characteristics: [Characteristicses]?
+    
+    init(){
+        IDNomenclature = "1"
+        Nomenclature = "1"
+        VendorCode = "1"
+        Available = false
+    }
 }
 
 struct Characteristicses: Codable, Hashable, Identifiable{

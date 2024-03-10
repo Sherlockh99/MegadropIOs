@@ -10,7 +10,7 @@ final class NetworkService{
     static let shared = NetworkService()
     
     private init() {}
-    
+    /*
     func downloadDataGroupWithNomenclature() async -> [GroupWithNomenclatures]?{
         var groupsWithNomenclatures: [GroupWithNomenclatures] = []
         
@@ -37,6 +37,7 @@ final class NetworkService{
         //return Product.mockData()
         //URLSession.shared.dataTask(with: URLRequest, completionHandler: (Data?, URLResponse?, Error?) -> Void)
     }
+    */
     
     func downloadDataGroupWithNomenclatureLocal() async -> [GroupWithNomenclatures]?{
         return load("GroupsAndNomenclatures2.json")

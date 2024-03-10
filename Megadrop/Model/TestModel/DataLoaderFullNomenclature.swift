@@ -1,17 +1,16 @@
 //
-//  DataLoader.swift
+//  DataLoaderFullNomenclature.swift
 //  Megadrop
 //
-//  Created by Андрій Коробчук on 03.03.2024.
+//  Created by Андрій Коробчук on 10.03.2024.
 //
 
 import Foundation
-class DataLoader: ObservableObject {
-    @Published var dataList: [GroupWithNomenclatures] = []
+class DataLoaderFullNomenclature: ObservableObject{
+    @Published var nomenclature = Nomenclature2()
     
-    func loadData() {
-        let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getGroupsAndNomenclatures"
-        
+    func loadData(IDNomenclature: String){
+        let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getfulldatanomenclature/" + IDNomenclature
         guard let url = URL(string: DROP_SHIPPING_DOMAIN) else { return }
        
         // Создаем запрос
@@ -33,9 +32,9 @@ class DataLoader: ObservableObject {
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             do {
                 if let data = data {
-                    let decodedData = try JSONDecoder().decode([GroupWithNomenclatures].self, from: data)
+                    let decodedData = try JSONDecoder().decode(Nomenclature2.self, from: data)
                     DispatchQueue.main.async {
-                        self.dataList = decodedData
+                        self.nomenclature = decodedData
                     }
                 } else {
                     print("No data")
@@ -44,9 +43,5 @@ class DataLoader: ObservableObject {
                 print("Error decoding: \(error)")
             }
         }.resume()
-    }
-    
-    func loadFullDataNomenclature(){
-        
     }
 }

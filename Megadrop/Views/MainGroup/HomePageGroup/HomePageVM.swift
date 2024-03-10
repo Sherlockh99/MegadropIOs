@@ -15,13 +15,14 @@ final class HomePageVM: ObservableObject{
         groupsWithNomenclatures = downloadGroupsWithNomenclatures
     }
     
+    /*
     func fetchData() async{
         guard let downloadGroupsWithNomenclatures: [GroupWithNomenclatures] = await NetworkService.shared.downloadDataGroupWithNomenclature() else {return}
       
         groupsWithNomenclatures = downloadGroupsWithNomenclatures
 
     }
-    
+    */
     
 }
 

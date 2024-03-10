@@ -10,6 +10,8 @@ import SwiftUI
 struct NomenclatureView: View {
     @State var nomenclature: Nomenclature2
     @State private var value = 0
+    @StateObject var loaderFull = DataLoaderFullNomenclature()
+    
     //var nomenclature: Nomenclature2
     
     var image: Image{
@@ -131,12 +133,16 @@ struct NomenclatureView: View {
             .padding()
             .font(.system(.title2, design: .rounded, weight: .bold))
             .onAppear{
+                
+                //loaderFull.loadData(IDNomenclature: nomenclature.id)
+                
                 getDataNomenclature(nomenclature: nomenclature) {
                     modified in
                     nomenclature.Details = modified.Details
                     nomenclature.Image = modified.Image
                     nomenclature.Characteristics = modified.Characteristics
                 }
+                 
                 
             }
     }
