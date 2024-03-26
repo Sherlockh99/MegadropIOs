@@ -11,12 +11,15 @@ struct HomePageGroup: View {
     var groupWithNomenclatures: GroupWithNomenclatures
     
     var body: some View {
-        Text(groupWithNomenclatures.NameGroup)
-            .font(.headline)
-            .padding(.leading, 15)
-            .padding(.top, 5)
-        
-        HomePageListNomenclature(nomenclatures: groupWithNomenclatures.Nomenclatures)
+        Section(header: Text(groupWithNomenclatures.NameGroup)){
+            
+            HomePageListNomenclature(nomenclatures: groupWithNomenclatures.Nomenclatures)
+        }
+        .font(.headline)
+        .padding(.leading, 15)
+        .padding(.top, 5)
+        .foregroundColor(.primary)
+
     }
 }
 

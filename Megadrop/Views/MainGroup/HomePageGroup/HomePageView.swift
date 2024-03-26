@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct HomePageView: View {
+    
+    // MARK: - PROPERTY
+    
+    @EnvironmentObject var shop: Shop
     @EnvironmentObject var vm: HomePageVM
     @StateObject var loader = DataLoader()
     
@@ -47,9 +51,10 @@ struct HomePageView: View {
             }
         }
     }
+    
 }
 
 #Preview {
     HomePageView()
-        .environmentObject(HomePageVM())
+        .environmentObject(Shop())
 }

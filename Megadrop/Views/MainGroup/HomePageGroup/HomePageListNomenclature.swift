@@ -24,7 +24,8 @@ struct HomePageListNomenclature: View {
                         .buttonStyle(.plain)
                         */
                         NavigationLink{
-                            NomenclatureView(nomenclature: nom)
+                            //NomenclatureView(nomenclature: nom)
+                            NomenclatureView()
                         }label: {
                             HomePageNomenclature(nomenclature: nom)
                         }

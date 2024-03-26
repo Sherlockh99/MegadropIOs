@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @Binding var isLogged: Bool
+    @AppStorage("onboarding") var isLogged = true
     @State private var showFavoritesOnly = false
     //@State private var isExit = false
     
@@ -52,8 +52,8 @@ struct SettingsView: View {
     }
 }
 
-/*
+
  #Preview {
- SettingsView(isLogged: Binding<true>)
+     SettingsView()
  }
- */
+ 

@@ -9,7 +9,8 @@ import SwiftUI
 
 struct CabinetView: View {
     @State private var selection: TabCabinet = .main
-    @Binding var isLogged: Bool
+
+    //@Binding var isLogged: Bool
 
     enum TabCabinet {
         case main
@@ -48,7 +49,8 @@ struct CabinetView: View {
                     Text("Взаиморасчеты")
                 }
                 NavigationLink{
-                    SettingsView(isLogged: $isLogged)
+                    //SettingsView(isLogged: $isLogged)
+                    SettingsView()
                 }label: {
                     Text("Настройки")
                 }

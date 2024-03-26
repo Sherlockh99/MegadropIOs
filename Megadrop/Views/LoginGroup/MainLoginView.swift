@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct MainLoginView: View {
-    @Binding var isLogged: Bool
-    
+    //@Binding var isLogged: Bool
+    @AppStorage("onboarding") var isLogged = false
     var body: some View {
         ZStack {
             CustomBackgroundView()
@@ -80,6 +80,7 @@ struct MainLoginView: View {
 }
 
 #Preview {
-    @State var logged = false
-    return MainLoginView(isLogged: $logged)
+    MainLoginView()
+    //@State var logged = false
+    //return MainLoginView(isLogged: $logged)
 }

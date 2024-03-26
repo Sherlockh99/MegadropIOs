@@ -10,13 +10,11 @@ import SwiftUI
 struct MainView: View {
     @State private var selection: Tab = .login
     @State private var logged = false
-    
+    @AppStorage("onboarding") var isLogged = false
+        
     var body: some View {
         @EnvironmentObject var viewModel: YourViewModel
-        //if(selection == .login){
-        if(logged){
-        //    MainLoginView(selection: $selection)
-        //} else {
+        if(isLogged){
             TabView(selection: $selection){
                 HomePageView()
                     .environmentObject(HomePageVM())
@@ -38,18 +36,20 @@ struct MainView: View {
                     }
                     .tag(Tab.basket)
                 
-                CabinetView(isLogged: $logged)
+                //CabinetView(isLogged: $logged)
+                CabinetView()
                     .tabItem {
                         Label("Cabinet", systemImage: "gearshape")
                     }
                     .tag(Tab.cabinet)
             }
         }else{
-            MainLoginView(isLogged: $logged)
+            MainLoginView()
         }
     }
 }
 
 #Preview {
     MainView()
+        .environmentObject(Shop())
 }

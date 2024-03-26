@@ -31,5 +31,6 @@ struct ContentViewModel: View{
         }
          */
         MainView()
+            .environmentObject(Shop())
     }
 }
