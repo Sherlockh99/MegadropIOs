@@ -9,10 +9,31 @@ import SwiftUI
 
 struct HomePageListNomenclature: View {
     @State var nomenclatures: [Nomenclature2]
+    @EnvironmentObject var shop: Shop
     
     var body: some View {
         VStack(alignment: .leading){            
             ScrollView(.horizontal, showsIndicators: false){
+                
+                //LazyVGrid(columns: gridLayout, spacing: 15, content: {
+                HStack(alignment: .top, spacing: 0){
+                    ForEach(nomenclatures) { nom in
+                        HomePageNomenclature(nomenclature: nom)
+                            .onTapGesture {
+                                feedback.impactOccurred()
+                                
+                                withAnimation(.easeOut) {
+                                    shop.selectedNomenclature = nom
+                                    shop.showingNomenclature = true
+                                }
+                            }
+                    } //: LOOP
+                }
+                //}) //: GRID
+                
+                /*
+                
+                
                 HStack(alignment: .top, spacing: 0){
                     ForEach(nomenclatures){ nom in
                         /*
@@ -24,14 +45,17 @@ struct HomePageListNomenclature: View {
                         .buttonStyle(.plain)
                         */
                         NavigationLink{
-                            //NomenclatureView(nomenclature: nom)
-                            NomenclatureView()
+                            shop.selectedNomenclature = nom
+                            
+                            NomenclatureView(nomenclature: nom)
+                            //NomenclatureView()
                         }label: {
                             HomePageNomenclature(nomenclature: nom)
                         }
                         
                     }
-                }
+                 
+                }*/
             }
         }
     }

@@ -40,7 +40,6 @@ struct HomePageNomenclature: View {
                     HStack{
                         Text("Цена:")
                         Spacer()
-                        //Text("Цена: \(nomenclature.Price, specifier: "%.2f")")
                         Text(String(nomenclature.Price))
                     }
                     

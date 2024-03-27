@@ -12,7 +12,6 @@ struct HomePageGroup: View {
     
     var body: some View {
         Section(header: Text(groupWithNomenclatures.NameGroup)){
-            
             HomePageListNomenclature(nomenclatures: groupWithNomenclatures.Nomenclatures)
         }
         .font(.headline)

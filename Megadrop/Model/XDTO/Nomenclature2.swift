@@ -25,7 +25,7 @@ struct Nomenclature2: Codable, Hashable, Identifiable{
         Available = false
     }
     
-    var formattedPrice: String { return "$\(Price)" }
+    var formattedPrice: String { return "\(Price) грн." }
 }
 
 struct Characteristicses: Codable, Hashable, Identifiable{

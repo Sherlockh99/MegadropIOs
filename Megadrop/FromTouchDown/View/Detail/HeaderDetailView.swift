@@ -17,11 +17,11 @@ struct HeaderDetailView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 6, content: {
-          Text("Protective Gear")
+          //Text("Protective Gear")
           
-          Text(shop.selectedProduct?.name ?? sampleProduct.name)
-            .font(.largeTitle)
-            .fontWeight(.black)
+          //Text(shop.selectedProduct?.name ?? sampleProduct.name)
+          //  .font(.largeTitle)
+          //  .fontWeight(.black)
             
             Text(shop.selectedNomenclature?.Nomenclature ?? sampleProduct.name)
                 .font(.largeTitle)

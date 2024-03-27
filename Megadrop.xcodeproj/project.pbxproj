@@ -175,6 +175,7 @@
 		C540B26D2B65A2210050B9C1 /* OldGroup */ = {
 			isa = PBXGroup;
 			children = (
+				C58C594E2BB36C0B0083EE4C /* Demo */,
 				C540B2782B65AC520050B9C1 /* HomePageItem.swift */,
 				C540B27A2B65AC780050B9C1 /* HomePageDetail.swift */,
 				C540B2802B65B2750050B9C1 /* HomePageRow.swift */,
@@ -295,11 +296,18 @@
 				C5966FB62B777C0B00A0A693 /* NomenclatureGroup */,
 				C540B26E2B65A23A0050B9C1 /* ImageGroup */,
 				C540B26D2B65A2210050B9C1 /* OldGroup */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C58C594E2BB36C0B0083EE4C /* Demo */ = {
+			isa = PBXGroup;
+			children = (
 				C53973652B8295A600628EC3 /* ExView.swift */,
 				C53973672B829A7800628EC3 /* YourViewModel.swift */,
 				C5755CEA2B8AA5F4005318A7 /* ImageViewer.swift */,
 			);
-			path = Views;
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		C58F7D102BA61DB100307B63 /* FromTouchDown */ = {
@@ -383,6 +391,7 @@
 			children = (
 				C5930DF12B9C720F00287F48 /* ColorExtention.swift */,
 				C5930DF32B9D03ED00287F48 /* GradientButtonStyle.swift */,
+				C53973692B829B7B00628EC3 /* Tab.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -461,7 +470,6 @@
 				C5B40C032B4B3CCB00847EE4 /* MegadropApp.swift */,
 				C5B40C072B4B3CCD00847EE4 /* Assets.xcassets */,
 				C5B40C092B4B3CCD00847EE4 /* Preview Content */,
-				C53973692B829B7B00628EC3 /* Tab.swift */,
 			);
 			path = Megadrop;
 			sourceTree = "<group>";

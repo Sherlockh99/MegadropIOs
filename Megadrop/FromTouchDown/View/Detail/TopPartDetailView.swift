@@ -22,16 +22,11 @@ struct TopPartDetailView: View {
         HStack(alignment: .center, spacing: 6, content: {
           // PRICE
           VStack(alignment: .leading, spacing: 6, content: {
-            Text("Price")
+            Text("Цена")
               .fontWeight(.semibold)
             
-            Text(shop.selectedProduct?.formattedPrice ?? sampleProduct.formattedPrice)
-              .font(.largeTitle)
-              .fontWeight(.black)
-              .scaleEffect(1.35, anchor: .leading)
-              
           Text(shop.selectedNomenclature?.formattedPrice ?? sampleProduct.formattedPrice)
-              .font(.largeTitle)
+              .font(.title)
               .fontWeight(.black)
               .scaleEffect(1.35, anchor: .leading)
 

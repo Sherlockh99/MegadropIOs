@@ -15,43 +15,35 @@ struct HomePageView: View {
     @EnvironmentObject var vm: HomePageVM
     @StateObject var loader = DataLoader()
     
-    var _body: some View {
-        NavigationSplitView{
-            ScrollView(.vertical, showsIndicators: false){
-                VStack{
-                    ForEach(vm.groupsWithNomenclatures){ gr in
-                        HomePageGroup(groupWithNomenclatures: gr)
-                    }
-                }
-            }
-        } detail: {
-            Text("Select a Landmark")
-        }
-        .onAppear{
-            //onAppear вызывается перед прорисовкой модели
-            Task {
-                await vm.fetchDataLocal()
-            }
-        }
-    }
-    
     var body: some View {
-        VStack{
-            NavigationSplitView{
-                ScrollView(.vertical, showsIndicators: false){
-                    ForEach(loader.dataList,id: \.self){key in
-                        HomePageGroup(groupWithNomenclatures: key)
-                    }
-                    .onAppear() {
-                        loader.loadData()
+        ZStack{
+            if shop.showingNomenclature == false && shop.selectedNomenclature == nil {
+                VStack{
+                    NavigationBarView()
+                        .padding(.horizontal, 15)
+                        .padding(.bottom)
+                        .background(Color.white)
+                        .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
+                    
+                    NavigationSplitView{
+                        ScrollView(.vertical, showsIndicators: false){
+                            ForEach(loader.dataList,id: \.self){key in
+                                HomePageGroup(groupWithNomenclatures: key)
+                            }
+                            .onAppear() {
+                                loader.loadData()
+                            }
+                        }
+                    } detail: {
+                        Text("Select a Landmark")
                     }
                 }
-            } detail: {
-                Text("Select a Landmark")
+            } else {
+                //ProductDetailView()
+                NomenclatureView()
             }
         }
     }
-    
 }
 
 #Preview {

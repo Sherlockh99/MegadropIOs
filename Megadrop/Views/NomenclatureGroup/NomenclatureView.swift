@@ -14,8 +14,6 @@ struct NomenclatureView: View {
     @State private var value = 0
     @StateObject var loaderFull = DataLoaderFullNomenclature()
     
-    //var nomenclature: Nomenclature2
-    
     var image: Image{
         Image("logo")
     }
@@ -23,6 +21,7 @@ struct NomenclatureView: View {
     var body: some View {
         VStack{
             // NAVBAR
+            
             NavigationBarDetailView()
                 .padding(.horizontal)
                 .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
@@ -82,6 +81,18 @@ struct NomenclatureView: View {
                 blue: shop.selectedProduct?.blue ?? sampleProduct.blue            
             ).ignoresSafeArea(.all,edges: .all)
         )
+        .onAppear{
+            /*
+            //var nomenclature = shop.selectedNomenclature!
+            getDataNomenclature(nomenclature: shop.selectedNomenclature!) {
+                modified in
+                shop.selectedNomenclature!.Details = modified.Details
+                //shop.selectedNomenclature.Details = modified.Details
+                shop.selectedNomenclature!.Image = modified.Image
+                //shop.selectedNomenclature.Characteristics = modified.Characteristics
+            }
+            */
+        }
             
         /*
         //NavigationSplitView{
@@ -215,8 +226,13 @@ struct NomenclatureView: View {
 }
 
 #Preview {
-//    NomenclatureView(nomenclature: ModelData().groupsWithNomenclatures[0].Nomenclatures[0])
+    /*
+    NomenclatureView(nomenclature: ModelData().groupsWithNomenclatures[0].Nomenclatures[0])
+        .environmentObject(Shop())
+        .previewLayout(.fixed(width: 375, height: 812))
+    */
     NomenclatureView()
         .environmentObject(Shop())
         .previewLayout(.fixed(width: 375, height: 812))
+     
 }

@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct MainView: View {
+    
     @State private var selection: Tab = .login
     @State private var logged = false
     @AppStorage("onboarding") var isLogged = false
-        
+    
     var body: some View {
         @EnvironmentObject var viewModel: YourViewModel
         if(isLogged){
@@ -19,7 +20,6 @@ struct MainView: View {
                 HomePageView()
                     .environmentObject(HomePageVM())
                     .tabItem {
-                        //Label("Home", systemImage: "star")
                         Label("Home", systemImage: "homekit")
                     }
                     .tag(Tab.main)

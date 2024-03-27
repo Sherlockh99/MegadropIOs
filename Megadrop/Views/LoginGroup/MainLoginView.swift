@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct MainLoginView: View {
-    //@Binding var isLogged: Bool
     @AppStorage("onboarding") var isLogged = false
+    
     var body: some View {
         ZStack {
             CustomBackgroundView()
@@ -19,8 +19,6 @@ struct MainLoginView: View {
                 ProfileLoginView().padding()
                 
                 Button {
-                    //ACTION:  Generate a random number
-                    //print("The button was pressed!")
                     isLogged = true
                 } label: {
                     Text("Login")
@@ -43,44 +41,9 @@ struct MainLoginView: View {
             
         }
         .frame(width: 350,height: 700)
-        /*
-            NavigationView {
-                VStack(alignment: .leading){
-                    HStack{
-                        Spacer()
-                        LogoCircleImage(image: Image("logo"))
-                        Spacer()
-                    }
-                    
-                    ProfileLoginView().padding()
-                    Button{
-                        //selection = .main
-                        isLogged = true
-                        //isShowNewView = checkCondition()
-                    } label: {
-                        HStack{
-                            Spacer()
-                            Text("ЛОГИН")
-                            Spacer()
-                        }
-                        .font(.system(.title2, design: .rounded, weight: .bold))
-                    }
-                    Spacer()
-                }
-            }
-         */
-    }
-    
-    
-    func checkCondition() -> Bool {
-        // Здесь реализуйте ваш алгоритм проверки
-        // Верните true, если условие выполнено
-        return true
     }
 }
 
 #Preview {
     MainLoginView()
-    //@State var logged = false
-    //return MainLoginView(isLogged: $logged)
 }
