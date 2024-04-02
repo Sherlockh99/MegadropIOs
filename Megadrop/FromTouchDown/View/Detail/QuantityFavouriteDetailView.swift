@@ -39,13 +39,14 @@ struct QuantityFavouriteDetailView: View {
             })
             
             Spacer()
-            
+           /*
             Button(action: {
               feedback.impactOccurred()
             }, label: {
               Image(systemName: "heart.circle")
                 .foregroundColor(.pink)
             })
+            */
         })
         .font(.system(.title, design: .rounded))
         .foregroundColor(.black)

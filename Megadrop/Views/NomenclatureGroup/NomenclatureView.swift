@@ -12,7 +12,8 @@ struct NomenclatureView: View {
     @EnvironmentObject var shop: Shop
     
     @State private var value = 0
-    @StateObject var loaderFull = DataLoaderFullNomenclature()
+    //@StateObject var loaderFull = DataLoaderFullNomenclature()
+    @StateObject private var nomenclatureFullDataLoader = NomenclatureFullDataLoader()
     
     var image: Image{
         Image("logo")
@@ -37,24 +38,35 @@ struct NomenclatureView: View {
             
             // DETAIL BOTTOM PART
             VStack(alignment: .center, spacing: 0, content: {
+                /*
                 // RATINGS + SIZES
                 RatingsSizesDetailView()
                   .padding(.top, -20)
                   .padding(.bottom, 10)
-                
+                */
                 // DESCRIPTION
+                /*
                 ScrollView(.vertical, showsIndicators: false, content: {
                     Text(shop.selectedProduct?.description ?? sampleProduct.description)
                         .font(.system(.body, design: .rounded))
                         .foregroundColor(.gray)
                         .multilineTextAlignment(.leading)
                 }) //: SCROLL
-                
+                */
                 ScrollView(.vertical, showsIndicators: false, content: {
-                    Text(shop.selectedNomenclature?.Nomenclature ?? sampleProduct.description)
-                        .font(.system(.body, design: .rounded))
-                        .foregroundColor(.gray)
-                        .multilineTextAlignment(.leading)
+                    if let details = nomenclatureFullDataLoader.nomenclature2?.Details {
+                    //if let details = shop.selectedNomenclature?.Details {
+                        Text(details)
+                            .font(.system(.body, design: .rounded))
+                            .foregroundColor(.gray)
+                            .multilineTextAlignment(.leading)
+                    } else {
+                        Text(shop.selectedNomenclature?.Nomenclature ?? sampleProduct.description)
+                            .font(.system(.body, design: .rounded))
+                            .foregroundColor(.gray)
+                            .multilineTextAlignment(.leading)
+                    }
+
                 }) //: SCROLL
                 
                 // QUANTITY + FAVOURITE
@@ -82,6 +94,12 @@ struct NomenclatureView: View {
             ).ignoresSafeArea(.all,edges: .all)
         )
         .onAppear{
+            
+            if let IDNomenclature = shop.selectedNomenclature?.IDNomenclature {
+                nomenclatureFullDataLoader.loadFullNomenclatureData(idNomenclature: IDNomenclature)
+                //loadImageData(idNomenclature: IDNomenclature)
+            }
+            //shop.selectedNomenclature = nomenclatureFullDataLoader.nomenclature2
             /*
             //var nomenclature = shop.selectedNomenclature!
             getDataNomenclature(nomenclature: shop.selectedNomenclature!) {

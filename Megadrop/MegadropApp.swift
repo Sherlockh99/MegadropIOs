@@ -23,13 +23,6 @@ struct ContentViewModel: View{
     @EnvironmentObject var viewModel: YourViewModel
     
     var body: some View{
-        /*
-        if viewModel.isLoggedIn {
-            MainView()
-        }else{
-            MainLoginView(isShowNewView: false)
-        }
-         */
         MainView()
             .environmentObject(Shop())
     }

@@ -24,7 +24,7 @@ struct HeaderDetailView: View {
           //  .fontWeight(.black)
             
             Text(shop.selectedNomenclature?.Nomenclature ?? sampleProduct.name)
-                .font(.largeTitle)
+                .font(.title2)
                 .fontWeight(.black)
 
         }) //: VSTACK
