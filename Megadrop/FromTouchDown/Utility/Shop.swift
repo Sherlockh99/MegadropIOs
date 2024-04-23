@@ -11,5 +11,5 @@ class Shop: ObservableObject {
   @Published var selectedProduct: Product? //= nil
   @Published var showingNomenclature: Bool = false
   @Published var selectedNomenclature: Nomenclature2? //= nil
-
+  @Published var IDGroup: String = ""
 }

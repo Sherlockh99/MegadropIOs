@@ -14,7 +14,7 @@ struct MainView: View {
     @AppStorage("onboarding") var isLogged = false
     
     var body: some View {
-        @EnvironmentObject var viewModel: YourViewModel
+        //@EnvironmentObject var viewModel: YourViewModel
         if(isLogged){
             TabView(selection: $selection){
                 HomePageView()

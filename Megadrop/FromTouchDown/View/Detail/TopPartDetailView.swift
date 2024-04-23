@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TopPartDetailView: View {
-
+    let IDGroup: String
     // MARK: - PROPERTY
     
     @EnvironmentObject var shop: Shop
@@ -27,16 +27,27 @@ struct TopPartDetailView: View {
                 Text("Цена")
                     .fontWeight(.semibold)
             
-                Text(shop.selectedNomenclature?.formattedPrice ?? sampleProduct.formattedPrice)
-                    .font(.title2)
-                    .fontWeight(.black)
-                    .scaleEffect(1.35, anchor: .leading)
-
+                if let formattedPrice = shop.selectedNomenclature?.formattedPrice{
+                    Text(formattedPrice)
+                        .font(.title2)
+                        .fontWeight(.black)
+                        .scaleEffect(1.35, anchor: .leading)
+                        .padding(.bottom, 5)
+                }else{
+                    Text(sampleProduct.formattedPrice)
+                        .font(.title2)
+                        .fontWeight(.black)
+                        .scaleEffect(1.35, anchor: .leading)
+                        .padding(.bottom, 5)
+                }
+                    
+                Text("Артикул: " + (shop.selectedNomenclature?.VendorCode ?? "777"))
+                    .fontWeight(.semibold)
             })
             .offset(y: isAnimating ? -50 : -75)
           
             Spacer()
-          
+
             if let image = imageLoader.image {
                 Image(uiImage: image)
                     .resizable()
@@ -48,55 +59,39 @@ struct TopPartDetailView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 150, height: 150, alignment: .center)
-                    //.offset(y: isAnimating ? 0 : -35)
-                //Text("Загрузка...")
-            }
-            
-            /*
-          // PHOTO
-          Image(shop.selectedProduct?.image ?? sampleProduct.image)
-            .resizable()
-            .scaledToFit()
-            .offset(y: isAnimating ? 0 : -35)
-           
-            if let nomenclature = shop.selectedNomenclature {
-                if(nomenclature.Image != ""){
-                    ImageViewer(imageModel: ImageModel(imageDataString: nomenclature.Image!))
-                        .scaledToFit()
-                        .offset(y: isAnimating ? 0 : -35)
-    
-                }else{
-                    image
-                        .resizable()
-                        .scaledToFit()
-                        .offset(y: isAnimating ? 0 : -35)
-                }
-            } else {
 
-                image
-                    .resizable()
-                    .scaledToFit()
-                    .offset(y: isAnimating ? 0 : -35)
-               
             }
-             */
-            
-            
-            
         }) //: HSTACK
         .onAppear{
             withAnimation(.easeOut(duration: 0.75)) {
               isAnimating.toggle()
             }
             if let IDNomenclature = shop.selectedNomenclature?.IDNomenclature {
-                imageLoader.loadImageData(idNomenclature: IDNomenclature)
+                if let selectedNomenclature = shop.selectedNomenclature {
+                    if selectedNomenclature.Image == "" {
+                        imageLoader.loadImageData(idNomenclature: IDNomenclature)
+                        
+                        getPicturesNomenclature(nom1: shop.selectedNomenclature!) {
+                            modified in
+                            if let im = modified.Image{
+                                shop.selectedNomenclature?.Image = im
+                                
+                                GroupManager.shared.updateImageNomenclature(groupID: IDGroup, nomenclatureID: shop.selectedNomenclature!.IDNomenclature, newImage: im)
+                                
+                            }
+                        }
+                    }else{
+                        imageLoader.decodeImage(fromBase64: selectedNomenclature.Image!)
+                    }
+
+                }
             }
         }
     }
 }
 
 #Preview {
-    TopPartDetailView()
+    TopPartDetailView(IDGroup: ModelData().groupsWithNomenclatures[0].IDGroup)
         .environmentObject(Shop())
         .previewLayout(.sizeThatFits)
         .padding()

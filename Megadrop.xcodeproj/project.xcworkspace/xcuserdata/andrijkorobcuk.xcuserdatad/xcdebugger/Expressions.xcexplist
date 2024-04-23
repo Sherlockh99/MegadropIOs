@@ -3,10 +3,75 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "getData(hService:completion:):NetworkService.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in closure #1 in closure #1 in closure #1 in closure #1 in HomePageView.body.getter:HomePageView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "loader.dataList.count">
+            </PersistentString>
+            <PersistentString
+               value = "GroupManager.shared.groupWithNomenclatures.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in closure #1 in NomenclatureView.body.getter:NomenclatureView.swift">
          <PersistentStrings>
             <PersistentString
                value = "loaderFull.nomenclature.Image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in NomenclatureFullDataLoader.loadFullNomenclatureData(idNomenclature:shop:):NomenclatureFullDataLoader.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "shop.selectedNomenclature">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in closure #1 in NomenclatureView.body.getter:NomenclatureView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "numberOfDice">
+            </PersistentString>
+            <PersistentString
+               value = "nom2">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in TopPartDetailView.body.getter:TopPartDetailView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "shop.selectedNomenclature?.Image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in getData(hService:completion:):NetworkService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "httpResponse">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in NomenclatureView.body.getter:NomenclatureView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedNomenclature.Details == nil">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in TopPartDetailView.body.getter:TopPartDetailView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedNomenclature.Image">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

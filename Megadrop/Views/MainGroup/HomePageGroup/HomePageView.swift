@@ -14,6 +14,8 @@ struct HomePageView: View {
     @EnvironmentObject var shop: Shop
     @EnvironmentObject var vm: HomePageVM
     @StateObject var loader = DataLoader()
+    @ObservedObject private var viewModel = GroupManager.shared
+
     
     var body: some View {
         ZStack{
@@ -27,20 +29,26 @@ struct HomePageView: View {
                     
                     NavigationSplitView{
                         ScrollView(.vertical, showsIndicators: false){
-                            ForEach(loader.dataList,id: \.self){key in
-                                HomePageGroup(groupWithNomenclatures: key)
+                            if !viewModel.isLoading{
+                                
+                                ForEach(groupWithNomenclatures,id: \.self){
+                                    key in
+                                    HomePageGroup(groupWithNomenclatures: key)
+                                }
                             }
-                            .onAppear() {
-                                loader.loadData()
+                        }
+                        .onAppear() {
+                            if groupWithNomenclatures.count==0 {
+                                GroupManager.shared.loadGroupWithNomenclatures()
                             }
+
                         }
                     } detail: {
                         Text("Select a Landmark")
                     }
                 }
             } else {
-                //ProductDetailView()
-                NomenclatureView()
+                NomenclatureView(IDGroup: shop.IDGroup)
             }
         }
     }

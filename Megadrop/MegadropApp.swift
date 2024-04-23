@@ -9,18 +9,18 @@ import SwiftUI
 
 @main
 struct MegadropApp: App {
-   @StateObject var viewModel = YourViewModel()
+   //@StateObject var viewModel = YourViewModel()
     
     var body: some Scene {
         WindowGroup {
             ContentViewModel()
-                .environmentObject(viewModel)
+                //.environmentObject(viewModel)
         }
     }
 }
 
 struct ContentViewModel: View{
-    @EnvironmentObject var viewModel: YourViewModel
+    //@EnvironmentObject var viewModel: YourViewModel
     
     var body: some View{
         MainView()

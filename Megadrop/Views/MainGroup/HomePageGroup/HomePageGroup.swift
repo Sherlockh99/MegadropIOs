@@ -12,7 +12,7 @@ struct HomePageGroup: View {
     
     var body: some View {
         Section(header: Text(groupWithNomenclatures.NameGroup)){
-            HomePageListNomenclature(nomenclatures: groupWithNomenclatures.Nomenclatures)
+            HomePageListNomenclature(IDGroup: groupWithNomenclatures.IDGroup, nomenclatures: groupWithNomenclatures.Nomenclatures)
         }
         .font(.headline)
         .padding(.leading, 15)

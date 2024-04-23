@@ -8,6 +8,8 @@
 import Foundation
 class DataLoader: ObservableObject {
     @Published var dataList: [GroupWithNomenclatures] = []
+    static let sharedDataLoader = DataLoader()
+    //private init() {}
     
     func loadData() {
         let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getGroupsAndNomenclatures"

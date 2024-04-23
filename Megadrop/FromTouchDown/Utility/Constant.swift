@@ -39,6 +39,7 @@ var gridLayout: [GridItem] {
 
 let feedback = UIImpactFeedbackGenerator(style: .medium)
 
+var groupWithNomenclatures: [GroupWithNomenclatures] = []
 // API
 // IMAGE
 // FONT

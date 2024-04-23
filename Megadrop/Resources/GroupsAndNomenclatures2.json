@@ -25,7 +25,9 @@
                 "Image": "",
                 "Price": 248,
                 "VendorCode": "1621",
-                "Available": true
+                "Available": true,
+                "Characteristics":[{"IDCharacteristic":1,"Characteristic":"S","Price":449,"OrderedQuality":0,"isCharacteristic":true},{"IDCharacteristic":2,"Characteristic":"M","Price":449,"OrderedQuality":0,"isCharacteristic":true},{"IDCharacteristic":3,"Characteristic":"L","Price":449,"OrderedQuality":0,"isCharacteristic":true}
+                ]
             },
             {
                 "IDNomenclature": "00000002385",

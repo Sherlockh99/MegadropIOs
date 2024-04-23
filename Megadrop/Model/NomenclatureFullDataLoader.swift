@@ -9,11 +9,11 @@ import Foundation
 import SwiftUI
 class NomenclatureFullDataLoader: ObservableObject{
     @Published var nomenclature2: Nomenclature2? = nil
-    //@EnvironmentObject var shop: Shop
+    private var shared = GroupManager.shared
     
-    func loadFullNomenclatureData(idNomenclature: String) {
+    func loadFullNomenclatureData(groupID: String, idNomenclature: String) {
         
-        let hService = "/nomenclature//getfulldatanomenclature/" + idNomenclature
+        let hService = "/nomenclature/getfulldatanomenclature/" + idNomenclature
         let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs" + hService
         //let s = "http://77.52.194.194/itpeople/hs/nomenclature/getdefaultpicture/00000002381"
         
@@ -55,51 +55,18 @@ class NomenclatureFullDataLoader: ObservableObject{
              if let dataString = String(data: data, encoding: .utf8) {
                 print("Полученные данные: \(dataString)")
                  if let decodedResponse = try? JSONDecoder().decode(Nomenclature2.self, from: data){
-                     self.decodeNomenclature(nomenclature: decodedResponse)
+                     self.decodeNomenclature(groupID: groupID, nomenclature: decodedResponse)
                  }
-                 //let imageData = Data(base64Encoded: base64String, options: .ignoreUnknownCharacters)
                // completion(data)
              }
          }.resume()
         
     }
     
-    func decodeNomenclature(nomenclature: Nomenclature2){
+    func decodeNomenclature(groupID: String, nomenclature: Nomenclature2){
         DispatchQueue.global(qos: .background).async {
-            
-            //if let _nomenclature2 = nomenclature {
-                self.nomenclature2 = nomenclature
-                //self.shop.selectedNomenclature = nomenclature
-            //}
-        }
-            /*
-            if let image = nomenclature.Image {
-                if let imageData = Data(base64Encoded: image, options: .ignoreUnknownCharacters) {
-                    print("Decode Image Next")
-                    DispatchQueue.main.async {
-                        self.image = UIImage(data: imageData)
-                        //guard let data = Data(base64Encoded: imageDataString, options: .ignoreUnknownCharacters) else { return }
-                    }
-                }
-            }
-             */
-            
-            
-    }
-}
-    
-/*
-    func decodeImage(fromBase64 base64String: String) {
-        print("Decode Image Start")
-        DispatchQueue.global(qos: .background).async {
-            if let imageData = Data(base64Encoded: base64String, options: .ignoreUnknownCharacters) {
-                print("Decode Image Next")
-                DispatchQueue.main.async {
-                    self.image = UIImage(data: imageData)
-                    //guard let data = Data(base64Encoded: imageDataString, options: .ignoreUnknownCharacters) else { return }
-                }
-            }
+            self.nomenclature2 = nomenclature
+            self.shared.updateFullDataNomenclature(groupID: groupID, nomenclatureID: nomenclature.IDNomenclature, nom2: nomenclature)
         }
     }
 }
-*/

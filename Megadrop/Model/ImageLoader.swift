@@ -35,10 +35,8 @@ class ImageLoader: ObservableObject {
         request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
         
         
-       // guard let url = URL(string: DROP_SHIPPING_DOMAIN) else { return }
-        
         // Создаем задачу для запроса данных
-        let task: Void = URLSession.shared.dataTask(with: request) { (data, response, error) in
+        let _: Void = URLSession.shared.dataTask(with: request) { (data, response, error) in
              // Проверяем наличие ошибки
              if let error = error {
                  print("Ошибка запроса данных: \(error.localizedDescription)")

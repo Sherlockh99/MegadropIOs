@@ -11,6 +11,14 @@ struct CatalogView: View {
     @State private var searchText = ""
     @State private var isSearching = false
     
+    let items = Array(1...30)  // Массив чисел от 1 до 30
+
+    let columns: [GridItem] = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
     var body: some View {
         VStack{
             Text("Поиск")
@@ -49,15 +57,27 @@ struct CatalogView: View {
                                Button("Поиск") {
                                    isSearching = true
                                    // Действие поиска
-                                   print("Поиск выполнен")
+                                   //print("Поиск выполнен")
                                }
                            }
                        }
             if(isSearching){
                 Text("Поиск выполнен")
             }
+            ScrollView {
+                        LazyVGrid(columns: columns, spacing: 20) {
+                            ForEach(items, id: \.self) { item in
+                                Text("\(item)")
+                                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 50)
+                                    .background(Color.blue)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(10)
+                            }
+                        }
+                        .padding(.horizontal)
+                    }
             Spacer()
-        }
+        }//VStack
     }
 }
 
