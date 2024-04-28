@@ -12,7 +12,7 @@ struct HomePageRow: View {
     
     var body: some View {
         HStack{
-            Text(item.Nomenclatures[0].Nomenclature)
+            Text(item.Nomenclatures?[0].Nomenclature ?? "Empty")
         }
     }
 }

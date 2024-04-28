@@ -20,14 +20,6 @@ class NomenclatureManager {
         nomenclatures.removeAll { $0.IDNomenclature == id }
     }
     
-    /*
-    func updateNomenclature(withId id: String, newNomenclature: Nomenclature2, image: String) {
-            if let index = nomenclatures.firstIndex(where: { $0.IDNomenclature == id }) {
-                //nomenclatures[index] = newNomenclature
-                nomenclatures[index].Image = image
-            }
-        }
-    */
     func loadNomenclatures(from url: URL) {
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else {

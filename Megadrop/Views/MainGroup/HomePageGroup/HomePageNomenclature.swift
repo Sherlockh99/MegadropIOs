@@ -20,23 +20,7 @@ struct HomePageNomenclature: View {
         VStack{
             
             VStack{
-                /*
-                if viewModel.isPictureLoaded{
-                    if nomenclature.Image != nil {
-                        ImageViewer(imageModel: ImageModel(imageDataString: nomenclature.Image!))
-                    }else{
-                        image
-                            .renderingMode(.original)
-                            .resizable()
-                            .frame(width: 150,height: 150)
-                    }
-                }else{
-                    image
-                        .renderingMode(.original)
-                        .resizable()
-                        .frame(width: 150,height: 150)
-                }
-                */
+
                  if(nomenclature.Image != ""){
                      ImageViewer(imageModel: ImageModel(imageDataString: nomenclature.Image!))
                  }else{
@@ -74,10 +58,6 @@ struct HomePageNomenclature: View {
             //TODO
             
             if(nomenclature.Image == ""){
-                /*
-                 GroupManager.shared.getPicturesNomenclature(IDGroup: IDGroup, IDNomenclature: nomenclature.IDNomenclature)
-                 */
-                
                 getPicturesNomenclature(nom1: nomenclature) {
                     modified in
                     if let im = modified.Image{
@@ -99,5 +79,5 @@ struct HomePageNomenclature: View {
 #Preview {
     HomePageNomenclature(
         IDGroup: ModelData().groupsWithNomenclatures[0].IDGroup,
-        nomenclature: ModelData().groupsWithNomenclatures[0].Nomenclatures[2])
+        nomenclature: ModelData().groupsWithNomenclatures[0].Nomenclatures![2])
 }

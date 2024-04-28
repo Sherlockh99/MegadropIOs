@@ -40,6 +40,8 @@ var gridLayout: [GridItem] {
 let feedback = UIImpactFeedbackGenerator(style: .medium)
 
 var groupWithNomenclatures: [GroupWithNomenclatures] = []
+var basket: [Basket] = []
+
 // API
 // IMAGE
 // FONT

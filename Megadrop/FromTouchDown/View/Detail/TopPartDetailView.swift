@@ -24,6 +24,7 @@ struct TopPartDetailView: View {
         HStack(alignment: .center, spacing: 6, content: {
           // PRICE
             VStack(alignment: .leading, spacing: 6, content: {
+                /*
                 Text("Цена")
                     .fontWeight(.semibold)
             
@@ -40,11 +41,14 @@ struct TopPartDetailView: View {
                         .scaleEffect(1.35, anchor: .leading)
                         .padding(.bottom, 5)
                 }
-                    
+                    */
+                Text(shop.selectedNomenclature?.Nomenclature ?? sampleProduct.name)
+                    .font(.title2)
+                    .fontWeight(.black)
                 Text("Артикул: " + (shop.selectedNomenclature?.VendorCode ?? "777"))
                     .fontWeight(.semibold)
             })
-            .offset(y: isAnimating ? -50 : -75)
+            //.offset(y: isAnimating ? -50 : -75)
           
             Spacer()
 

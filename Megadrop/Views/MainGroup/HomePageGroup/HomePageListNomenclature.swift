@@ -40,32 +40,6 @@ struct HomePageListNomenclature: View {
                          //: LOOP
                 }
                 //}) //: GRID
-                
-                /*
-                
-                
-                HStack(alignment: .top, spacing: 0){
-                    ForEach(nomenclatures){ nom in
-                        /*
-                        Button {
-                            NomenclatureView(nomenclature: nom)
-                        }label: {
-                            HomePageNomenclature(nomenclature: nom)
-                        }
-                        .buttonStyle(.plain)
-                        */
-                        NavigationLink{
-                            shop.selectedNomenclature = nom
-                            
-                            NomenclatureView(nomenclature: nom)
-                            //NomenclatureView()
-                        }label: {
-                            HomePageNomenclature(nomenclature: nom)
-                        }
-                        
-                    }
-                 
-                }*/
             }
         }
     }
@@ -75,5 +49,5 @@ struct HomePageListNomenclature: View {
     let groupWithNomenclatures = ModelData().groupsWithNomenclatures[0]
     return HomePageListNomenclature(
         IDGroup: ModelData().groupsWithNomenclatures[0].IDGroup,
-        nomenclatures: Array(groupWithNomenclatures.Nomenclatures))
+        nomenclatures: Array(groupWithNomenclatures.Nomenclatures ?? []))
 }

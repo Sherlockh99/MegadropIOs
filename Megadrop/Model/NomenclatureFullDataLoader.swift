@@ -15,7 +15,6 @@ class NomenclatureFullDataLoader: ObservableObject{
         
         let hService = "/nomenclature/getfulldatanomenclature/" + idNomenclature
         let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs" + hService
-        //let s = "http://77.52.194.194/itpeople/hs/nomenclature/getdefaultpicture/00000002381"
         
         guard let url = URL(string: DROP_SHIPPING_DOMAIN) else { return }
         
@@ -34,8 +33,6 @@ class NomenclatureFullDataLoader: ObservableObject{
         // Добавляем заголовок для авторизации
         request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
         
-        
-       // guard let url = URL(string: DROP_SHIPPING_DOMAIN) else { return }
         
         // Создаем задачу для запроса данных
         let _: Void = URLSession.shared.dataTask(with: request) { (data, response, error) in

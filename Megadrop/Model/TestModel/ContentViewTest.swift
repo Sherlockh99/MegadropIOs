@@ -14,7 +14,7 @@ struct ContentViewTest: View {
         List(loader.dataList){ dataItem in
             VStack(alignment: .leading)
             {
-                Text(dataItem.Nomenclatures[0].Nomenclature)
+                Text(dataItem.Nomenclatures?[0].Nomenclature ?? "")
             }
         }
         .onAppear() {

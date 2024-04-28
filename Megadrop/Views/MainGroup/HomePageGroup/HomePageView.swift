@@ -30,7 +30,6 @@ struct HomePageView: View {
                     NavigationSplitView{
                         ScrollView(.vertical, showsIndicators: false){
                             if !viewModel.isLoading{
-                                
                                 ForEach(groupWithNomenclatures,id: \.self){
                                     key in
                                     HomePageGroup(groupWithNomenclatures: key)

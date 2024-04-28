@@ -85,7 +85,7 @@ struct QuantityFavouriteDetailView: View {
 #Preview {
     QuantityFavouriteDetailView(
         IDGroup: ModelData().groupsWithNomenclatures[0].IDGroup,
-        IDNomenclature: ModelData().groupsWithNomenclatures[0].Nomenclatures[2].IDNomenclature,
-        IDCharacteristic: ModelData().groupsWithNomenclatures[0].Nomenclatures[2].Characteristics![0].IDCharacteristic)
+        IDNomenclature: ModelData().groupsWithNomenclatures[0].Nomenclatures![2].IDNomenclature,
+        IDCharacteristic: ModelData().groupsWithNomenclatures[0].Nomenclatures![2].Characteristics![0].IDCharacteristic)
 }
 

@@ -61,6 +61,10 @@
 		C5966FB22B7777B100A0A693 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5966FB12B7777B100A0A693 /* NetworkService.swift */; };
 		C5A063572BCC2C0B005A48DA /* NomenclatureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A063562BCC2C0B005A48DA /* NomenclatureManager.swift */; };
 		C5A063592BCC3B3E005A48DA /* GroupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A063582BCC3B3E005A48DA /* GroupManager.swift */; };
+		C5B170552BDC7A500068411D /* OneBasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B170542BDC7A500068411D /* OneBasketView.swift */; };
+		C5B170572BDC7F140068411D /* Characteristicses.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B170562BDC7F140068411D /* Characteristicses.swift */; };
+		C5B170592BDC883D0068411D /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B170582BDC883D0068411D /* Basket.swift */; };
+		C5B1705D2BDC911E0068411D /* Basket.json in Resources */ = {isa = PBXBuildFile; fileRef = C5B1705C2BDC911E0068411D /* Basket.json */; };
 		C5B40C042B4B3CCB00847EE4 /* MegadropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B40C032B4B3CCB00847EE4 /* MegadropApp.swift */; };
 		C5B40C062B4B3CCB00847EE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B40C052B4B3CCB00847EE4 /* ContentView.swift */; };
 		C5B40C082B4B3CCD00847EE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B40C072B4B3CCD00847EE4 /* Assets.xcassets */; };
@@ -76,6 +80,7 @@
 		C5CFBBB82BB76EEA0087B6EA /* NomenclatureFullDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBBB72BB76EEA0087B6EA /* NomenclatureFullDataLoader.swift */; };
 		C5D732FD2B8F058B002D770F /* PictureNomenclature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D732FC2B8F058B002D770F /* PictureNomenclature.swift */; };
 		C5E8D5F22B95A5660032F0BD /* Nomenclature3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E8D5F12B95A5660032F0BD /* Nomenclature3.swift */; };
+		C5EF5C822BDCF32500623F9D /* BasketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EF5C812BDCF32500623F9D /* BasketManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +139,10 @@
 		C5966FB12B7777B100A0A693 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C5A063562BCC2C0B005A48DA /* NomenclatureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomenclatureManager.swift; sourceTree = "<group>"; };
 		C5A063582BCC3B3E005A48DA /* GroupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupManager.swift; sourceTree = "<group>"; };
+		C5B170542BDC7A500068411D /* OneBasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneBasketView.swift; sourceTree = "<group>"; };
+		C5B170562BDC7F140068411D /* Characteristicses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characteristicses.swift; sourceTree = "<group>"; };
+		C5B170582BDC883D0068411D /* Basket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
+		C5B1705C2BDC911E0068411D /* Basket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Basket.json; sourceTree = "<group>"; };
 		C5B40C002B4B3CCB00847EE4 /* Megadrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Megadrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B40C032B4B3CCB00847EE4 /* MegadropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MegadropApp.swift; sourceTree = "<group>"; };
 		C5B40C052B4B3CCB00847EE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -150,6 +159,7 @@
 		C5CFBBB72BB76EEA0087B6EA /* NomenclatureFullDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomenclatureFullDataLoader.swift; sourceTree = "<group>"; };
 		C5D732FC2B8F058B002D770F /* PictureNomenclature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureNomenclature.swift; sourceTree = "<group>"; };
 		C5E8D5F12B95A5660032F0BD /* Nomenclature3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nomenclature3.swift; sourceTree = "<group>"; };
+		C5EF5C812BDCF32500623F9D /* BasketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +230,7 @@
 		C540B2702B65A2C30050B9C1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C5B1705C2BDC911E0068411D /* Basket.json */,
 				C540B27E2B65B0290050B9C1 /* GroupsAndNomenclatures2.json */,
 				C540B2752B65AA220050B9C1 /* GroupsAndNomenclatures.json */,
 			);
@@ -301,6 +312,7 @@
 				C5CFBBB72BB76EEA0087B6EA /* NomenclatureFullDataLoader.swift */,
 				C5A063562BCC2C0B005A48DA /* NomenclatureManager.swift */,
 				C5A063582BCC3B3E005A48DA /* GroupManager.swift */,
+				C5EF5C812BDCF32500623F9D /* BasketManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -431,6 +443,7 @@
 		C5966FB42B777BDF00A0A693 /* BasketGroup */ = {
 			isa = PBXGroup;
 			children = (
+				C5B170542BDC7A500068411D /* OneBasketView.swift */,
 				C540B2682B6594370050B9C1 /* BasketView.swift */,
 			);
 			path = BasketGroup;
@@ -501,15 +514,33 @@
 		C5E733492B93A000007AF49F /* XDTO */ = {
 			isa = PBXGroup;
 			children = (
-				C540B2732B65A5B10050B9C1 /* GroupWithNomenclatures.swift */,
-				C5B4D8362B66A56A009CE4A1 /* Nomenclature.swift */,
-				C58AF1A02B854B84008B0CCF /* Nomenclature2.swift */,
+				C5EF5C842BDE795400623F9D /* Old */,
+				C5EF5C832BDE791800623F9D /* GroupsAndNomenclatures */,
 				C5D732FC2B8F058B002D770F /* PictureNomenclature.swift */,
-				C5E8D5F12B95A5660032F0BD /* Nomenclature3.swift */,
 				C5CFBBB52BB76AA80087B6EA /* ImageData.swift */,
 				C5B8A0162BD316BD00F85BCE /* BasketReply.swift */,
+				C5B170582BDC883D0068411D /* Basket.swift */,
 			);
 			path = XDTO;
+			sourceTree = "<group>";
+		};
+		C5EF5C832BDE791800623F9D /* GroupsAndNomenclatures */ = {
+			isa = PBXGroup;
+			children = (
+				C540B2732B65A5B10050B9C1 /* GroupWithNomenclatures.swift */,
+				C58AF1A02B854B84008B0CCF /* Nomenclature2.swift */,
+				C5B170562BDC7F140068411D /* Characteristicses.swift */,
+			);
+			path = GroupsAndNomenclatures;
+			sourceTree = "<group>";
+		};
+		C5EF5C842BDE795400623F9D /* Old */ = {
+			isa = PBXGroup;
+			children = (
+				C5B4D8362B66A56A009CE4A1 /* Nomenclature.swift */,
+				C5E8D5F12B95A5660032F0BD /* Nomenclature3.swift */,
+			);
+			path = Old;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -575,6 +606,7 @@
 				C540B2762B65AA220050B9C1 /* GroupsAndNomenclatures.json in Resources */,
 				C5B40C082B4B3CCD00847EE4 /* Assets.xcassets in Resources */,
 				C58F7D182BA61EFB00307B63 /* product.json in Resources */,
+				C5B1705D2BDC911E0068411D /* Basket.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +622,7 @@
 				C5966FB22B7777B100A0A693 /* NetworkService.swift in Sources */,
 				C58F7D272BA63ADF00307B63 /* AddToCartDetailView.swift in Sources */,
 				C58F7D232BA637B700307B63 /* RatingsSizesDetailView.swift in Sources */,
+				C5B170592BDC883D0068411D /* Basket.swift in Sources */,
 				C54345772B7995A2001D60DE /* AboutView.swift in Sources */,
 				C543456E2B798F5E001D60DE /* MyOrdersView.swift in Sources */,
 				C540B2792B65AC520050B9C1 /* HomePageItem.swift in Sources */,
@@ -618,10 +651,12 @@
 				C53F43762B9E50D500A6E0FA /* Characteristics.swift in Sources */,
 				C58F7D1F2BA62BFE00307B63 /* HeaderDetailView.swift in Sources */,
 				C540B2672B6593D60050B9C1 /* CatalogView.swift in Sources */,
+				C5B170552BDC7A500068411D /* OneBasketView.swift in Sources */,
 				C540B2652B6593600050B9C1 /* HomePageView.swift in Sources */,
 				C58F7D2C2BA63DDC00307B63 /* NavigationBarView.swift in Sources */,
 				C5A063592BCC3B3E005A48DA /* GroupManager.swift in Sources */,
 				C5B4D8372B66A56A009CE4A1 /* Nomenclature.swift in Sources */,
+				C5B170572BDC7F140068411D /* Characteristicses.swift in Sources */,
 				C540B27B2B65AC780050B9C1 /* HomePageDetail.swift in Sources */,
 				C5B40C062B4B3CCB00847EE4 /* ContentView.swift in Sources */,
 				C54FEE8C2B81897400AE8DEC /* LoginView.swift in Sources */,
@@ -629,6 +664,7 @@
 				C54345682B7985B6001D60DE /* MyOrderView.swift in Sources */,
 				C5930DEF2B9C719700287F48 /* CustomBackgroundView.swift in Sources */,
 				C5B40C042B4B3CCB00847EE4 /* MegadropApp.swift in Sources */,
+				C5EF5C822BDCF32500623F9D /* BasketManager.swift in Sources */,
 				C58F7D292BA63BB300307B63 /* CustomShape.swift in Sources */,
 				C5CFBBB82BB76EEA0087B6EA /* NomenclatureFullDataLoader.swift in Sources */,
 				C5B4D8392B66A839009CE4A1 /* HomePageListNomenclature.swift in Sources */,

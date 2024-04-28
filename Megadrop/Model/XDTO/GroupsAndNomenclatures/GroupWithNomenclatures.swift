@@ -15,6 +15,6 @@ struct GroupWithNomenclatures: Codable, Hashable, Identifiable{
     var NameGroup: String
     var Image: String?
     
-    var Nomenclatures: [Nomenclature2]
+    var Nomenclatures: [Nomenclature2]?
     
 }

@@ -8,9 +8,35 @@
 import SwiftUI
 
 struct BasketView: View {
+    @ObservedObject private var viewModelBasketManager = BasketManager.sharedBasketManager
+    
     var body: some View {
-        Text("Basket")
+        VStack{
+            
+            ScrollView(.vertical, showsIndicators: false){
+                if !viewModelBasketManager.isLoadingBasketManager{
+                    ForEach(basket,id: \.self){
+                        key in
+                        Text(key.IDCharacteristic)
+                        //HomePageGroup(groupWithNomenclatures: key)
+                    }
+                }
+            }
+            .onAppear{
+                viewModelBasketManager.loadBasket()
+                /*
+                //Получить корзину из базы
+                nomenclatureFullDataLoader.loadFullNomenclatureData(
+                    groupID: IDGroup,
+                    idNomenclature: selectedNomenclature.IDNomenclature)
+                 */
+            }
+             
+
+            Text("Basket")
+        }
     }
+        
 }
 
 #Preview {

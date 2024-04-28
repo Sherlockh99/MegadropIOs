@@ -1,0 +1,47 @@
+[
+    {
+        "IDNomenclature": "00000002381",
+        "NameNomenclaure": "Футболка Женская с сердцем",
+        "IDCharacteristic": "00000002381",
+        "NameCharacteristic": "Футболка Женская с сердцем",
+        "isCharacteristic": false,
+        "Price": 248,
+        "Count": 5
+    },
+    {
+        "IDNomenclature": "00000002383",
+        "NameNomenclaure": "Женская футболка Доброго Вечора Ми з України",
+        "IDCharacteristic": "00000002383",
+        "NameCharacteristic": "Женская футболка Доброго Вечора Ми з України",
+        "isCharacteristic": false,
+        "Price": 248,
+        "Count": 1
+    },
+    {
+        "IDNomenclature": "00000002763",
+        "NameNomenclaure": "Женская атласная пижама с Принтом  ЗЕЛЕНАЯ",
+        "IDCharacteristic": "         ",
+        "NameCharacteristic": "S",
+        "isCharacteristic": true,
+        "Price": 449,
+        "Count": 4
+    },
+    {
+        "IDNomenclature": "00000002763",
+        "NameNomenclaure": "Женская атласная пижама с Принтом  ЗЕЛЕНАЯ",
+        "IDCharacteristic": "         ",
+        "NameCharacteristic": "M",
+        "isCharacteristic": true,
+        "Price": 449,
+        "Count": 3
+    },
+    {
+        "IDNomenclature": "00000002763",
+        "NameNomenclaure": "Женская атласная пижама с Принтом  ЗЕЛЕНАЯ",
+        "IDCharacteristic": "         ",
+        "NameCharacteristic": "L",
+        "isCharacteristic": true,
+        "Price": 449,
+        "Count": 2
+    }
+]

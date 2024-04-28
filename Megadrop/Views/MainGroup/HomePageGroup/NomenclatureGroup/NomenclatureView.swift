@@ -25,11 +25,12 @@ struct NomenclatureView: View {
                 NavigationBarDetailView()
                     .padding(.horizontal)
                     .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
-                
+               
+                /*
                 //HEADER
                 HeaderDetailView()
                     .padding(.horizontal)
-                
+                */
                 // DETAIL TOP PART
                 TopPartDetailView(IDGroup: IDGroup)
                     .padding(.horizontal)
