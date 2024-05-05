@@ -10,6 +10,7 @@ class GroupManager: ObservableObject{
     static let shared = GroupManager()
     //@Published var groupWithNomenclatures: [GroupWithNomenclatures] = []
     @Published var isLoading = false
+    //@Published var isLoadingNomenclature = false
     //@Published var isPictureLoaded = false
     @Published var isUpdatedQuality = false
     
@@ -39,6 +40,84 @@ class GroupManager: ObservableObject{
         request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
         
         return request
+    }
+    
+    func loadGroups(){
+        self.isLoading = true
+
+        let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getGroups"
+        if let request = getRequest(DROP_SHIPPING_DOMAIN: DROP_SHIPPING_DOMAIN){
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                guard let data = data, error == nil else {
+                    print("Ошибка запроса: \(error?.localizedDescription ?? "No error description")")
+                    //self.isLoading = false
+                    return
+                }
+                
+                do {
+                    // Десериализация JSON в массив экземпляров Nomenclature2
+                    let groupWithNomenclaturesJSON = try JSONDecoder().decode([GroupWithNomenclatures].self, from: data)
+                    DispatchQueue.main.async {
+                        // Обновление массива в NomenclatureManager
+                        //self.groupWithNomenclatures.append(contentsOf: groupWithNomenclaturesJSON)
+                        groupWithNomenclatures.append(contentsOf: groupWithNomenclaturesJSON)
+                        //self.isLoading = false
+                        self.loadNomenclatures()
+                    }
+                } catch {
+                    print("Ошибка десериализации JSON: \(error.localizedDescription)")
+                }
+            }.resume()
+        }
+
+    }
+    
+    func loadNomenclatures(){
+        //self.isLoadingNomenclature = true
+        //self.isLoading = true
+        //let semaphore = DispatchSemaphore(value: 0)
+        let aGroup = DispatchGroup()
+        
+        groupWithNomenclatures.forEach { key in
+            aGroup.enter() // Отметить начало задачи
+            let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getNomenclaturesGroup/" + key.IDGroup
+            if let request = getRequest(DROP_SHIPPING_DOMAIN: DROP_SHIPPING_DOMAIN){
+                URLSession.shared.dataTask(with: request) { data, response, error in
+                    //defer { group.leave() }
+                    guard let data = data, error == nil else {
+                        print("Ошибка запроса: \(error?.localizedDescription ?? "No error description")")
+                        //self.isLoadingNomenclature = false
+                        //semaphore.signal()
+                        aGroup.leave()
+                        return
+                    }
+                    
+                    do {
+                        // Десериализация JSON в массив экземпляров Nomenclature2
+                        let nomenclaturesJSON = try JSONDecoder().decode([Nomenclature2].self, from: data)
+                        DispatchQueue.main.async {
+                            //nomenclatures.append(contentsOf: nomenclaturesJSON)
+                            self.addNomenclatures(groupID: key.IDGroup, nom2: nomenclaturesJSON)
+                        }
+                        aGroup.leave()
+                    } catch {
+                        print("Ошибка десериализации JSON: \(error.localizedDescription)")
+                        aGroup.leave()
+                    }
+                    
+                    //semaphore.signal()
+                    
+                }.resume()
+            }
+            //semaphore.wait() // Ожидаем сигнала
+        }
+        
+        //semaphore.wait()
+        // Этот блок кода выполнится после завершения всех задач в группе
+       aGroup.notify(queue: DispatchQueue.main) {
+            //self.isLoadingNomenclature = false
+            self.isLoading = false
+        }
     }
     
     func loadGroupWithNomenclatures() {
@@ -153,5 +232,14 @@ class GroupManager: ObservableObject{
         return nil
     }
     
+    func addNomenclatures(groupID: String, nom2: [Nomenclature2]){
+        if let groupIndex = groupWithNomenclatures.firstIndex(where: { $0.IDGroup == groupID }) {
+            groupWithNomenclatures[groupIndex].Nomenclatures = nom2
+        }
+    }
 
+    func getNomenclatures(groupID: String)->[Nomenclature2]{
+        let filteredNomenclatures = nomenclatures.filter { $0.IDGroup == groupID }
+        return filteredNomenclatures
+    }
 }

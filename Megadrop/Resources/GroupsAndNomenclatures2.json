@@ -4,166 +4,204 @@
         "NameGroup": "ОДЕЖДА",
         "Nomenclatures": [
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000009361",
                 "Nomenclature": "Костюм: свободная кофта",
                 "Image": "",
                 "Price": 55,
                 "VendorCode": "18502",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Костюм: свободная кофта"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002381",
                 "Nomenclature": "Футболка Женская с сердцем",
                 "Image": "",
                 "Price": 248,
                 "VendorCode": "1619",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Футболка Женская с сердцем"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002383",
                 "Nomenclature": "Женская футболка Доброго Вечора Ми з України",
                 "Image": "",
                 "Price": 248,
                 "VendorCode": "1621",
                 "Available": true,
-                "Characteristics":[{"IDCharacteristic":1,"Characteristic":"S","Price":449,"OrderedQuality":0,"isCharacteristic":true},{"IDCharacteristic":2,"Characteristic":"M","Price":449,"OrderedQuality":0,"isCharacteristic":true},{"IDCharacteristic":3,"Characteristic":"L","Price":449,"OrderedQuality":0,"isCharacteristic":true}
-                ]
+                "Nomenklature": "Женская футболка Доброго Вечора Ми з України"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002385",
                 "Nomenclature": "Женская футболка с рукавом на подкат патриотичная",
                 "Image": "",
                 "Price": 248,
                 "VendorCode": "1620",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Женская футболка с рукавом на подкат патриотичная"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002693",
                 "Nomenclature": "Женская футболка свободного кроя патриотическая С МАРКОЙ",
                 "Image": "",
                 "Price": 250,
                 "VendorCode": "1749",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Женская футболка свободного кроя патриотическая С МАРКОЙ"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002763",
                 "Nomenclature": "Женская атласная пижама с Принтом  ЗЕЛЕНАЯ",
                 "Image": "",
                 "Price": 449,
                 "VendorCode": "00004",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Женская атласная пижама с Принтом  ЗЕЛЕНАЯ"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002763",
                 "Nomenclature": "Женская атласная пижама с Принтом  ЗЕЛЕНАЯ",
                 "Image": "",
                 "Price": 449,
                 "VendorCode": "00004",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Женская атласная пижама с Принтом  ЗЕЛЕНАЯ"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002763",
                 "Nomenclature": "Женская атласная пижама с Принтом  ЗЕЛЕНАЯ",
                 "Image": "",
                 "Price": 449,
                 "VendorCode": "00004",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Женская атласная пижама с Принтом  ЗЕЛЕНАЯ"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002763",
                 "Nomenclature": "Женская атласная пижама с Принтом  ЗЕЛЕНАЯ",
                 "Image": "",
                 "Price": 449,
                 "VendorCode": "00004",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Женская атласная пижама с Принтом  ЗЕЛЕНАЯ"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002764",
                 "Nomenclature": "Женская атласная пижама с Принтом  ГОЛУБАЯ",
                 "Image": "",
                 "Price": 395,
                 "VendorCode": "00006",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Женская атласная пижама с Принтом  ГОЛУБАЯ"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002764",
                 "Nomenclature": "Женская атласная пижама с Принтом  ГОЛУБАЯ",
                 "Image": "",
                 "Price": 395,
                 "VendorCode": "00006",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Женская атласная пижама с Принтом  ГОЛУБАЯ"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002764",
                 "Nomenclature": "Женская атласная пижама с Принтом  ГОЛУБАЯ",
                 "Image": "",
                 "Price": 395,
                 "VendorCode": "00006",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Женская атласная пижама с Принтом  ГОЛУБАЯ"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002764",
                 "Nomenclature": "Женская атласная пижама с Принтом  ГОЛУБАЯ",
                 "Image": "",
                 "Price": 395,
                 "VendorCode": "00006",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Женская атласная пижама с Принтом  ГОЛУБАЯ"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002765",
                 "Nomenclature": "Женская атласная пижама с Принтом  СИНИЙ",
                 "Image": "",
                 "Price": 395,
                 "VendorCode": "00007",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Женская атласная пижама с Принтом  СИНИЙ"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002765",
                 "Nomenclature": "Женская атласная пижама с Принтом  СИНИЙ",
                 "Image": "",
                 "Price": 395,
                 "VendorCode": "00007",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Женская атласная пижама с Принтом  СИНИЙ"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002765",
                 "Nomenclature": "Женская атласная пижама с Принтом  СИНИЙ",
                 "Image": "",
                 "Price": 395,
                 "VendorCode": "00007",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Женская атласная пижама с Принтом  СИНИЙ"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002765",
                 "Nomenclature": "Женская атласная пижама с Принтом  СИНИЙ",
                 "Image": "",
                 "Price": 395,
                 "VendorCode": "00007",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Женская атласная пижама с Принтом  СИНИЙ"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002768",
                 "Nomenclature": "Пижама женская Кофта и брюки Турецкий трикотаж с котиками",
                 "Image": "",
                 "Price": 545,
                 "VendorCode": "00009",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Пижама женская Кофта и брюки Турецкий трикотаж с котиками"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002768",
                 "Nomenclature": "Пижама женская Кофта и брюки Турецкий трикотаж с котиками",
                 "Image": "",
                 "Price": 545,
                 "VendorCode": "00009",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Пижама женская Кофта и брюки Турецкий трикотаж с котиками"
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002768",
                 "Nomenclature": "Пижама женская Кофта и брюки Турецкий трикотаж с котиками",
                 "Image": "",
                 "Price": 545,
                 "VendorCode": "00009",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Пижама женская Кофта и брюки Турецкий трикотаж с котиками"
             }
         ]
     },
@@ -172,164 +210,204 @@
         "NameGroup": "РАДИО И КАЛОНКИ ",
         "Nomenclatures": [
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000000071",
                 "Nomenclature": "Радиоприемник с фонариком",
                 "Image": "",
                 "Price": 180,
                 "VendorCode": "0938",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Радиоприемник с фонариком"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000000168",
                 "Nomenclature": "Колонка Bluetooth MP3 FM караоке с микрофоном",
                 "Image": "",
                 "Price": 688,
                 "VendorCode": "1122",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Колонка Bluetooth MP3 FM караоке с микрофоном"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000000307",
                 "Nomenclature": "КОЛОНКА Char 2+ ",
                 "Image": "",
                 "Price": 325,
                 "VendorCode": "0341",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "КОЛОНКА Char 2+ "
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000000369",
                 "Nomenclature": "Портативная колонка JBL Xtreme 2 BIG",
                 "Image": "",
                 "Price": 543,
                 "VendorCode": "0378",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Портативная колонка JBL Xtreme 2 BIG"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000000564",
                 "Nomenclature": "КОЛОНКИ с САБВУФЕРОМ система 2.1",
                 "Image": "",
                 "Price": 219,
                 "VendorCode": "0234",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "КОЛОНКИ с САБВУФЕРОМ система 2.1"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000000652",
                 "Nomenclature": "Колонка Сабвуфер *10*Д 1000BT БЛЮТУЗ Bluetooth Subwoofer 12В//220",
                 "Image": "",
                 "Price": 1589,
                 "VendorCode": "0303",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Колонка Сабвуфер *10*Д 1000BT БЛЮТУЗ Bluetooth Subwoofer 12В//220"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000000660",
                 "Nomenclature": "Колонки для компьютера, ноутбука",
                 "Image": "",
                 "Price": 0,
                 "VendorCode": "0023",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Колонки для компьютера, ноутбука"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000001047",
                 "Nomenclature": "Колонки для компьютера или ноутбука 2.1 Хрестовая",
                 "Image": "",
                 "Price": 219,
                 "VendorCode": "0267",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Колонки для компьютера или ноутбука 2.1 Хрестовая"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000001198",
                 "Nomenclature": "Колонка портативная Блютуз JBL Charge mini жбл",
                 "Image": "",
                 "Price": 185,
                 "VendorCode": "0327",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Колонка портативная Блютуз JBL Charge mini жбл"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000001327",
                 "Nomenclature": "Колонки для ноутбука планшета телефона CK4",
                 "Image": "",
                 "Price": 92,
                 "VendorCode": "0857",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Колонки для ноутбука планшета телефона CK4"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000001428",
                 "Nomenclature": "Радиоприемник Golon RX-381",
                 "Image": "",
                 "Price": 330,
                 "VendorCode": "0937",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Радиоприемник Golon RX-381"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000001473",
                 "Nomenclature": "Компьютерные колонки FT-2060 с Сабвуфером",
                 "Image": "",
                 "Price": 315,
                 "VendorCode": "0986",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Компьютерные колонки FT-2060 с Сабвуфером"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000001598",
                 "Nomenclature": "Портативная колонка Bluetooth JBK-8878",
                 "Image": "",
                 "Price": 538,
                 "VendorCode": "1061",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Портативная колонка Bluetooth JBK-8878"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000001829",
                 "Nomenclature": "Настольные колонки для компьютера, ноутбука, телефона проводные usb система 2.0 Bluetooth",
                 "Image": "",
                 "Price": 272,
                 "VendorCode": "1260",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Настольные колонки для компьютера, ноутбука, телефона проводные usb система 2.0 Bluetooth"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000001884",
                 "Nomenclature": "Акустика Kisonli колонки с сабвуфером и пультом для пк",
                 "Image": "",
                 "Price": 387,
                 "VendorCode": "1303",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Акустика Kisonli колонки с сабвуфером и пультом для пк"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000002139",
                 "Nomenclature": "Мощные Колонки для компьютера Kisonli U-2900 с сабвуфером",
                 "Image": "",
                 "Price": 300,
                 "VendorCode": "1498",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Мощные Колонки для компьютера Kisonli U-2900 с сабвуфером"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000002266",
                 "Nomenclature": "Портативная музыкальная колонка с подсветкой Bluetooth RX-6168 10W с микрофоном",
                 "Image": "",
                 "Price": 1208,
                 "VendorCode": "1555",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Портативная музыкальная колонка с подсветкой Bluetooth RX-6168 10W с микрофоном"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000005422",
                 "Nomenclature": "Радиоприёмник всеволновой",
                 "Image": "",
                 "Price": 350,
                 "VendorCode": "2024",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Радиоприёмник всеволновой"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000005425",
                 "Nomenclature": "Радиоприемник Golon RX-381 многофункциональный",
                 "Image": "",
                 "Price": 465,
                 "VendorCode": "2027",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Радиоприемник Golon RX-381 многофункциональный"
             },
             {
+                "IDGroup": "00000007313",
                 "IDNomenclature": "00000005426",
                 "Nomenclature": "Радиоприёмник KIPO KB-308AC",
                 "Image": "",
                 "Price": 255,
                 "VendorCode": "2028",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Радиоприёмник KIPO KB-308AC"
             }
         ]
     },
@@ -338,164 +416,204 @@
         "NameGroup": "ВСЕ ДЛЯ КУХНИ",
         "Nomenclatures": [
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000073",
                 "Nomenclature": "Чайник А-плюс со свистком 3л",
                 "Image": "",
                 "Price": 318,
                 "VendorCode": "0100",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Чайник А-плюс со свистком 3л"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000104",
                 "Nomenclature": "Набор ножей CONTOUR PRO 11 в 1",
                 "Image": "",
                 "Price": 315,
                 "VendorCode": "0129",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Набор ножей CONTOUR PRO 11 в 1"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000122",
                 "Nomenclature": "Кофеварка Domotec с термостаканом 700W",
                 "Image": "",
                 "Price": 369,
                 "VendorCode": "0349",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Кофеварка Domotec с термостаканом 700W"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000136",
                 "Nomenclature": "Электрочайник Domotec",
                 "Image": "",
                 "Price": 307,
                 "VendorCode": "0067",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Электрочайник Domotec"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000138",
                 "Nomenclature": "Кофемолка Domotec 150Вт БЕЛАЯ",
                 "Image": "",
                 "Price": 226,
                 "VendorCode": "0174",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Кофемолка Domotec 150Вт БЕЛАЯ"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000154",
                 "Nomenclature": "Ручной миксер с чашей Domotec",
                 "Image": "",
                 "Price": 0,
                 "VendorCode": "0079",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Ручной миксер с чашей Domotec"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000170",
                 "Nomenclature": "Фритюрница + Крышка 24 см",
                 "Image": "",
                 "Price": 231,
                 "VendorCode": "0395",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Фритюрница + Крышка 24 см"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000180",
                 "Nomenclature": "Термос 0.75л",
                 "Image": "",
                 "Price": 162,
                 "VendorCode": "0359",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Термос 0.75л"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000181",
                 "Nomenclature": "Цифровой кухн весы до 1кг мерная чашка",
                 "Image": "",
                 "Price": 395,
                 "VendorCode": "0949",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Цифровой кухн весы до 1кг мерная чашка"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000241",
                 "Nomenclature": "Набор  A-PLUS Rainbow радуга",
                 "Image": "",
                 "Price": 642,
                 "VendorCode": "0929",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Набор  A-PLUS Rainbow радуга"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000253",
                 "Nomenclature": "Гриль 4в1 Livstar",
                 "Image": "",
                 "Price": 950,
                 "VendorCode": "0087",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Гриль 4в1 Livstar"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000254",
                 "Nomenclature": "ГРИЛЬ Wimpex 3в1 ",
                 "Image": "",
                 "Price": 0,
                 "VendorCode": "0399",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "ГРИЛЬ Wimpex 3в1 "
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000267",
                 "Nomenclature": "Весы кухонные круглые с чашей LIVSTAR",
                 "Image": "",
                 "Price": 191,
                 "VendorCode": "0084",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Весы кухонные круглые с чашей LIVSTAR"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000278",
                 "Nomenclature": "Сковородка A-plus 20 см",
                 "Image": "",
                 "Price": 162,
                 "VendorCode": "0364",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Сковородка A-plus 20 см"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000281",
                 "Nomenclature": "Фритюрница + Крышка 26 см",
                 "Image": "",
                 "Price": 257,
                 "VendorCode": "0396",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Фритюрница + Крышка 26 см"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000286",
                 "Nomenclature": "Кофеварка A-PLUS 650 Ватт со стеклянной колбой",
                 "Image": "",
                 "Price": 475,
                 "VendorCode": "0406",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Кофеварка A-PLUS 650 Ватт со стеклянной колбой"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000289",
                 "Nomenclature": "ЭЛЕКТРО Мясорубка Rainberg 2200W",
                 "Image": "",
                 "Price": 896,
                 "VendorCode": "0227",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "ЭЛЕКТРО Мясорубка Rainberg 2200W"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000291",
                 "Nomenclature": "Набор кастрюль 4шт с прозрачными крышками",
                 "Image": "",
                 "Price": 785,
                 "VendorCode": "0040",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Набор кастрюль 4шт с прозрачными крышками"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000007",
                 "Nomenclature": "Набор эмалированных судочков с крышкой A-PLUS 5шт",
                 "Image": "",
                 "Price": 205,
                 "VendorCode": "0336",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Набор эмалированных судочков с крышкой A-PLUS 5шт"
             },
             {
+                "IDGroup": "00000007305",
                 "IDNomenclature": "00000000019",
                 "Nomenclature": "КОФЕВАРКА LIVSTAR колбовая",
                 "Image": "",
                 "Price": 491,
                 "VendorCode": "0090",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "КОФЕВАРКА LIVSTAR колбовая"
             }
         ]
     },
@@ -504,164 +622,204 @@
         "NameGroup": "ФОНАРИКИ ЛАМПЫ ГИРЛЯНДЫ",
         "Nomenclatures": [
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000000097",
                 "Nomenclature": "Фонарик тактический, велофонарь",
                 "Image": "",
                 "Price": 215,
                 "VendorCode": "0059",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Фонарик тактический, велофонарь"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000000381",
                 "Nomenclature": "Настольная лампа-трансформер iPLED 5S ЛЕД ",
                 "Image": "",
                 "Price": 133,
                 "VendorCode": "0369",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Настольная лампа-трансформер iPLED 5S ЛЕД "
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000000551",
                 "Nomenclature": "Фонарь налобный АККУМУЛЯТОРНЫЙ светодиодный для рыбалки велосипеда",
                 "Image": "",
                 "Price": 163,
                 "VendorCode": "0075",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Фонарь налобный АККУМУЛЯТОРНЫЙ светодиодный для рыбалки велосипеда"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000000664",
                 "Nomenclature": "УЛЬТРА ОТПУГИВАТЕЛЬ СОБАК AOKEMAN ",
                 "Image": "",
                 "Price": 145,
                 "VendorCode": "0489",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "УЛЬТРА ОТПУГИВАТЕЛЬ СОБАК AOKEMAN "
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000000698",
                 "Nomenclature": "АКЦИЯ Фонарь Police+батарейки в подарок, Велофонарь",
                 "Image": "",
                 "Price": 50,
                 "VendorCode": "0231",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "АКЦИЯ Фонарь Police+батарейки в подарок, Велофонарь"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000000732",
                 "Nomenclature": "Налобный фонарь с ТРЕМЯ светодиодами и ДВУМЯ сменными аКкумуляторами",
                 "Image": "",
                 "Price": 222,
                 "VendorCode": "0195",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Налобный фонарь с ТРЕМЯ светодиодами и ДВУМЯ сменными аКкумуляторами"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000000740",
                 "Nomenclature": "Уличный фонарь на солнечной батарее с пультом Solar street light",
                 "Image": "",
                 "Price": 275,
                 "VendorCode": "1052",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Уличный фонарь на солнечной батарее с пультом Solar street light"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000000898",
                 "Nomenclature": "Лазерный проектор Диско Лазер стробоскоп для дома, кафе,бара,",
                 "Image": "",
                 "Price": 260,
                 "VendorCode": "0596",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Лазерный проектор Диско Лазер стробоскоп для дома, кафе,бара,"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000000984",
                 "Nomenclature": "ФОНАРИК-ОТПУГИВАТЕЛЬ СОБАК ШЕРХАН",
                 "Image": "",
                 "Price": 185,
                 "VendorCode": "0490",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "ФОНАРИК-ОТПУГИВАТЕЛЬ СОБАК ШЕРХАН"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000000997",
                 "Nomenclature": "ФОНАРИК ОТПУГИВАТЕЛЬ ЖИВОТНЫХ ПОМАДА",
                 "Image": "",
                 "Price": 196,
                 "VendorCode": "0491",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "ФОНАРИК ОТПУГИВАТЕЛЬ ЖИВОТНЫХ ПОМАДА"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000001267",
                 "Nomenclature": "Светодиодная гирлянда \"ЗВЕЗДОПАД\" 2.5м 138LED 12 ЦВЕТНЫХ звезд",
                 "Image": "",
                 "Price": 335,
                 "VendorCode": "0831",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Светодиодная гирлянда \"ЗВЕЗДОПАД\" 2.5м 138LED 12 ЦВЕТНЫХ звезд"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000001279",
                 "Nomenclature": "Светодиодная гирлянда \"ЗВЕЗДОПАД\" 2.5м 138LED 12 ЗОЛОТЫХ звезд",
                 "Image": "",
                 "Price": 335,
                 "VendorCode": "0830",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Светодиодная гирлянда \"ЗВЕЗДОПАД\" 2.5м 138LED 12 ЗОЛОТЫХ звезд"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000001314",
                 "Nomenclature": "Светодиодная гирлянда \"ЗВЕЗДОПАД\" 2.5м 138LED ЛУНА И ЗВЕЗДЫ",
                 "Image": "",
                 "Price": 358,
                 "VendorCode": "0852",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Светодиодная гирлянда \"ЗВЕЗДОПАД\" 2.5м 138LED ЛУНА И ЗВЕЗДЫ"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000001350",
                 "Nomenclature": "Лампа трансформер Topwell светодиодная лампа",
                 "Image": "",
                 "Price": 225,
                 "VendorCode": "0876",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Лампа трансформер Topwell светодиодная лампа"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000001392",
                 "Nomenclature": "Лампа кольцевая 30 см Ring Fill Light",
                 "Image": "",
                 "Price": 341,
                 "VendorCode": "0897",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Лампа кольцевая 30 см Ring Fill Light"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000001468",
                 "Nomenclature": "Лампа-ночник со светодиодными МЕДУЗАМИ",
                 "Image": "",
                 "Price": 422,
                 "VendorCode": "0968",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Лампа-ночник со светодиодными МЕДУЗАМИ"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000001495",
                 "Nomenclature": "Лампа Bailong BL-007",
                 "Image": "",
                 "Price": 110,
                 "VendorCode": "0992",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Лампа Bailong BL-007"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000001627",
                 "Nomenclature": "Налобный фонарь High Power Headlamp 3xT6",
                 "Image": "",
                 "Price": 191,
                 "VendorCode": "1073",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Налобный фонарь High Power Headlamp 3xT6"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000001750",
                 "Nomenclature": "Настольная лампа MINI X-7188 светодиодная",
                 "Image": "",
                 "Price": 55,
                 "VendorCode": "1193",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Настольная лампа MINI X-7188 светодиодная"
             },
             {
+                "IDGroup": "00000007311",
                 "IDNomenclature": "00000001778",
                 "Nomenclature": "Настольная LED лампа Yajia YJ-5863",
                 "Image": "",
                 "Price": 255,
                 "VendorCode": "1187",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Настольная LED лампа Yajia YJ-5863"
             }
         ]
     },
@@ -670,164 +828,204 @@
         "NameGroup": "ВСЕ ДЛЯ АВТО",
         "Nomenclatures": [
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000101",
                 "Nomenclature": "Автомагнитола Pioner 1DIN",
                 "Image": "",
                 "Price": 289,
                 "VendorCode": "0177",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Автомагнитола Pioner 1DIN"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000162",
                 "Nomenclature": "АнтиБликовый козырек hdVision vidor 2в1",
                 "Image": "",
                 "Price": 146,
                 "VendorCode": "0149",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "АнтиБликовый козырек hdVision vidor 2в1"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000176",
                 "Nomenclature": "Набор ключей Snap'N Grip",
                 "Image": "",
                 "Price": 102,
                 "VendorCode": "0063",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Набор ключей Snap'N Grip"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000192",
                 "Nomenclature": "Автомобильная акустика колонки 5 дюйм",
                 "Image": "",
                 "Price": 312,
                 "VendorCode": "0167",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Автомобильная акустика колонки 5 дюйм"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000259",
                 "Nomenclature": "Видеорегистратор K6000",
                 "Image": "",
                 "Price": 295,
                 "VendorCode": "0181",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Видеорегистратор K6000"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000270",
                 "Nomenclature": "Набор отверток для ремонта IPHONE телефонов 16в1 С битами Отвертки",
                 "Image": "",
                 "Price": 114,
                 "VendorCode": "0232",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Набор отверток для ремонта IPHONE телефонов 16в1 С битами Отвертки"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000287",
                 "Nomenclature": "Набор торцевых головок 40 шт",
                 "Image": "",
                 "Price": 195,
                 "VendorCode": "0125",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Набор торцевых головок 40 шт"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000295",
                 "Nomenclature": "Набор головок с трещеткой и удлинителем 1/2\" 12 предметов",
                 "Image": "",
                 "Price": 237,
                 "VendorCode": "0893",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Набор головок с трещеткой и удлинителем 1/2\" 12 предметов"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000339",
                 "Nomenclature": "Автомобильный FM трансмиттер модулятор G7 FM Bluetooth",
                 "Image": "",
                 "Price": 110,
                 "VendorCode": "0389",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Автомобильный FM трансмиттер модулятор G7 FM Bluetooth"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000340",
                 "Nomenclature": "АВТОПЫЛЕСОС  CAR VACUM CLEANER красний",
                 "Image": "",
                 "Price": 214,
                 "VendorCode": "0099",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "АВТОПЫЛЕСОС  CAR VACUM CLEANER красний"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000442",
                 "Nomenclature": "Видеорегистратор G30",
                 "Image": "",
                 "Price": 295,
                 "VendorCode": "0165",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Видеорегистратор G30"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000563",
                 "Nomenclature": "Велокрепеж, крепление для велофонарика",
                 "Image": "",
                 "Price": 41,
                 "VendorCode": "0060",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Велокрепеж, крепление для велофонарика"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000587",
                 "Nomenclature": "Автомобильная акустика, колонки 6х9 дюйма 1000Вт",
                 "Image": "",
                 "Price": 496,
                 "VendorCode": "0170",
-                "Available": false
+                "Available": false,
+                "Nomenklature": "Автомобильная акустика, колонки 6х9 дюйма 1000Вт"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000589",
                 "Nomenclature": "Универсальный ключ Universal Wrench 48 инструментов в 1",
                 "Image": "",
                 "Price": 335,
                 "VendorCode": "0472",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Универсальный ключ Universal Wrench 48 инструментов в 1"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000590",
                 "Nomenclature": "Модулятор Bluetooth адаптер BT-450 Wireless",
                 "Image": "",
                 "Price": 81,
                 "VendorCode": "0475",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Модулятор Bluetooth адаптер BT-450 Wireless"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000803",
                 "Nomenclature": "Автомобильный компрессор для авто ПОРШНЕВОЙ 25л",
                 "Image": "",
                 "Price": 170,
                 "VendorCode": "0035",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Автомобильный компрессор для авто ПОРШНЕВОЙ 25л"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000060",
                 "Nomenclature": "Набор отверток инструментов 32 в 1, для ремонта телефонов и электроники",
                 "Image": "",
                 "Price": 125,
                 "VendorCode": "0156",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Набор отверток инструментов 32 в 1, для ремонта телефонов и электроники"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000650",
                 "Nomenclature": "Видеорегистратор автомобильный GT350 ",
                 "Image": "",
                 "Price": 265,
                 "VendorCode": "0311",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Видеорегистратор автомобильный GT350 "
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000671",
                 "Nomenclature": "ЛАЗЕРНЫЙ УРОВЕНЬ 4В1",
                 "Image": "",
                 "Price": 162,
                 "VendorCode": "0155",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "ЛАЗЕРНЫЙ УРОВЕНЬ 4В1"
             },
             {
+                "IDGroup": "00000007301",
                 "IDNomenclature": "00000000679",
                 "Nomenclature": "Разветвитель c USB IN-CAR тройной разветвитель для авто 0120",
                 "Image": "",
                 "Price": 95,
                 "VendorCode": "0185",
-                "Available": true
+                "Available": true,
+                "Nomenklature": "Разветвитель c USB IN-CAR тройной разветвитель для авто 0120"
             }
         ]
     }

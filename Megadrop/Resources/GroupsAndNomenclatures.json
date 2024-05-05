@@ -4,6 +4,7 @@
         "NameGroup": "ОДЕЖДА",
         "Nomenclatures": [
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000009361",
                 "Nomenklature": "Костюм: свободная кофта",
                 "Image": "",
@@ -12,6 +13,7 @@
                 "Available": true
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002381",
                 "Nomenklature": "Футболка Женская с сердцем",
                 "Image": "",
@@ -20,6 +22,7 @@
                 "Available": true
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002383",
                 "Nomenklature": "Женская футболка Доброго Вечора Ми з України",
                 "Image": "",
@@ -28,6 +31,7 @@
                 "Available": true
             },
             {
+                "IDGroup": "00000002758",
                 "IDNomenclature": "00000002385",
                 "Nomenklature": "Женская футболка с рукавом на подкат патриотичная",
                 "Image": "",
