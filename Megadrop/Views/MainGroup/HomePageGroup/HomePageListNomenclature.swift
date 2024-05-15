@@ -8,46 +8,29 @@
 import SwiftUI
 
 struct HomePageListNomenclature: View {
-    let IDGroup: String
-    //@ObservedObject private var viewModel = GroupManager.shared
-    
-    @State var nomenclatures: [Nomenclature2]
-    @EnvironmentObject var shop: Shop
-    
+    let groupsWithNomenclatures_: GroupWithNomenclatures
     var body: some View {
-        VStack(alignment: .leading){            
+        VStack(alignment: .leading){
             ScrollView(.horizontal, showsIndicators: false){
-                
-                //LazyVGrid(columns: gridLayout, spacing: 15, content: {
-                HStack(alignment: .top, spacing: 0){
-                    
-                    ForEach(nomenclatures) { nom in
-                        
-                        HomePageNomenclature(IDGroup: IDGroup, nomenclature: nom)
-                            .onTapGesture {
-                                feedback.impactOccurred()
-                                
-                                withAnimation(.easeOut) {
-                                    shop.selectedNomenclature = nom
-                                    shop.showingNomenclature = true
-                                    shop.IDGroup = IDGroup
-                                }
-                         
-                            }
-                    
-                         }
-                         
-                         //: LOOP
-                }
-                //}) //: GRID
-            }
-        }
-    }
+                LazyHStack{
+                    if let nomenclatures = groupsWithNomenclatures_.Nomenclatures {
+                        ForEach(nomenclatures,id: \.self){
+                            key in
+                            HomePageNomenclature(
+                                IDGroup: groupsWithNomenclatures_.IDGroup,
+                                nomenclature: key)
+                        }
+                    } else {
+                        Text("1")
+                    }
+                } //: LAZYHSTACK
+            } //: SCROLL
+        }//: VSTACK
+    }//: BODY
 }
 
 #Preview {
     let groupWithNomenclatures = ModelData().groupsWithNomenclatures[0]
     return HomePageListNomenclature(
-        IDGroup: ModelData().groupsWithNomenclatures[0].IDGroup,
-        nomenclatures: Array(groupWithNomenclatures.Nomenclatures ?? []))
+        groupsWithNomenclatures_: groupWithNomenclatures)
 }

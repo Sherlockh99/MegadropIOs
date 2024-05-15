@@ -17,4 +17,8 @@ struct GroupWithNomenclatures: Codable, Hashable, Identifiable{
     
     var Nomenclatures: [Nomenclature2]?
     
+    mutating func removeDuplicateNomenclatures() {
+            guard let nomenclatures = Nomenclatures else { return }
+            self.Nomenclatures = Array(Set(nomenclatures))
+        }
 }

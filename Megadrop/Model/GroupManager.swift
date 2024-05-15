@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 class GroupManager: ObservableObject{
     static let shared = GroupManager()
     //@Published var groupWithNomenclatures: [GroupWithNomenclatures] = []
@@ -20,7 +21,7 @@ class GroupManager: ObservableObject{
     public func getRequest(DROP_SHIPPING_DOMAIN: String) -> URLRequest?{
         guard let url = URL(string: DROP_SHIPPING_DOMAIN) else {
             print("Некорректный URL")
-            self.isLoading = false
+            self.isLoading = true
             return nil
         }
         
@@ -148,13 +149,21 @@ class GroupManager: ObservableObject{
                 }
                 
                 do {
+                    
                     // Десериализация JSON в массив экземпляров Nomenclature2
                     let groupWithNomenclaturesJSON = try JSONDecoder().decode([GroupWithNomenclatures].self, from: data)
                     DispatchQueue.main.async {
                         // Обновление массива в NomenclatureManager
                         //self.groupWithNomenclatures.append(contentsOf: groupWithNomenclaturesJSON)
+                        print("Start")
                         groupWithNomenclatures.append(contentsOf: groupWithNomenclaturesJSON)
+                        
+                            for index in groupWithNomenclatures.indices {
+                                groupWithNomenclatures[index].removeDuplicateNomenclatures()
+                            }
+  
                         self.isLoading = false
+                        
                     }
                 } catch {
                     print("Ошибка десериализации JSON: \(error.localizedDescription)")
@@ -238,8 +247,8 @@ class GroupManager: ObservableObject{
         }
     }
 
-    func getNomenclatures(groupID: String)->[Nomenclature2]{
-        let filteredNomenclatures = nomenclatures.filter { $0.IDGroup == groupID }
-        return filteredNomenclatures
-    }
+    //func getNomenclatures(groupID: String)->[Nomenclature2]{
+        //let filteredNomenclatures = nomenclatures.filter { $0.IDGroup == groupID }
+        //return filteredNomenclatures
+    //}
 }

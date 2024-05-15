@@ -15,7 +15,7 @@ struct HomePageView: View {
     @EnvironmentObject var vm: HomePageVM
     @StateObject var loader = DataLoader()
     @ObservedObject private var viewModel = GroupManager.shared
-
+    @StateObject private var nomenclatureFullDataLoader = NomenclatureFullDataLoader()
     
     var body: some View {
         ZStack{
@@ -37,8 +37,14 @@ struct HomePageView: View {
                             }
                         }
                         .onAppear() {
+                            
                             if groupWithNomenclatures.count==0 {
                                 GroupManager.shared.loadGroupWithNomenclatures()
+/*
+                                nomenclatureFullDataLoader.loadFullNomenclatureData(
+                                    groupID: IDGroup,
+                                    idNomenclature: selectedNomenclature.IDNomenclature)
+*/
                             }
 
                         }

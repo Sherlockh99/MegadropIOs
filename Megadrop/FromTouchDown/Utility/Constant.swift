@@ -40,7 +40,7 @@ var gridLayout: [GridItem] {
 let feedback = UIImpactFeedbackGenerator(style: .medium)
 
 var groupWithNomenclatures: [GroupWithNomenclatures] = []
-var nomenclatures: [Nomenclature2] = []
+//var nomenclatures: [Nomenclature2] = []
 var basket: [Basket] = []
 
 // API

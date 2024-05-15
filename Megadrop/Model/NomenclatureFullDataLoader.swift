@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 class NomenclatureFullDataLoader: ObservableObject{
+    
     @Published var nomenclature2: Nomenclature2? = nil
     private var shared = GroupManager.shared
     

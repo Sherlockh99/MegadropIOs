@@ -29,4 +29,8 @@ struct Nomenclature2: Codable, Hashable, Identifiable{
     }
     
     var formattedPrice: String { return "\(Price) грн." }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(IDNomenclature)
+    }
 }
