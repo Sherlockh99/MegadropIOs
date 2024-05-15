@@ -39,25 +39,21 @@ struct HomePageNomenclature: View {
             }
             
             VStack{
-                //Text(nomenclature.Nomenclature)
-                
                 HStack{
                     Text("Доступность:")
                     Spacer()
-                    /*
                      if nomenclature.Available {
-                     Text("Да")
+                         Text("Да")
                      } else {
-                     Text("Нет")
+                         Text("Нет")
                      }
-                     */
                 }
                 
                 
                 HStack{
                     Text("Цена:")
-                    //Spacer()
-                    //Text(String(nomenclature.Price))
+                    Spacer()
+                    Text(String(nomenclature.Price))
                 }
             }
             Spacer()
@@ -91,11 +87,7 @@ struct HomePageNomenclature: View {
     }
 }
 
-
 #Preview {
-    //HomePageNomenclature(
-    //    IDGroup: ModelData().groupsWithNomenclatures[0].IDGroup,
-    //    nomenclature: ModelData().groupsWithNomenclatures[0].Nomenclatures![2])
     HomePageNomenclature(
         IDGroup: ModelData().groupsWithNomenclatures[0].IDGroup,
         nomenclature: ModelData().groupsWithNomenclatures[0].Nomenclatures![2])

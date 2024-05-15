@@ -40,11 +40,6 @@ struct HomePageView: View {
                             
                             if groupWithNomenclatures.count==0 {
                                 GroupManager.shared.loadGroupWithNomenclatures()
-/*
-                                nomenclatureFullDataLoader.loadFullNomenclatureData(
-                                    groupID: IDGroup,
-                                    idNomenclature: selectedNomenclature.IDNomenclature)
-*/
                             }
 
                         }

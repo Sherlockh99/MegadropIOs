@@ -16,9 +16,11 @@ struct HomePageListNomenclature: View {
                     if let nomenclatures = groupsWithNomenclatures_.Nomenclatures {
                         ForEach(nomenclatures,id: \.self){
                             key in
-                            HomePageNomenclature(
-                                IDGroup: groupsWithNomenclatures_.IDGroup,
-                                nomenclature: key)
+                            NavigationLink(destination: NomenclatureView(IDGroup: groupsWithNomenclatures_.IDGroup)) {
+                                HomePageNomenclature(
+                                    IDGroup: groupsWithNomenclatures_.IDGroup,
+                                    nomenclature: key)
+                            }
                         }
                     } else {
                         Text("1")
