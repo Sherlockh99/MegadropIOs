@@ -61,8 +61,8 @@ struct HomePageNomenclature: View {
         .frame(width: 150, height: 250)
         .padding(.leading, 15)
         .onAppear{
-            print(nomenclature.id)
-            print(nomenclature.Price)
+            //print(nomenclature.id)
+            //print(nomenclature.Price)
             //TODO
             
             if(nomenclature.Image == ""){

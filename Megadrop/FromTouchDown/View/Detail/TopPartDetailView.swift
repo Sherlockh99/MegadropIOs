@@ -70,12 +70,12 @@ struct TopPartDetailView: View {
             withAnimation(.easeOut(duration: 0.75)) {
               isAnimating.toggle()
             }
-            if let IDNomenclature = shop.selectedNomenclature?.IDNomenclature {
+            //if let IDNomenclature = shop.selectedNomenclature?.IDNomenclature {
                 if let selectedNomenclature = shop.selectedNomenclature {
                     if selectedNomenclature.Image == "" {
-                        imageLoader.loadImageData(idNomenclature: IDNomenclature)
+                        imageLoader.loadImageData(idNomenclature: selectedNomenclature.IDNomenclature)
                         
-                        getPicturesNomenclature(nom1: shop.selectedNomenclature!) {
+                        getPicturesNomenclature(nom1: selectedNomenclature) {
                             modified in
                             if let im = modified.Image{
                                 shop.selectedNomenclature?.Image = im
@@ -89,7 +89,7 @@ struct TopPartDetailView: View {
                     }
 
                 }
-            }
+            //}
         }
     }
 }

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct NomenclatureView: View {
     let IDGroup: String
+    let nomenclature: Nomenclature2
+    
     @EnvironmentObject var shop: Shop
     @State private var value = 0
     @StateObject private var nomenclatureFullDataLoader = NomenclatureFullDataLoader()
@@ -26,11 +28,11 @@ struct NomenclatureView: View {
                     .padding(.horizontal)
                     .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
                
-                /*
+                
                 //HEADER
-                HeaderDetailView()
-                    .padding(.horizontal)
-                */
+                //HeaderDetailView()
+                //    .padding(.horizontal)
+                
                 // DETAIL TOP PART
                 TopPartDetailView(IDGroup: IDGroup)
                     .padding(.horizontal)
@@ -44,31 +46,36 @@ struct NomenclatureView: View {
                         .padding(.bottom, 10)
                     */
                     ScrollView(.vertical, showsIndicators: false, content: {
-                        if let details = nomenclatureFullDataLoader.nomenclature2?.Details {
+                        if let details = nomenclature.Details{
+                            //nomenclatureFullDataLoader.nomenclature2.Details {
                             //if let details = shop.selectedNomenclature?.Details {
                             Text(details)
                                 .font(.system(.body, design: .rounded))
                                 .foregroundColor(.gray)
                                 .multilineTextAlignment(.leading)
-                        } else {
+                        } 
+                        /*else {
                             Text(shop.selectedNomenclature?.Nomenclature ?? sampleProduct.description)
                                 .font(.system(.body, design: .rounded))
                                 .foregroundColor(.gray)
                                 .multilineTextAlignment(.leading)
                         }
+                         */
                         
                         Spacer()
                         
-                        if let nom2 = nomenclatureFullDataLoader.nomenclature2{
-                            if let details = nom2.Characteristics{
+                        //if let nom2 = nomenclatureFullDataLoader.nomenclature2{
+                        //if let nom2 = nomenclature{
+                        //if !viewModelNFDL.isLoadedNDFL{
+                            if let details = nomenclature.Characteristics{
                                 ForEach(details,id: \.self){key in
                                     QuantityFavouriteDetailView(
                                         IDGroup: IDGroup,
-                                        IDNomenclature: nom2.IDNomenclature,
+                                        IDNomenclature: nomenclature.IDNomenclature,
                                         IDCharacteristic: key.IDCharacteristic)
                                 }
                             }
-                        }
+                        //}
                     })//: SCROLL
                                     
                     /*
@@ -79,45 +86,53 @@ struct NomenclatureView: View {
                 })//: VSTACK
                 .padding(.horizontal)
                 .padding(.bottom,105)
-                .background(
-                    Color.white
-                        .clipShape(CustomShape())
-                        .padding(.top, -105)
-                )
+                //.background(
+                //    Color.white
+                //        .clipShape(CustomShape())
+                //        .padding(.top, -105)
+                //)
             })//: VSTACK
             .zIndex(0)
             .ignoresSafeArea(.all, edges: .all)
             .background(
-                Color(
-                    red: shop.selectedProduct?.red ?? sampleProduct.red,
+               Color(
+                   red: shop.selectedProduct?.red ?? sampleProduct.red,
                     green: shop.selectedProduct?.green ?? sampleProduct.green,
-                    blue: shop.selectedProduct?.blue ?? sampleProduct.blue
-                ).ignoresSafeArea(.all, edges: .all)
+                   blue: shop.selectedProduct?.blue ?? sampleProduct.blue
+               ).ignoresSafeArea(.all, edges: .all)
             )
+                 
         }
         .onAppear{
-            if let selectedNomenclature = shop.selectedNomenclature {
+            if nomenclature.Details == nil {
                 
+            }else{
+                
+            }
+            
+            //shop.selectedNomenclature = nomenclature
+            
+            if let selectedNomenclature = shop.selectedNomenclature {
                 if selectedNomenclature.Details == nil {
                     nomenclatureFullDataLoader.loadFullNomenclatureData(
                         groupID: IDGroup,
                         idNomenclature: selectedNomenclature.IDNomenclature)
-                    
-                    
-                }else{
-                    nomenclatureFullDataLoader.decodeNomenclature(
+                }
+                 else{
+                     nomenclatureFullDataLoader.decodeNomenclature(
                         groupID: IDGroup,
                         nomenclature: selectedNomenclature)
                 }
-                
             }
+             
         }
     }
 }
 
 #Preview {
 
-    NomenclatureView(IDGroup: ModelData().groupsWithNomenclatures[0].IDGroup)
+    NomenclatureView(IDGroup: ModelData().groupsWithNomenclatures[0].IDGroup,
+                     nomenclature: ModelData().groupsWithNomenclatures[0].Nomenclatures![0])
         .environmentObject(Shop())
         .previewLayout(.fixed(width: 375, height: 812))
      

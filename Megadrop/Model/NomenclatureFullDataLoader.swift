@@ -8,12 +8,14 @@
 import Foundation
 import SwiftUI
 class NomenclatureFullDataLoader: ObservableObject{
+    //static let sharedNFDL = NomenclatureFullDataLoader()
     
-    @Published var nomenclature2: Nomenclature2? = nil
     private var shared = GroupManager.shared
     
+    //private init() {}
+    
     func loadFullNomenclatureData(groupID: String, idNomenclature: String) {
-        
+        //self.isLoadedNDFL = false
         let hService = "/nomenclature/getfulldatanomenclature/" + idNomenclature
         let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs" + hService
         
@@ -40,12 +42,14 @@ class NomenclatureFullDataLoader: ObservableObject{
              // Проверяем наличие ошибки
              if let error = error {
                  print("Ошибка запроса данных: \(error.localizedDescription)")
+                 //self.isLoadedNDFL = true
                  return
              }
              
              // Проверяем HTTP статус код и наличие данных
              guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200, let data = data else {
                  print("Нет данных или ошибка HTTP")
+                 //self.isLoadedNDFL = true
                  return
              }
 
@@ -55,6 +59,7 @@ class NomenclatureFullDataLoader: ObservableObject{
                  if let decodedResponse = try? JSONDecoder().decode(Nomenclature2.self, from: data){
                      self.decodeNomenclature(groupID: groupID, nomenclature: decodedResponse)
                  }
+                 //self.isLoadedNDFL = true
                // completion(data)
              }
          }.resume()
@@ -63,7 +68,6 @@ class NomenclatureFullDataLoader: ObservableObject{
     
     func decodeNomenclature(groupID: String, nomenclature: Nomenclature2){
         DispatchQueue.global(qos: .background).async {
-            self.nomenclature2 = nomenclature
             self.shared.updateFullDataNomenclature(groupID: groupID, nomenclatureID: nomenclature.IDNomenclature, nom2: nomenclature)
         }
     }

@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct HomePageListNomenclature: View {
+    
+    @EnvironmentObject var shop: Shop
     let groupsWithNomenclatures_: GroupWithNomenclatures
+    
     var body: some View {
         VStack(alignment: .leading){
             ScrollView(.horizontal, showsIndicators: false){
@@ -16,11 +19,17 @@ struct HomePageListNomenclature: View {
                     if let nomenclatures = groupsWithNomenclatures_.Nomenclatures {
                         ForEach(nomenclatures,id: \.self){
                             key in
-                            NavigationLink(destination: NomenclatureView(IDGroup: groupsWithNomenclatures_.IDGroup)) {
                                 HomePageNomenclature(
                                     IDGroup: groupsWithNomenclatures_.IDGroup,
                                     nomenclature: key)
-                            }
+                                .onTapGesture {
+                                  feedback.impactOccurred()
+                                  
+                                  withAnimation(.easeOut) {
+                                    shop.selectedNomenclature = key
+                                    shop.showingNomenclature = true
+                                  }
+                                }
                         }
                     } else {
                         Text("1")

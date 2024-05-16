@@ -16,13 +16,13 @@ struct NavigationBarView: View {
     
     var body: some View {
         HStack {
-            /*
+            
             Button(action: {}, label: {
                 Image(systemName: "magnifyingglass")
                     .font(.title)
                     .foregroundColor(.black)
             }) //: BUTTON
-            */
+            
             Spacer()
             
             LogoView()
@@ -35,7 +35,7 @@ struct NavigationBarView: View {
               })
             
             Spacer()
-            /*
+            
             Button(action: {}, label: {
               ZStack {
                 Image(systemName: "cart")
@@ -48,7 +48,7 @@ struct NavigationBarView: View {
                   .offset(x: 13, y: -10)
               }
             }) //: BUTTON
-             */
+             
         }
     }
 }

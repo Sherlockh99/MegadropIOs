@@ -12,22 +12,18 @@ struct HomePageView: View {
     // MARK: - PROPERTY
     
     @EnvironmentObject var shop: Shop
-    @EnvironmentObject var vm: HomePageVM
-    @StateObject var loader = DataLoader()
     @ObservedObject private var viewModel = GroupManager.shared
-    @StateObject private var nomenclatureFullDataLoader = NomenclatureFullDataLoader()
     
     var body: some View {
         ZStack{
             if shop.showingNomenclature == false && shop.selectedNomenclature == nil {
                 VStack{
-                    NavigationBarView()
+                    NavigationBarHomeView()
                         .padding(.horizontal, 15)
                         .padding(.bottom)
                         .background(Color.white)
                         .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
                     
-                    NavigationSplitView{
                         ScrollView(.vertical, showsIndicators: false){
                             if !viewModel.isLoading{
                                 ForEach(groupWithNomenclatures,id: \.self){
@@ -43,12 +39,9 @@ struct HomePageView: View {
                             }
 
                         }
-                    } detail: {
-                        Text("Select a Landmark")
-                    }
                 }
             } else {
-                NomenclatureView(IDGroup: shop.IDGroup)
+                NomenclatureView(IDGroup: shop.IDGroup, nomenclature: shop.selectedNomenclature ?? ModelData().groupsWithNomenclatures[0].Nomenclatures![0])
             }
         }
     }
