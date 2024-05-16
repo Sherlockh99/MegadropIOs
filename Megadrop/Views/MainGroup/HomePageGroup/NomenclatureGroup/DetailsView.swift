@@ -13,7 +13,6 @@ struct DetailsView: View {
     @EnvironmentObject var shop: Shop
     @StateObject private var nomenclatureFullDataLoaderSNDFL = NomenclatureFullDataLoader.sharedNFDL
     
-    
     var body: some View {
         VStack(alignment: .center, spacing: 0, content: {
             ScrollView(.vertical, showsIndicators: false, content: {

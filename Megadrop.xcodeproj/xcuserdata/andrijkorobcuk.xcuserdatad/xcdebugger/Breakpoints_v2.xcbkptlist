@@ -100,5 +100,53 @@
             landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5153A05C-ABFF-4A1C-8206-CA4A8F1DA3CF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Megadrop/FromTouchDown/View/Detail/QuantityFavouriteDetailView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "changeCounter(counter_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5153A05C-ABFF-4A1C-8206-CA4A8F1DA3CF - 1c91da005f5ea3c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Megadrop.QuantityFavouriteDetailView.changeCounter(counter_: Swift.Int) -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/FromTouchDown/View/Detail/QuantityFavouriteDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5153A05C-ABFF-4A1C-8206-CA4A8F1DA3CF - 329a3dbb07300189"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Megadrop.BasketReply&gt;) -&gt; () in Megadrop.QuantityFavouriteDetailView.changeCounter(counter_: Swift.Int) -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/FromTouchDown/View/Detail/QuantityFavouriteDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

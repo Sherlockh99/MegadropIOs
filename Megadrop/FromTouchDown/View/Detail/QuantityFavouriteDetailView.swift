@@ -16,7 +16,6 @@ struct QuantityFavouriteDetailView: View {
     @EnvironmentObject var shop: Shop
     @State private var counter: Int = 0
     @State private var characteristic: Characteristicses?
-    //@ObservedObject private var viewModel = GroupManager.shared
 
     // MARK: - BODY
     

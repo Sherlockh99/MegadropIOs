@@ -26,8 +26,9 @@ struct HomePageListNomenclature: View {
                                   feedback.impactOccurred()
                                   
                                   withAnimation(.easeOut) {
-                                    shop.selectedNomenclature = key
-                                    shop.showingNomenclature = true
+                                      shop.IDGroup = groupsWithNomenclatures_.IDGroup
+                                      shop.selectedNomenclature = key
+                                      shop.showingNomenclature = true
                                   }
                                 }
                         }

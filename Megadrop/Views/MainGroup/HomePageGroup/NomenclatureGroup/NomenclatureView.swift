@@ -37,7 +37,7 @@ struct NomenclatureView: View {
                 TopPartDetailView(IDGroup: IDGroup)
                     .padding(.horizontal)
                     .zIndex(1)
-                DetailsView(IDGroup: IDGroup,nom3: nomenclature)
+                DetailsView(IDGroup: IDGroup, nom3: nomenclature)
             })//: VSTACK
             .zIndex(0)
             .ignoresSafeArea(.all, edges: .all)
