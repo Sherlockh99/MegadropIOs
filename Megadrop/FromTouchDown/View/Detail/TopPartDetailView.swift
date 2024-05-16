@@ -74,7 +74,6 @@ struct TopPartDetailView: View {
                 if let selectedNomenclature = shop.selectedNomenclature {
                     if selectedNomenclature.Image == "" {
                         imageLoader.loadImageData(idNomenclature: selectedNomenclature.IDNomenclature)
-                        
                         getPicturesNomenclature(nom1: selectedNomenclature) {
                             modified in
                             if let im = modified.Image{
@@ -87,7 +86,6 @@ struct TopPartDetailView: View {
                     }else{
                         imageLoader.decodeImage(fromBase64: selectedNomenclature.Image!)
                     }
-
                 }
             //}
         }

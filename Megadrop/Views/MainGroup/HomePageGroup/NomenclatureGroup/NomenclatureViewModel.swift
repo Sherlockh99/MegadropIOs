@@ -7,7 +7,7 @@
 
 import Foundation
 func getDataNomenclature(nomenclature: Nomenclature2, completion: @escaping (Nomenclature2)->Void){
-    var nom = nomenclature
+    //var nom = nomenclature
    
     getData(hService: "/nomenclature/getfulldatanomenclature/" + nomenclature.IDNomenclature){
         modified in
@@ -15,10 +15,11 @@ func getDataNomenclature(nomenclature: Nomenclature2, completion: @escaping (Nom
             let decoder = JSONDecoder()
             let userData = try decoder.decode(Nomenclature2.self, from: modified)
             print("all ok")
-            nom.Details = userData.Details
-            nom.Image = userData.Image ?? ""
-            nom.Characteristics = userData.Characteristics
-            completion(nom)
+            var nom2 = nomenclature
+            nom2.Details = userData.Details
+            nom2.Image = userData.Image ?? ""
+            nom2.Characteristics = userData.Characteristics
+            completion(nom2)
         }catch{
             print("Error UserData")
         }

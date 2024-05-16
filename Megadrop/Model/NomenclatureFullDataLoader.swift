@@ -8,11 +8,12 @@
 import Foundation
 import SwiftUI
 class NomenclatureFullDataLoader: ObservableObject{
-    //static let sharedNFDL = NomenclatureFullDataLoader()
+    @Published var isLoadedNDFL = false
+    static let sharedNFDL = NomenclatureFullDataLoader()
     
     private var shared = GroupManager.shared
     
-    //private init() {}
+    private init() {}
     
     func loadFullNomenclatureData(groupID: String, idNomenclature: String) {
         //self.isLoadedNDFL = false

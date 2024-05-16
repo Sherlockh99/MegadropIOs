@@ -13,7 +13,7 @@ struct NomenclatureView: View {
     
     @EnvironmentObject var shop: Shop
     @State private var value = 0
-    @StateObject private var nomenclatureFullDataLoader = NomenclatureFullDataLoader()
+    //@StateObject private var nomenclatureFullDataLoader = NomenclatureFullDataLoader()
     
     var image: Image{
         Image("logo")
@@ -37,60 +37,7 @@ struct NomenclatureView: View {
                 TopPartDetailView(IDGroup: IDGroup)
                     .padding(.horizontal)
                     .zIndex(1)
-                
-                VStack(alignment: .center, spacing: 0, content: {
-                   /*
-                    // RATINGS + SIZES
-                    RatingsSizesDetailView()
-                        .padding(.top, -20)
-                        .padding(.bottom, 10)
-                    */
-                    ScrollView(.vertical, showsIndicators: false, content: {
-                        if let details = nomenclature.Details{
-                            //nomenclatureFullDataLoader.nomenclature2.Details {
-                            //if let details = shop.selectedNomenclature?.Details {
-                            Text(details)
-                                .font(.system(.body, design: .rounded))
-                                .foregroundColor(.gray)
-                                .multilineTextAlignment(.leading)
-                        } 
-                        /*else {
-                            Text(shop.selectedNomenclature?.Nomenclature ?? sampleProduct.description)
-                                .font(.system(.body, design: .rounded))
-                                .foregroundColor(.gray)
-                                .multilineTextAlignment(.leading)
-                        }
-                         */
-                        
-                        Spacer()
-                        
-                        //if let nom2 = nomenclatureFullDataLoader.nomenclature2{
-                        //if let nom2 = nomenclature{
-                        //if !viewModelNFDL.isLoadedNDFL{
-                            if let details = nomenclature.Characteristics{
-                                ForEach(details,id: \.self){key in
-                                    QuantityFavouriteDetailView(
-                                        IDGroup: IDGroup,
-                                        IDNomenclature: nomenclature.IDNomenclature,
-                                        IDCharacteristic: key.IDCharacteristic)
-                                }
-                            }
-                        //}
-                    })//: SCROLL
-                                    
-                    /*
-                     // ADD TO CART
-                     AddToCartDetailView()
-                     */
-                    
-                })//: VSTACK
-                .padding(.horizontal)
-                .padding(.bottom,105)
-                //.background(
-                //    Color.white
-                //        .clipShape(CustomShape())
-                //        .padding(.top, -105)
-                //)
+                DetailsView(IDGroup: IDGroup,nom3: nomenclature)
             })//: VSTACK
             .zIndex(0)
             .ignoresSafeArea(.all, edges: .all)
@@ -104,6 +51,7 @@ struct NomenclatureView: View {
                  
         }
         .onAppear{
+            /*
             if nomenclature.Details == nil {
                 
             }else{
@@ -124,6 +72,7 @@ struct NomenclatureView: View {
                         nomenclature: selectedNomenclature)
                 }
             }
+             */
              
         }
     }
