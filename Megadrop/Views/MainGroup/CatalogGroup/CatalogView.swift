@@ -10,14 +10,23 @@ import SwiftUI
 struct CatalogView: View {
     @State private var searchText = ""
     @State private var isSearching = false
+    @State private var isGroups = true
     @State private var isGroup = true
     @State private var idGroup = ""
+    @State private var isNomenclature = false
+
+    @EnvironmentObject var shop: Shop
     //@ObservedObject private var viewModel = GroupManager.shared
 
     let items = Array(1...30)  // Массив чисел от 1 до 30
-
+/*
     let columns: [GridItem] = [
         GridItem(.fixed(100)),
+        GridItem(.fixed(100)),
+        GridItem(.fixed(100))
+    ]
+*/
+    let columns: [GridItem] = [
         GridItem(.fixed(100)),
         GridItem(.fixed(100))
     ]
@@ -71,12 +80,13 @@ struct CatalogView: View {
             }
             Spacer()
             ZStack{
-                if(isGroup){
+                if(isGroups){
                     ScrollView {
-                        LazyVGrid(columns: columns, spacing: 20) {
+                        //LazyVGrid(columns: columns, spacing: 20) {
                             ForEach(groupWithNomenclatures, id: \.self) { item in
                                 Button("\(item.NameGroup)"){
-                                    isGroup = false
+                                    isGroups = false
+                                    isGroup = true
                                     idGroup = item.IDGroup
                                 }
                                 /*
@@ -88,14 +98,46 @@ struct CatalogView: View {
                                  
                                  */
                             }
+                        //} //:LAZYVGRID
+                        //.padding(.horizontal)
+                    }//: SCROLLVIEW
+                }else if isGroup{ //isGroups
+                    if let nom4 = GroupManager.shared.getNomenclatures(groupID: idGroup){
+                        ScrollView {
+                            LazyVGrid(columns: columns, spacing: 20) {
+                                ForEach(nom4, id: \.self){ key in
+                                    //Text(item.Nomenclature)
+                                    HomePageNomenclature(
+                                        IDGroup: idGroup,
+                                        nomenclature: key)
+                                    .onTapGesture {
+                                        feedback.impactOccurred()
+                                        
+                                        withAnimation(.easeOut) {
+                                            shop.IDGroup = idGroup
+                                            shop.selectedNomenclature = key
+                                            shop.showingNomenclature = true
+                                        }
+                                        isNomenclature = true
+                                        isGroup = false
+                                        isGroups = false
+                                    }
+                                }
+                            }
                         }
-                        .padding(.horizontal)
+                        .font(.headline)
+                        .padding(.leading, 15)
+                        .padding(.top, 5)
+                        .foregroundColor(.primary)
                     }
-                }else{ //isGroup
+                }else if isNomenclature {
+                    NomenclatureView(IDGroup: idGroup, nomenclature: shop.selectedNomenclature ?? ModelData().groupsWithNomenclatures[0].Nomenclatures![0])
+                }else {
                     Button("Press me"){
-                        isGroup = true
+                        isGroup = false
+                        isGroups = true
                     }
-                }//:else isGroup
+                }//:else if isGroup
             }//:ZStack
             Spacer()
         }//:VStack

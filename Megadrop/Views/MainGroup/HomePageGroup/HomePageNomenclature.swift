@@ -24,21 +24,22 @@ struct HomePageNomenclature: View {
                 if(isLoaded){
                     if(nomenclature.Image != ""){
                         ImageViewer(imageModel: ImageModel(imageDataString: nomenclature.Image!))
+                    }else{
+                        image
+                            .renderingMode(.original)
+                            .resizable()
+                            .frame(width: 150,height: 150)
                     }
-                }
-                /*
-                if(nomenclature.Image != ""){
-                    //ImageViewer(imageModel: ImageModel(imageDataString: nomenclature.Image!))
                 }else{
-                    //image
-                    //    .renderingMode(.original)
-                    //    .resizable()
-                    //    .frame(width: 150,height: 150)
+                    image
+                        .renderingMode(.original)
+                        .resizable()
+                        .frame(width: 150,height: 150)
                 }
-                 */
             }
             
             VStack{
+                Text(nomenclature.Nomenclature)
                 HStack{
                     Text("Доступность:")
                     Spacer()
@@ -67,6 +68,7 @@ struct HomePageNomenclature: View {
             
             if(nomenclature.Image == ""){
                 // Выполнение кода после отображения представления
+            /*
                 DispatchQueue.main.async {
                     getPicturesNomenclature(nom1: nomenclature) {
                         modified in
@@ -79,10 +81,11 @@ struct HomePageNomenclature: View {
                     }
                     isLoaded = true
                 }
-                
+              */
             }else{
                 isLoaded = true
             }
+            
         }
     }
 }

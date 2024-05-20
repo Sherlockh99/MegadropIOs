@@ -247,8 +247,12 @@ class GroupManager: ObservableObject{
         }
     }
 
-    //func getNomenclatures(groupID: String)->[Nomenclature2]{
+    func getNomenclatures(groupID: String)->[Nomenclature2]?{
+        if let groupIndex = groupWithNomenclatures.firstIndex(where: { $0.IDGroup == groupID }) {
+            return groupWithNomenclatures[groupIndex].Nomenclatures ?? nil
+        }
+        return nil
         //let filteredNomenclatures = nomenclatures.filter { $0.IDGroup == groupID }
         //return filteredNomenclatures
-    //}
+    }
 }
