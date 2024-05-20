@@ -28,31 +28,23 @@ struct DetailsView: View {
                         .multilineTextAlignment(.leading)
                 }
 
-                
                 Spacer()
-                
-                //if let nom2 = nomenclatureFullDataLoader.nomenclature2{
-                //if let nom2 = nomenclature{
-                //if !viewModelNFDL.isLoadedNDFL{
-                    if let characteristics = nom3.Characteristics{
-                        ForEach(characteristics,id: \.self){key in
-                            QuantityFavouriteDetailView(
-                                IDGroup: IDGroup,
-                                IDNomenclature: nom3.IDNomenclature,
-                                IDCharacteristic: key.IDCharacteristic)
-                        }
+
+                if let characteristics = nom3.Characteristics{
+                    ForEach(characteristics,id: \.self){key in
+                        QuantityFavouriteDetailView(
+                            IDGroup: IDGroup,
+                            IDNomenclature: nom3.IDNomenclature,
+                            IDCharacteristic: key.IDCharacteristic)
                     }
-                //}
-                //}
+                }
                 
             })//: SCROLL
         })//: VSTACK
         .padding(.horizontal)
         .padding(.bottom,105)
         .onAppear{
-            //if let selectedNomenclature = shop.selectedNomenclature {
-                //nomenclatureFullDataLoaderSNDFL.loadFullNomenclatureData(groupID: IDGroup, idNomenclature: selectedNomenclature.IDNomenclature)
-            if let detailsNom = nom3.Details {
+            if nom3.Details != nil {
                 
             }else{
                 getDataNomenclature(nomenclature: nom3) {

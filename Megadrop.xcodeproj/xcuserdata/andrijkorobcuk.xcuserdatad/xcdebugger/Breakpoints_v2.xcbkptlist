@@ -110,8 +110,8 @@
             filePath = "Megadrop/FromTouchDown/View/Detail/QuantityFavouriteDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "changeCounter(counter_:)"
             landmarkType = "7">
             <Locations>

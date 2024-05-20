@@ -12,8 +12,6 @@ struct NomenclatureView: View {
     let nomenclature: Nomenclature2
     
     @EnvironmentObject var shop: Shop
-    @State private var value = 0
-    //@StateObject private var nomenclatureFullDataLoader = NomenclatureFullDataLoader()
     
     var image: Image{
         Image("logo")
@@ -49,31 +47,6 @@ struct NomenclatureView: View {
                ).ignoresSafeArea(.all, edges: .all)
             )
                  
-        }
-        .onAppear{
-            /*
-            if nomenclature.Details == nil {
-                
-            }else{
-                
-            }
-            
-            //shop.selectedNomenclature = nomenclature
-            
-            if let selectedNomenclature = shop.selectedNomenclature {
-                if selectedNomenclature.Details == nil {
-                    nomenclatureFullDataLoader.loadFullNomenclatureData(
-                        groupID: IDGroup,
-                        idNomenclature: selectedNomenclature.IDNomenclature)
-                }
-                 else{
-                     nomenclatureFullDataLoader.decodeNomenclature(
-                        groupID: IDGroup,
-                        nomenclature: selectedNomenclature)
-                }
-            }
-             */
-             
         }
     }
 }
