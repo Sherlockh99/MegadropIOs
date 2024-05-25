@@ -34,25 +34,10 @@ struct CatalogView: View {
             }
         }else{
             VStack{ //START: VSTACK
-                //if !shop.isNomenclatureCatalog {
-                if shop.isGroupsCatalog {
-                    SearchView()
-                }
-                Spacer()
-                VStack{
-                    if(shop.isGroupsCatalog){
-                        ScrollView {
-                            ForEach(groupWithNomenclatures, id: \.self) { item in
-                                Button("\(item.NameGroup)"){
-                                    shop.isGroupsCatalog = false
-                                    shop.isGroupCatalog = true
-                                    shop.idGroupCatalog = item.IDGroup
-                                }
-                            }
-                        }
-                    } else if shop.isGroupCatalog {
-                        GroupCatalogView()
-                    }
+                if(shop.isGroupsCatalog){
+                    GroupsCatalogView()
+                } else if shop.isGroupCatalog {
+                    GroupCatalogView()
                 }
             }
             .onAppear{
@@ -64,7 +49,8 @@ struct CatalogView: View {
                     shop.isGroupsCatalog = false
                 }
             }
-        }
+            //END: VSTACK
+        } //END: END IF
         //END: VSTACK
     } //:BODY
 }
