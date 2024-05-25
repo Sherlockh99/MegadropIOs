@@ -1,14 +1,13 @@
 //
-//  NavigationBarDetailView.swift
+//  NavigationBarSearchListNomenclatureView.swift
 //  Megadrop
 //
-//  Created by Андрій Коробчук on 16.03.2024.
+//  Created by Андрій Коробчук on 21.05.2024.
 //
 
 import SwiftUI
 
-struct NavigationBarDetailView: View {
-    
+struct NavigationBarSearchListNomenclatureView: View {
     // MARK: - PROPERTY
     
     @EnvironmentObject var shop: Shop
@@ -19,16 +18,13 @@ struct NavigationBarDetailView: View {
             Button(action: {
                 withAnimation(.easeIn){
                     feedback.impactOccurred()
-                    if shop.isNomenclatureCatalog {
-                        shop.isNomenclatureCatalog = false
-                        shop.selectedNomenclatureCatalog = nil
-                        shop.isGroupCatalog = true
-                    } else {
-                        shop.selectedProduct = nil
-                        shop.showingProduct = false
-                        shop.selectedNomenclature = nil
-                        shop.showingNomenclature = false
-                    }
+                    //shop.selectedProduct = nil
+                    //shop.showingProduct = false
+                    //shop.selectedNomenclature = nil
+                    //shop.showingNomenclature = false
+                    //shop.isNomenclatureCatalog = false
+                    shop.isGroupCatalog = false
+                    shop.isGroupsCatalog = true
                 }
             }, label: {
                 Image(systemName: "chevron.left")
@@ -37,8 +33,8 @@ struct NavigationBarDetailView: View {
             })
             
             Spacer()
-            
-            LogoView()
+           
+            Text("SEARCH")
               .opacity(isAnimated ? 1 : 0)
               .offset(x: 0, y: isAnimated ? 0 : -25)
               .onAppear(perform: {
@@ -48,18 +44,19 @@ struct NavigationBarDetailView: View {
               })
             
             Spacer()
-            
+           /*
             Button(action:{},label: {
                 Image(systemName: "cart")
                     .font(.title)
                     .foregroundColor(.white)
             })
+            */
         } //: HSTACK
     }
 }
 
 #Preview {
-    NavigationBarDetailView()
+    NavigationBarSearchListNomenclatureView()
         .environmentObject(Shop())
         .previewLayout(.sizeThatFits)
         .padding()

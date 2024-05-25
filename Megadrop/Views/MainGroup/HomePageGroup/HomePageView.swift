@@ -36,6 +36,8 @@ struct HomePageView: View {
                             
                             if groupWithNomenclatures.count==0 {
                                 GroupManager.shared.loadGroupWithNomenclatures()
+                            }else{
+                                shop.isGroupsCatalog = true
                             }
 
                         }

@@ -14,32 +14,16 @@
          contextName = "closure #1 in HomePageGroup.body.getter:HomePageGroup.swift">
          <PersistentStrings>
             <PersistentString
-               value = "viewModel.isLoadingNomenclature">
+               value = "groupWithNomenclatures.IDGroup">
             </PersistentString>
             <PersistentString
-               value = "groupWithNomenclatures.IDGroup">
+               value = "viewModel.isLoadingNomenclature">
             </PersistentString>
             <PersistentString
                value = "groupWithNomenclatures">
             </PersistentString>
             <PersistentString
                value = "_nomenclatures">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #2 in NomenclatureView.body.getter:NomenclatureView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "selectedNomenclature.Details == nil">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in TopPartDetailView.body.getter:TopPartDetailView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "shop.selectedNomenclature?.Image">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -52,6 +36,30 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #1 in TopPartDetailView.body.getter:TopPartDetailView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "shop.selectedNomenclature?.Image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in NomenclatureView.body.getter:NomenclatureView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedNomenclature.Details == nil">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CatalogView.body.getter:CatalogView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "isGroups">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in NomenclatureFullDataLoader.loadFullNomenclatureData(idNomenclature:shop:):NomenclatureFullDataLoader.swift">
          <PersistentStrings>
             <PersistentString
@@ -60,13 +68,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in closure #1 in GroupManager.loadNomenclatures():GroupManager.swift">
+         contextName = "closure #2 in HomePageGroup.body.getter:HomePageGroup.swift">
          <PersistentStrings>
             <PersistentString
-               value = "nomenclaturesJSON">
-            </PersistentString>
-            <PersistentString
-               value = "data.toString()">
+               value = "isLoadingNom">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -82,10 +87,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #2 in HomePageGroup.body.getter:HomePageGroup.swift">
+         contextName = "closure #1 in closure #1 in GroupManager.loadNomenclatures():GroupManager.swift">
          <PersistentStrings>
             <PersistentString
-               value = "isLoadingNom">
+               value = "nomenclaturesJSON">
+            </PersistentString>
+            <PersistentString
+               value = "data.toString()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -145,10 +153,10 @@
          contextName = "closure #2 in closure #1 in closure #1 in closure #1 in closure #1 in HomePageView.body.getter:HomePageView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "loader.dataList.count">
+               value = "GroupManager.shared.groupWithNomenclatures.count">
             </PersistentString>
             <PersistentString
-               value = "GroupManager.shared.groupWithNomenclatures.count">
+               value = "loader.dataList.count">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

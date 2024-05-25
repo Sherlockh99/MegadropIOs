@@ -32,7 +32,7 @@ struct NomenclatureView: View {
                 //    .padding(.horizontal)
                 
                 // DETAIL TOP PART
-                TopPartDetailView(IDGroup: IDGroup)
+                TopPartDetailView(IDGroup: IDGroup, nomenclature: nomenclature)
                     .padding(.horizontal)
                     .zIndex(1)
                 DetailsView(IDGroup: IDGroup, nom3: nomenclature)

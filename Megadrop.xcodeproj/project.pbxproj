@@ -57,6 +57,7 @@
 		C5930DEF2B9C719700287F48 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5930DEE2B9C719700287F48 /* CustomBackgroundView.swift */; };
 		C5930DF22B9C720F00287F48 /* ColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5930DF12B9C720F00287F48 /* ColorExtention.swift */; };
 		C5930DF42B9D03ED00287F48 /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5930DF32B9D03ED00287F48 /* GradientButtonStyle.swift */; };
+		C59548612BFC9FA1002F2BD6 /* NavigationBarSearchListNomenclatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59548602BFC9FA1002F2BD6 /* NavigationBarSearchListNomenclatureView.swift */; };
 		C5966FAF2B77768B00A0A693 /* NomenclatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5966FAE2B77768B00A0A693 /* NomenclatureView.swift */; };
 		C5966FB22B7777B100A0A693 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5966FB12B7777B100A0A693 /* NetworkService.swift */; };
 		C5A063572BCC2C0B005A48DA /* NomenclatureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A063562BCC2C0B005A48DA /* NomenclatureManager.swift */; };
@@ -137,6 +138,7 @@
 		C5930DEE2B9C719700287F48 /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
 		C5930DF12B9C720F00287F48 /* ColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtention.swift; sourceTree = "<group>"; };
 		C5930DF32B9D03ED00287F48 /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
+		C59548602BFC9FA1002F2BD6 /* NavigationBarSearchListNomenclatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarSearchListNomenclatureView.swift; sourceTree = "<group>"; };
 		C5966FAE2B77768B00A0A693 /* NomenclatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomenclatureView.swift; sourceTree = "<group>"; };
 		C5966FB12B7777B100A0A693 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C5A063562BCC2C0B005A48DA /* NomenclatureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomenclatureManager.swift; sourceTree = "<group>"; };
@@ -358,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				C58F7D0E2BA61CE200307B63 /* NavigationBarDetailView.swift */,
+				C59548602BFC9FA1002F2BD6 /* NavigationBarSearchListNomenclatureView.swift */,
 				C58F7D1E2BA62BFE00307B63 /* HeaderDetailView.swift */,
 				C58F7D202BA62E7400307B63 /* TopPartDetailView.swift */,
 				C58F7D222BA637B700307B63 /* RatingsSizesDetailView.swift */,
@@ -640,6 +643,7 @@
 				C540B26B2B6594A50050B9C1 /* CabinetView.swift in Sources */,
 				C5443DDF2B5D8C150082BE6F /* Profile.swift in Sources */,
 				C5930DF22B9C720F00287F48 /* ColorExtention.swift in Sources */,
+				C59548612BFC9FA1002F2BD6 /* NavigationBarSearchListNomenclatureView.swift in Sources */,
 				C540B2722B65A4720050B9C1 /* ModelData.swift in Sources */,
 				C58F7D212BA62E7400307B63 /* TopPartDetailView.swift in Sources */,
 				C53973682B829A7800628EC3 /* YourViewModel.swift in Sources */,
