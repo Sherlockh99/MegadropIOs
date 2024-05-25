@@ -42,7 +42,6 @@ struct NavigationBarSearchListNomenclatureView: View {
                   isAnimated.toggle()
                 }
               })
-            
             Spacer()
            /*
             Button(action:{},label: {
