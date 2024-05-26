@@ -19,9 +19,11 @@ struct HomePageListNomenclature: View {
                     if let nomenclatures = groupsWithNomenclatures_.Nomenclatures {
                         ForEach(nomenclatures,id: \.self){
                             key in
-                                HomePageNomenclature(
+                            //HomePageNomenclature(nomenclature: key)
+                            
+                             HomePageNomenclature(
                                     IDGroup: groupsWithNomenclatures_.IDGroup,
-                                    nomenclature: key)
+                                    nomenclature: key)                             
                                 .onTapGesture {
                                   feedback.impactOccurred()
                                   

@@ -1,34 +1,31 @@
 //
-//  GroupCatalogView.swift
+//  SearchCatalogView.swift
 //  Megadrop
 //
-//  Created by Андрій Коробчук on 25.05.2024.
+//  Created by Андрій Коробчук on 26.05.2024.
 //
 
 import SwiftUI
 
-struct GroupCatalogView: View {
+struct SearchCatalogView: View {
     @EnvironmentObject var shop: Shop
-    @State private var feedback = UIImpactFeedbackGenerator(style: .medium)
-    
+    //@State var nom5: [Nomenclature2] = []
     let columns = [
            GridItem(.flexible()),
            GridItem(.flexible())
        ]
-    	
+    
     var body: some View {
         VStack{
-            if let nom4 = GroupManager.shared.getNomenclatures(groupID: shop.idGroupCatalog) {
-                NavigationBarSearchListNomenclatureView()
-                    .background(Color.gray)
-                
-                SearchView()
-                
+            NavigationBarSearchListNomenclatureView()
+                .background(Color.gray)
+            
+            SearchView()
                 ScrollView{
                     LazyVGrid(columns: columns, spacing: 10){
-                        ForEach(nom4, id: \.self){ key in
-                            //HomePageNomenclature(nomenclature: key)
-                            HomePageNomenclature(IDGroup: shop.idGroupCatalog, nomenclature: key)
+                        ForEach(shop.searchingValues, id: \.self){ key in
+                            //HomePageNomenclature(IDGroup: shop.idGroupCatalog, nomenclature: key)
+                            HomePageNomenclature(IDGroup: "_", nomenclature: key)
                                 .frame(maxWidth: .infinity)
                                 //.background(Color.gray.opacity(0.2))
                                 .cornerRadius(10)
@@ -39,20 +36,18 @@ struct GroupCatalogView: View {
                                     withAnimation(.easeOut) {
                                         shop.selectedNomenclatureCatalog = key
                                         shop.isGroupCatalog = false
+                                        shop.isSearchCatalog = false
                                         shop.isNomenclatureCatalog = true
                                     }
                                 }
-                        } //END: FOR EACH
-                    } //END: LAZYVGRID
-                    .padding(.horizontal, 5)
-                } //END: SCROLLVIEW
-            }
+                        }
+                    }
+                }
         }
-        //END: VSTACK
     }
 }
 
 #Preview {
-    GroupCatalogView()
+    SearchCatalogView()
         .environmentObject(Shop())
 }

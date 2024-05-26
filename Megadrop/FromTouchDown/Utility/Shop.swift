@@ -17,5 +17,7 @@ class Shop: ObservableObject {
     @Published var idGroupCatalog: String = ""
     @Published var isNomenclatureCatalog: Bool = false
     @Published var selectedNomenclatureCatalog: Nomenclature2? //= nil
-
+    @Published var isSearchCatalog: Bool = false
+    @Published var searchingValue: String = ""
+    @Published var searchingValues: [Nomenclature2] = []
 }

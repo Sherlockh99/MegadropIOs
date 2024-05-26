@@ -3,10 +3,26 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "CatalogView.body.getter:CatalogView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "isGroups">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in closure #1 in NomenclatureView.body.getter:NomenclatureView.swift">
          <PersistentStrings>
             <PersistentString
                value = "loaderFull.nomenclature.Image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in HomePageNomenclature.body.getter:HomePageNomenclature.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nomenclature3.Nomenclature">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -28,14 +44,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in HomePageNomenclature.body.getter:HomePageNomenclature.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "nomenclature3.Nomenclature">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "closure #1 in TopPartDetailView.body.getter:TopPartDetailView.swift">
          <PersistentStrings>
             <PersistentString
@@ -48,14 +56,6 @@
          <PersistentStrings>
             <PersistentString
                value = "selectedNomenclature.Details == nil">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "CatalogView.body.getter:CatalogView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "isGroups">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -153,15 +153,23 @@
          contextName = "closure #2 in closure #1 in closure #1 in closure #1 in closure #1 in HomePageView.body.getter:HomePageView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "GroupManager.shared.groupWithNomenclatures.count">
+               value = "loader.dataList.count">
             </PersistentString>
             <PersistentString
-               value = "loader.dataList.count">
+               value = "GroupManager.shared.groupWithNomenclatures.count">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "closure #1 in GroupManager.loadNomenclatures():GroupManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in closure #1 in SearchCatalogView.body.getter:SearchCatalogView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nom5">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

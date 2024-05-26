@@ -25,4 +25,5 @@ struct GroupsCatalogView: View {
 
 #Preview {
     GroupsCatalogView()
+        .environmentObject(Shop())
 }

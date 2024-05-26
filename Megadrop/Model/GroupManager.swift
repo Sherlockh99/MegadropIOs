@@ -255,4 +255,10 @@ class GroupManager: ObservableObject{
         //let filteredNomenclatures = nomenclatures.filter { $0.IDGroup == groupID }
         //return filteredNomenclatures
     }
+    
+    func findNomenclatures(containing text: String) -> [Nomenclature2] {
+        return groupWithNomenclatures
+            .flatMap {$0.Nomenclatures ?? [] }
+            .filter { $0.Nomenclature.localizedCaseInsensitiveContains(text) }
+    }
 }

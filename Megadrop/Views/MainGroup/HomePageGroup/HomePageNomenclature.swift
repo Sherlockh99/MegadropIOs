@@ -62,26 +62,22 @@ struct HomePageNomenclature: View {
         .frame(width: 150, height: 250)
         .padding(.leading, 15)
         .onAppear{
-            //print(nomenclature.id)
-            //print(nomenclature.Price)
-            //TODO
-            
             if(nomenclature.Image == ""){
                 // Выполнение кода после отображения представления
-            /*
+            
                 DispatchQueue.main.async {
                     getPicturesNomenclature(nom1: nomenclature) {
                         modified in
                         if let im = modified.Image{
                             nomenclature.Image = im
-                            
-                            GroupManager.shared.updateImageNomenclature(groupID: IDGroup, nomenclatureID: nomenclature.IDNomenclature, newImage: im)
-                            
+                            if IDGroup != "_" {
+                                GroupManager.shared.updateImageNomenclature(groupID: IDGroup, nomenclatureID: nomenclature.IDNomenclature, newImage: im)
+                            }
                         }
                     }
                     isLoaded = true
                 }
-              */
+              
             }else{
                 isLoaded = true
             }
@@ -94,5 +90,4 @@ struct HomePageNomenclature: View {
     HomePageNomenclature(
         IDGroup: ModelData().groupsWithNomenclatures[0].IDGroup,
         nomenclature: ModelData().groupsWithNomenclatures[0].Nomenclatures![2])
-
 }

@@ -38,6 +38,8 @@ struct CatalogView: View {
                     GroupsCatalogView()
                 } else if shop.isGroupCatalog {
                     GroupCatalogView()
+                } else if shop.isSearchCatalog {
+                    SearchCatalogView()
                 }
             }
             .onAppear{
