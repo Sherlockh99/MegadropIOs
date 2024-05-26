@@ -17,8 +17,9 @@ struct BasketView: View {
                 if !viewModelBasketManager.isLoadingBasketManager{
                     ForEach(basket,id: \.self){
                         key in
-                        Text(key.IDCharacteristic)
-                        //HomePageGroup(groupWithNomenclatures: key)
+                        
+                        //Text(key.IDCharacteristic)
+                        OneBasketView(basketOrder: key)
                     }
                 }
             }

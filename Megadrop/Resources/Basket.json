@@ -2,7 +2,7 @@
     {
         "IDNomenclature": "00000001319",
         "NameNomenclaure": "Аэромобиль Balloon car",
-        "IDCharacteristic": "00000001319",
+        "IDCharacteristic": 1,
         "NameCharacteristic": "Аэромобиль Balloon car",
         "isCharacteristic": false,
         "Price": 203,
@@ -12,7 +12,7 @@
     {
         "IDNomenclature": "00000002299",
         "NameNomenclaure": "Матрас велюр Bestway с електронасосом",
-        "IDCharacteristic": "00000002299",
+        "IDCharacteristic": 2,
         "NameCharacteristic": "Матрас велюр Bestway с електронасосом",
         "isCharacteristic": false,
         "Price": 947,
@@ -22,7 +22,7 @@
     {
         "IDNomenclature": "00000004358",
         "NameNomenclaure": "РЮКЗАК 5 В 1 на подкладке молочный",
-        "IDCharacteristic": "00000004358",
+        "IDCharacteristic": 3,
         "NameCharacteristic": "РЮКЗАК 5 В 1 на подкладке молочный",
         "isCharacteristic": false,
         "Price": 330,
@@ -32,7 +32,7 @@
     {
         "IDNomenclature": "00000004706",
         "NameNomenclaure": "Куртка осень-зима хаки",
-        "IDCharacteristic": "00000004706",
+        "IDCharacteristic": 4,
         "NameCharacteristic": "Куртка осень-зима хаки",
         "isCharacteristic": false,
         "Price": 900,
@@ -42,7 +42,7 @@
     {
         "IDNomenclature": "00000004715",
         "NameNomenclaure": "Костюмчик Худи с капюшоном, брюки джоггеры с карманами темно-серый графит",
-        "IDCharacteristic": "00000004715",
+        "IDCharacteristic": 5,
         "NameCharacteristic": "Костюмчик Худи с капюшоном, брюки джоггеры с карманами темно-серый графит",
         "isCharacteristic": false,
         "Price": 1100,
@@ -52,7 +52,7 @@
     {
         "IDNomenclature": "00000004725",
         "NameNomenclaure": "СУМКА на подкладке коричневый",
-        "IDCharacteristic": "00000004725",
+        "IDCharacteristic": 6,
         "NameCharacteristic": "СУМКА на подкладке коричневый",
         "isCharacteristic": false,
         "Price": 520,
@@ -62,7 +62,7 @@
     {
         "IDNomenclature": "00000004728",
         "NameNomenclaure": "СУМКА 6 в 1 на подкладке эко кожа красный",
-        "IDCharacteristic": "00000004728",
+        "IDCharacteristic": 7,
         "NameCharacteristic": "СУМКА 6 в 1 на подкладке эко кожа красный",
         "isCharacteristic": false,
         "Price": 650,
@@ -72,7 +72,7 @@
     {
         "IDNomenclature": "00000004735",
         "NameNomenclaure": "СУМКА набор 4 в 1 на подкладке коричневый",
-        "IDCharacteristic": "00000004735",
+        "IDCharacteristic": 8,
         "NameCharacteristic": "СУМКА набор 4 в 1 на подкладке коричневый",
         "isCharacteristic": false,
         "Price": 570,
@@ -82,7 +82,7 @@
     {
         "IDNomenclature": "00000004741",
         "NameNomenclaure": "СУМКА на кнопке синий",
-        "IDCharacteristic": "00000004741",
+        "IDCharacteristic": 9,
         "NameCharacteristic": "СУМКА на кнопке синий",
         "isCharacteristic": false,
         "Price": 275,
@@ -92,7 +92,7 @@
     {
         "IDNomenclature": "00000004755",
         "NameNomenclaure": "Свободный свитер застегивается на молнию айвори беж",
-        "IDCharacteristic": "00000004755",
+        "IDCharacteristic": 10,
         "NameCharacteristic": "Свободный свитер застегивается на молнию айвори беж",
         "isCharacteristic": false,
         "Price": 580,
@@ -102,7 +102,7 @@
     {
         "IDNomenclature": "00000004767",
         "NameNomenclaure": "Костюм с худи утепленный флисом голубой",
-        "IDCharacteristic": "00000004767",
+        "IDCharacteristic": 11,
         "NameCharacteristic": "Костюм с худи утепленный флисом голубой",
         "isCharacteristic": false,
         "Price": 795,
@@ -112,7 +112,7 @@
     {
         "IDNomenclature": "00000004940",
         "NameNomenclaure": "Ланч бокс 2шт, судочки, набор  для приготовления или разогрева обедов чая",
-        "IDCharacteristic": "00000004940",
+        "IDCharacteristic": 12,
         "NameCharacteristic": "Ланч бокс 2шт, судочки, набор  для приготовления или разогрева обедов чая",
         "isCharacteristic": false,
         "Price": 125,
@@ -122,7 +122,7 @@
     {
         "IDNomenclature": "00000004991",
         "NameNomenclaure": "СУМКА (маленький размер) Качество супер бежево-красный",
-        "IDCharacteristic": "00000004991",
+        "IDCharacteristic": 13,
         "NameCharacteristic": "СУМКА (маленький размер) Качество супер бежево-красный",
         "isCharacteristic": false,
         "Price": 450,
@@ -132,7 +132,7 @@
     {
         "IDNomenclature": "00000005336",
         "NameNomenclaure": "Элегантное платье люрекс черный",
-        "IDCharacteristic": "00000005336",
+        "IDCharacteristic": 14,
         "NameCharacteristic": "Элегантное платье люрекс черный",
         "isCharacteristic": false,
         "Price": 460,
@@ -142,7 +142,7 @@
     {
         "IDNomenclature": "00000005422",
         "NameNomenclaure": "Радиоприёмник всеволновой",
-        "IDCharacteristic": "00000005422",
+        "IDCharacteristic": 15,
         "NameCharacteristic": "Радиоприёмник всеволновой",
         "isCharacteristic": false,
         "Price": 350,
@@ -152,7 +152,7 @@
     {
         "IDNomenclature": "00000006111",
         "NameNomenclaure": "Спортивный костюм кофта на змейке и брюки черный",
-        "IDCharacteristic": "00000006111",
+        "IDCharacteristic": 16,
         "NameCharacteristic": "Спортивный костюм кофта на змейке и брюки черный",
         "isCharacteristic": false,
         "Price": 810,
@@ -162,7 +162,7 @@
     {
         "IDNomenclature": "00000006240",
         "NameNomenclaure": "Легкое цветочное платье черный",
-        "IDCharacteristic": "00000006240",
+        "IDCharacteristic": 17,
         "NameCharacteristic": "Легкое цветочное платье черный",
         "isCharacteristic": false,
         "Price": 500,
@@ -172,7 +172,7 @@
     {
         "IDNomenclature": "00000006312",
         "NameNomenclaure": "Трендовая женская сумка КРОСС-БОДИ через плечо КОРИЧНЕВЫЙ",
-        "IDCharacteristic": "00000006312",
+        "IDCharacteristic": 18,
         "NameCharacteristic": "Трендовая женская сумка КРОСС-БОДИ через плечо КОРИЧНЕВЫЙ",
         "isCharacteristic": false,
         "Price": 325,
@@ -182,7 +182,7 @@
     {
         "IDNomenclature": "00000006315",
         "NameNomenclaure": "Базовые женские штаны трикотаж рубчик лаванда",
-        "IDCharacteristic": "00000006315",
+        "IDCharacteristic": 19,
         "NameCharacteristic": "Базовые женские штаны трикотаж рубчик лаванда",
         "isCharacteristic": false,
         "Price": 400,
@@ -192,7 +192,7 @@
     {
         "IDNomenclature": "00000006404",
         "NameNomenclaure": "Набор для удаления нежелательных волос Wonder Wax набор для депиляции ",
-        "IDCharacteristic": "00000006404",
+        "IDCharacteristic": 20,
         "NameCharacteristic": "Набор для удаления нежелательных волос Wonder Wax набор для депиляции ",
         "isCharacteristic": false,
         "Price": 155,
@@ -202,7 +202,7 @@
     {
         "IDNomenclature": "00000006595",
         "NameNomenclaure": "Очень удобный спортивный костюмчик голубой",
-        "IDCharacteristic": "00000006595",
+        "IDCharacteristic": 21,
         "NameCharacteristic": "Очень удобный спортивный костюмчик голубой",
         "isCharacteristic": false,
         "Price": 820,
@@ -212,7 +212,7 @@
     {
         "IDNomenclature": "00000006904",
         "NameNomenclaure": "Стильный спортивный костюм майка-топ + лосины черный",
-        "IDCharacteristic": "00000006904",
+        "IDCharacteristic": 22,
         "NameCharacteristic": "Стильный спортивный костюм майка-топ + лосины черный",
         "isCharacteristic": false,
         "Price": 330,
@@ -222,7 +222,7 @@
     {
         "IDNomenclature": "00000007196",
         "NameNomenclaure": "Очень женственное и нежное платье цветочный принт черный",
-        "IDCharacteristic": "00000007196",
+        "IDCharacteristic": 23,
         "NameCharacteristic": "Очень женственное и нежное платье цветочный принт черный",
         "isCharacteristic": false,
         "Price": 460,
@@ -232,7 +232,7 @@
     {
         "IDNomenclature": "00000007737",
         "NameNomenclaure": "Мужская куртка-ветровка из плащевки «Канада» синий",
-        "IDCharacteristic": "00000007737",
+        "IDCharacteristic": 24,
         "NameCharacteristic": "Мужская куртка-ветровка из плащевки «Канада» синий",
         "isCharacteristic": false,
         "Price": 1000,
@@ -242,7 +242,7 @@
     {
         "IDNomenclature": "00000007880",
         "NameNomenclaure": "Невероятно красивое, привлекательное платье с идеальной посадкой белый",
-        "IDCharacteristic": "00000007880",
+        "IDCharacteristic": 25,
         "NameCharacteristic": "Невероятно красивое, привлекательное платье с идеальной посадкой белый",
         "isCharacteristic": false,
         "Price": 380,
@@ -252,7 +252,7 @@
     {
         "IDNomenclature": "00000008167",
         "NameNomenclaure": "Силиконовый кухонный набор принадлежностей 12 предметов (дерево+силикон) Zepline",
-        "IDCharacteristic": "00000008167",
+        "IDCharacteristic": 26,
         "NameCharacteristic": "Силиконовый кухонный набор принадлежностей 12 предметов (дерево+силикон) Zepline",
         "isCharacteristic": false,
         "Price": 575,
@@ -262,7 +262,7 @@
     {
         "IDNomenclature": "00000008586",
         "NameNomenclaure": "Максимально удобный практичный и комфортный костюм барби+белый",
-        "IDCharacteristic": "00000008586",
+        "IDCharacteristic": 27,
         "NameCharacteristic": "Максимально удобный практичный и комфортный костюм барби+белый",
         "isCharacteristic": false,
         "Price": 770,
@@ -272,7 +272,7 @@
     {
         "IDNomenclature": "00000009077",
         "NameNomenclaure": "Классный костюмчик на пуговицах с нашивкой на шортиках белый",
-        "IDCharacteristic": "00000009077",
+        "IDCharacteristic": 28,
         "NameCharacteristic": "Классный костюмчик на пуговицах с нашивкой на шортиках белый",
         "isCharacteristic": false,
         "Price": 370,
@@ -282,7 +282,7 @@
     {
         "IDNomenclature": "00000003124",
         "NameNomenclaure": "Костюм с объемным худи, электрик",
-        "IDCharacteristic": "         ",
+        "IDCharacteristic": 29,
         "NameCharacteristic": "42-44",
         "isCharacteristic": true,
         "Price": 660,
@@ -292,7 +292,7 @@
     {
         "IDNomenclature": "00000003124",
         "NameNomenclaure": "Костюм с объемным худи, электрик",
-        "IDCharacteristic": "         ",
+        "IDCharacteristic": 30,
         "NameCharacteristic": "44-46",
         "isCharacteristic": true,
         "Price": 660,

@@ -10,7 +10,7 @@ struct Basket: Codable, Hashable{
     var id: String {IDNomenclature}
     var IDNomenclature: String
     var NameNomenclaure: String
-    var IDCharacteristic: String
+    var IDCharacteristic: Int
     var NameCharacteristic: String
     var isCharacteristic: Bool
     var Price: Int
