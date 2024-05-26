@@ -15,4 +15,5 @@ struct Basket: Codable, Hashable{
     var isCharacteristic: Bool
     var Price: Int
     var Count: Int
+    var IDGroup: String
 }

@@ -1,47 +1,302 @@
 [
     {
-        "IDNomenclature": "00000002381",
-        "NameNomenclaure": "Футболка Женская с сердцем",
-        "IDCharacteristic": "00000002381",
-        "NameCharacteristic": "Футболка Женская с сердцем",
+        "IDNomenclature": "00000001319",
+        "NameNomenclaure": "Аэромобиль Balloon car",
+        "IDCharacteristic": "00000001319",
+        "NameCharacteristic": "Аэромобиль Balloon car",
         "isCharacteristic": false,
-        "Price": 248,
-        "Count": 5
+        "Price": 203,
+        "Count": 4,
+        "IDGroup": "00000007310"
     },
     {
-        "IDNomenclature": "00000002383",
-        "NameNomenclaure": "Женская футболка Доброго Вечора Ми з України",
-        "IDCharacteristic": "00000002383",
-        "NameCharacteristic": "Женская футболка Доброго Вечора Ми з України",
+        "IDNomenclature": "00000002299",
+        "NameNomenclaure": "Матрас велюр Bestway с електронасосом",
+        "IDCharacteristic": "00000002299",
+        "NameCharacteristic": "Матрас велюр Bestway с електронасосом",
         "isCharacteristic": false,
-        "Price": 248,
-        "Count": 1
+        "Price": 947,
+        "Count": 1,
+        "IDGroup": "00000007302"
     },
     {
-        "IDNomenclature": "00000002763",
-        "NameNomenclaure": "Женская атласная пижама с Принтом  ЗЕЛЕНАЯ",
-        "IDCharacteristic": "         ",
-        "NameCharacteristic": "S",
-        "isCharacteristic": true,
-        "Price": 449,
-        "Count": 4
+        "IDNomenclature": "00000004358",
+        "NameNomenclaure": "РЮКЗАК 5 В 1 на подкладке молочный",
+        "IDCharacteristic": "00000004358",
+        "NameCharacteristic": "РЮКЗАК 5 В 1 на подкладке молочный",
+        "isCharacteristic": false,
+        "Price": 330,
+        "Count": 5,
+        "IDGroup": "00000009360"
     },
     {
-        "IDNomenclature": "00000002763",
-        "NameNomenclaure": "Женская атласная пижама с Принтом  ЗЕЛЕНАЯ",
-        "IDCharacteristic": "         ",
-        "NameCharacteristic": "M",
-        "isCharacteristic": true,
-        "Price": 449,
-        "Count": 3
+        "IDNomenclature": "00000004706",
+        "NameNomenclaure": "Куртка осень-зима хаки",
+        "IDCharacteristic": "00000004706",
+        "NameCharacteristic": "Куртка осень-зима хаки",
+        "isCharacteristic": false,
+        "Price": 900,
+        "Count": 3,
+        "IDGroup": "00000002758"
     },
     {
-        "IDNomenclature": "00000002763",
-        "NameNomenclaure": "Женская атласная пижама с Принтом  ЗЕЛЕНАЯ",
+        "IDNomenclature": "00000004715",
+        "NameNomenclaure": "Костюмчик Худи с капюшоном, брюки джоггеры с карманами темно-серый графит",
+        "IDCharacteristic": "00000004715",
+        "NameCharacteristic": "Костюмчик Худи с капюшоном, брюки джоггеры с карманами темно-серый графит",
+        "isCharacteristic": false,
+        "Price": 1100,
+        "Count": 1,
+        "IDGroup": "00000002758"
+    },
+    {
+        "IDNomenclature": "00000004725",
+        "NameNomenclaure": "СУМКА на подкладке коричневый",
+        "IDCharacteristic": "00000004725",
+        "NameCharacteristic": "СУМКА на подкладке коричневый",
+        "isCharacteristic": false,
+        "Price": 520,
+        "Count": 3,
+        "IDGroup": "00000009360"
+    },
+    {
+        "IDNomenclature": "00000004728",
+        "NameNomenclaure": "СУМКА 6 в 1 на подкладке эко кожа красный",
+        "IDCharacteristic": "00000004728",
+        "NameCharacteristic": "СУМКА 6 в 1 на подкладке эко кожа красный",
+        "isCharacteristic": false,
+        "Price": 650,
+        "Count": 1,
+        "IDGroup": "00000009360"
+    },
+    {
+        "IDNomenclature": "00000004735",
+        "NameNomenclaure": "СУМКА набор 4 в 1 на подкладке коричневый",
+        "IDCharacteristic": "00000004735",
+        "NameCharacteristic": "СУМКА набор 4 в 1 на подкладке коричневый",
+        "isCharacteristic": false,
+        "Price": 570,
+        "Count": 1,
+        "IDGroup": "00000009360"
+    },
+    {
+        "IDNomenclature": "00000004741",
+        "NameNomenclaure": "СУМКА на кнопке синий",
+        "IDCharacteristic": "00000004741",
+        "NameCharacteristic": "СУМКА на кнопке синий",
+        "isCharacteristic": false,
+        "Price": 275,
+        "Count": 1,
+        "IDGroup": "00000009360"
+    },
+    {
+        "IDNomenclature": "00000004755",
+        "NameNomenclaure": "Свободный свитер застегивается на молнию айвори беж",
+        "IDCharacteristic": "00000004755",
+        "NameCharacteristic": "Свободный свитер застегивается на молнию айвори беж",
+        "isCharacteristic": false,
+        "Price": 580,
+        "Count": 3,
+        "IDGroup": "00000002758"
+    },
+    {
+        "IDNomenclature": "00000004767",
+        "NameNomenclaure": "Костюм с худи утепленный флисом голубой",
+        "IDCharacteristic": "00000004767",
+        "NameCharacteristic": "Костюм с худи утепленный флисом голубой",
+        "isCharacteristic": false,
+        "Price": 795,
+        "Count": 1,
+        "IDGroup": "00000002758"
+    },
+    {
+        "IDNomenclature": "00000004940",
+        "NameNomenclaure": "Ланч бокс 2шт, судочки, набор  для приготовления или разогрева обедов чая",
+        "IDCharacteristic": "00000004940",
+        "NameCharacteristic": "Ланч бокс 2шт, судочки, набор  для приготовления или разогрева обедов чая",
+        "isCharacteristic": false,
+        "Price": 125,
+        "Count": 1,
+        "IDGroup": "00000007305"
+    },
+    {
+        "IDNomenclature": "00000004991",
+        "NameNomenclaure": "СУМКА (маленький размер) Качество супер бежево-красный",
+        "IDCharacteristic": "00000004991",
+        "NameCharacteristic": "СУМКА (маленький размер) Качество супер бежево-красный",
+        "isCharacteristic": false,
+        "Price": 450,
+        "Count": 3,
+        "IDGroup": "00000009360"
+    },
+    {
+        "IDNomenclature": "00000005336",
+        "NameNomenclaure": "Элегантное платье люрекс черный",
+        "IDCharacteristic": "00000005336",
+        "NameCharacteristic": "Элегантное платье люрекс черный",
+        "isCharacteristic": false,
+        "Price": 460,
+        "Count": 1,
+        "IDGroup": "00000002758"
+    },
+    {
+        "IDNomenclature": "00000005422",
+        "NameNomenclaure": "Радиоприёмник всеволновой",
+        "IDCharacteristic": "00000005422",
+        "NameCharacteristic": "Радиоприёмник всеволновой",
+        "isCharacteristic": false,
+        "Price": 350,
+        "Count": 4,
+        "IDGroup": "00000007313"
+    },
+    {
+        "IDNomenclature": "00000006111",
+        "NameNomenclaure": "Спортивный костюм кофта на змейке и брюки черный",
+        "IDCharacteristic": "00000006111",
+        "NameCharacteristic": "Спортивный костюм кофта на змейке и брюки черный",
+        "isCharacteristic": false,
+        "Price": 810,
+        "Count": 4,
+        "IDGroup": "00000002758"
+    },
+    {
+        "IDNomenclature": "00000006240",
+        "NameNomenclaure": "Легкое цветочное платье черный",
+        "IDCharacteristic": "00000006240",
+        "NameCharacteristic": "Легкое цветочное платье черный",
+        "isCharacteristic": false,
+        "Price": 500,
+        "Count": 1,
+        "IDGroup": "00000002758"
+    },
+    {
+        "IDNomenclature": "00000006312",
+        "NameNomenclaure": "Трендовая женская сумка КРОСС-БОДИ через плечо КОРИЧНЕВЫЙ",
+        "IDCharacteristic": "00000006312",
+        "NameCharacteristic": "Трендовая женская сумка КРОСС-БОДИ через плечо КОРИЧНЕВЫЙ",
+        "isCharacteristic": false,
+        "Price": 325,
+        "Count": 2,
+        "IDGroup": "00000009360"
+    },
+    {
+        "IDNomenclature": "00000006315",
+        "NameNomenclaure": "Базовые женские штаны трикотаж рубчик лаванда",
+        "IDCharacteristic": "00000006315",
+        "NameCharacteristic": "Базовые женские штаны трикотаж рубчик лаванда",
+        "isCharacteristic": false,
+        "Price": 400,
+        "Count": 1,
+        "IDGroup": "00000002758"
+    },
+    {
+        "IDNomenclature": "00000006404",
+        "NameNomenclaure": "Набор для удаления нежелательных волос Wonder Wax набор для депиляции ",
+        "IDCharacteristic": "00000006404",
+        "NameCharacteristic": "Набор для удаления нежелательных волос Wonder Wax набор для депиляции ",
+        "isCharacteristic": false,
+        "Price": 155,
+        "Count": 4,
+        "IDGroup": "00000007304"
+    },
+    {
+        "IDNomenclature": "00000006595",
+        "NameNomenclaure": "Очень удобный спортивный костюмчик голубой",
+        "IDCharacteristic": "00000006595",
+        "NameCharacteristic": "Очень удобный спортивный костюмчик голубой",
+        "isCharacteristic": false,
+        "Price": 820,
+        "Count": 1,
+        "IDGroup": "00000002758"
+    },
+    {
+        "IDNomenclature": "00000006904",
+        "NameNomenclaure": "Стильный спортивный костюм майка-топ + лосины черный",
+        "IDCharacteristic": "00000006904",
+        "NameCharacteristic": "Стильный спортивный костюм майка-топ + лосины черный",
+        "isCharacteristic": false,
+        "Price": 330,
+        "Count": 2,
+        "IDGroup": "00000002758"
+    },
+    {
+        "IDNomenclature": "00000007196",
+        "NameNomenclaure": "Очень женственное и нежное платье цветочный принт черный",
+        "IDCharacteristic": "00000007196",
+        "NameCharacteristic": "Очень женственное и нежное платье цветочный принт черный",
+        "isCharacteristic": false,
+        "Price": 460,
+        "Count": 4,
+        "IDGroup": "00000002758"
+    },
+    {
+        "IDNomenclature": "00000007737",
+        "NameNomenclaure": "Мужская куртка-ветровка из плащевки «Канада» синий",
+        "IDCharacteristic": "00000007737",
+        "NameCharacteristic": "Мужская куртка-ветровка из плащевки «Канада» синий",
+        "isCharacteristic": false,
+        "Price": 1000,
+        "Count": 3,
+        "IDGroup": "00000002758"
+    },
+    {
+        "IDNomenclature": "00000007880",
+        "NameNomenclaure": "Невероятно красивое, привлекательное платье с идеальной посадкой белый",
+        "IDCharacteristic": "00000007880",
+        "NameCharacteristic": "Невероятно красивое, привлекательное платье с идеальной посадкой белый",
+        "isCharacteristic": false,
+        "Price": 380,
+        "Count": 2,
+        "IDGroup": "00000002758"
+    },
+    {
+        "IDNomenclature": "00000008167",
+        "NameNomenclaure": "Силиконовый кухонный набор принадлежностей 12 предметов (дерево+силикон) Zepline",
+        "IDCharacteristic": "00000008167",
+        "NameCharacteristic": "Силиконовый кухонный набор принадлежностей 12 предметов (дерево+силикон) Zepline",
+        "isCharacteristic": false,
+        "Price": 575,
+        "Count": 1,
+        "IDGroup": "00000007305"
+    },
+    {
+        "IDNomenclature": "00000008586",
+        "NameNomenclaure": "Максимально удобный практичный и комфортный костюм барби+белый",
+        "IDCharacteristic": "00000008586",
+        "NameCharacteristic": "Максимально удобный практичный и комфортный костюм барби+белый",
+        "isCharacteristic": false,
+        "Price": 770,
+        "Count": 5,
+        "IDGroup": "00000002758"
+    },
+    {
+        "IDNomenclature": "00000009077",
+        "NameNomenclaure": "Классный костюмчик на пуговицах с нашивкой на шортиках белый",
+        "IDCharacteristic": "00000009077",
+        "NameCharacteristic": "Классный костюмчик на пуговицах с нашивкой на шортиках белый",
+        "isCharacteristic": false,
+        "Price": 370,
+        "Count": 2,
+        "IDGroup": "00000002758"
+    },
+    {
+        "IDNomenclature": "00000003124",
+        "NameNomenclaure": "Костюм с объемным худи, электрик",
         "IDCharacteristic": "         ",
-        "NameCharacteristic": "L",
+        "NameCharacteristic": "42-44",
         "isCharacteristic": true,
-        "Price": 449,
-        "Count": 2
+        "Price": 660,
+        "Count": 1,
+        "IDGroup": "00000002758"
+    },
+    {
+        "IDNomenclature": "00000003124",
+        "NameNomenclaure": "Костюм с объемным худи, электрик",
+        "IDCharacteristic": "         ",
+        "NameCharacteristic": "44-46",
+        "isCharacteristic": true,
+        "Price": 660,
+        "Count": 1,
+        "IDGroup": "00000002758"
     }
 ]

@@ -31,7 +31,16 @@
                 "Price": 248,
                 "VendorCode": "1621",
                 "Available": true,
-                "Nomenklature": "Женская футболка Доброго Вечора Ми з України"
+                "Nomenklature": "Женская футболка Доброго Вечора Ми з України",
+                "Characteristics": [
+                        {
+                            "IDCharacteristic": 1,
+                            "Characteristic": "Набор ножей CONTOUR PRO 11 в 1",
+                            "Price": 315.0,
+                            "OrderedQuality": 0,
+                            "isCharacteristic": false
+                        }
+                    ]
             },
             {
                 "IDGroup": "00000002758",

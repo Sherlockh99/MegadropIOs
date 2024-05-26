@@ -10,6 +10,7 @@ import Foundation
 @Observable
 class ModelData{
     var groupsWithNomenclatures: [GroupWithNomenclatures] = load("GroupsAndNomenclatures2.json")
+    var basketModelData: [Basket] = load("Basket.json")
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

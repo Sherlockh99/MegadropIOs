@@ -229,7 +229,16 @@ class GroupManager: ObservableObject{
         }
         return nil
     }
-    
+
+    func getNomenclature(groupID: String, nomenclatureID: String) -> Nomenclature2? {
+        if let groupIndex = groupWithNomenclatures.firstIndex(where: { $0.IDGroup == groupID }) {
+            if let nomenclatureIndex = groupWithNomenclatures[groupIndex].Nomenclatures?.firstIndex(where: { $0.IDNomenclature == nomenclatureID }) {
+                return groupWithNomenclatures[groupIndex].Nomenclatures?[nomenclatureIndex]
+            }
+        }
+        return nil
+    }
+
     func getCharacteristic(groupID: String, nomenclatureID: String, characteristicID: Int) -> Characteristicses? {
         if let groupIndex = groupWithNomenclatures.firstIndex(where: { $0.IDGroup == groupID }) {
             if let nomenclatureIndex = groupWithNomenclatures[groupIndex].Nomenclatures?.firstIndex(where: { $0.IDNomenclature == nomenclatureID }) {
@@ -252,8 +261,6 @@ class GroupManager: ObservableObject{
             return groupWithNomenclatures[groupIndex].Nomenclatures ?? nil
         }
         return nil
-        //let filteredNomenclatures = nomenclatures.filter { $0.IDGroup == groupID }
-        //return filteredNomenclatures
     }
     
     func findNomenclatures(containing text: String) -> [Nomenclature2] {
