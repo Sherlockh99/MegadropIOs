@@ -186,15 +186,23 @@ class GroupManager: ObservableObject{
 
     }
     
-    func setQualityAndPriceCharacteristic(groupID: String, 
+    //TODO: изменить characteristicID на nameCharacteristic
+    /*
+    func setQualityAndPriceCharacteristic(groupID: String,
                                           nomenclatureID: String,
                                           characteristicID: Int,
                                           orderedQuality: Int,
                                           price: Double){
-        
+        */
+    
+    func setQualityAndPriceCharacteristic(groupID: String,
+                                          nomenclatureID: String,
+                                          characteristicName: String,
+                                          orderedQuality: Int,
+                                          price: Double){
         if let groupIndex = groupWithNomenclatures.firstIndex(where: { $0.IDGroup == groupID }) {
             if let nomenclatureIndex = groupWithNomenclatures[groupIndex].Nomenclatures?.firstIndex(where: { $0.IDNomenclature == nomenclatureID }) {
-                if let characteristicIndex = groupWithNomenclatures[groupIndex].Nomenclatures?[nomenclatureIndex].Characteristics?.firstIndex(where: {$0.IDCharacteristic == characteristicID}){
+                if let characteristicIndex = groupWithNomenclatures[groupIndex].Nomenclatures?[nomenclatureIndex].Characteristics?.firstIndex(where: {$0.Characteristic == characteristicName}){
  
                     groupWithNomenclatures[groupIndex].Nomenclatures?[nomenclatureIndex].Characteristics![characteristicIndex].OrderedQuality = orderedQuality
 
@@ -249,6 +257,17 @@ class GroupManager: ObservableObject{
         }
         return nil
     }
+
+    func getCharacteristicName(groupID: String, nomenclatureID: String, nameCharacteristic: String) -> Characteristicses? {
+        if let groupIndex = groupWithNomenclatures.firstIndex(where: { $0.IDGroup == groupID }) {
+            if let nomenclatureIndex = groupWithNomenclatures[groupIndex].Nomenclatures?.firstIndex(where: { $0.IDNomenclature == nomenclatureID }) {
+                if let characteristicIndex = groupWithNomenclatures[groupIndex].Nomenclatures?[nomenclatureIndex].Characteristics?.firstIndex(where: {$0.Characteristic == nameCharacteristic}){
+                    return groupWithNomenclatures[groupIndex].Nomenclatures?[nomenclatureIndex].Characteristics![characteristicIndex]
+                }
+            }
+        }
+        return nil
+    }
     
     func addNomenclatures(groupID: String, nom2: [Nomenclature2]){
         if let groupIndex = groupWithNomenclatures.firstIndex(where: { $0.IDGroup == groupID }) {
@@ -267,5 +286,14 @@ class GroupManager: ObservableObject{
         return groupWithNomenclatures
             .flatMap {$0.Nomenclatures ?? [] }
             .filter { $0.Nomenclature.localizedCaseInsensitiveContains(text) }
+    }
+    
+    func updatePhotoNomenclature(groupID: String, nomenclatureID: String, Image: String){
+        if let groupIndex = groupWithNomenclatures.firstIndex(where: { $0.IDGroup == groupID }) {
+            if let nomenclatureIndex = groupWithNomenclatures[groupIndex].Nomenclatures?.firstIndex(where: { $0.IDNomenclature == nomenclatureID }) {
+                groupWithNomenclatures[groupIndex].Nomenclatures?[nomenclatureIndex].Image = Image
+                
+            }
+        }
     }
 }

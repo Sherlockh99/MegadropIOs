@@ -25,7 +25,7 @@ struct SearchCatalogView: View {
                     LazyVGrid(columns: columns, spacing: 10){
                         ForEach(shop.searchingValues, id: \.self){ key in
                             //HomePageNomenclature(IDGroup: shop.idGroupCatalog, nomenclature: key)
-                            HomePageNomenclature(IDGroup: "_", nomenclature: key)
+                            HomePageNomenclature(IDGroup: "00001", nomenclature: key)
                                 .frame(maxWidth: .infinity)
                                 //.background(Color.gray.opacity(0.2))
                                 .cornerRadius(10)

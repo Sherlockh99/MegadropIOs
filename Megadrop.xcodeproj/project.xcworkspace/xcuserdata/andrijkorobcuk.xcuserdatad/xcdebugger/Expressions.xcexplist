@@ -3,30 +3,6 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "CatalogView.body.getter:CatalogView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "isGroups">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in closure #1 in NomenclatureView.body.getter:NomenclatureView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "loaderFull.nomenclature.Image">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in HomePageNomenclature.body.getter:HomePageNomenclature.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "nomenclature3.Nomenclature">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "closure #1 in HomePageGroup.body.getter:HomePageGroup.swift">
          <PersistentStrings>
             <PersistentString
@@ -44,49 +20,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in TopPartDetailView.body.getter:TopPartDetailView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "shop.selectedNomenclature?.Image">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #2 in NomenclatureView.body.getter:NomenclatureView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "selectedNomenclature.Details == nil">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in NomenclatureFullDataLoader.loadFullNomenclatureData(idNomenclature:shop:):NomenclatureFullDataLoader.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "shop.selectedNomenclature">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #2 in HomePageGroup.body.getter:HomePageGroup.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "isLoadingNom">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in closure #1 in closure #1 in HomePageListNomenclature.body.getter:HomePageListNomenclature.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "_nomenclatures.count">
-            </PersistentString>
-            <PersistentString
-               value = "IDGroup">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "closure #1 in closure #1 in GroupManager.loadNomenclatures():GroupManager.swift">
          <PersistentStrings>
             <PersistentString
@@ -94,14 +27,6 @@
             </PersistentString>
             <PersistentString
                value = "data.toString()">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #2 in GroupManager.loadNomenclatures():GroupManager.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "nomenclatures">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -117,6 +42,9 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "getData(hService:completion:):NetworkService.swift">
+      </ContextState>
+      <ContextState
          contextName = "closure #2 in TopPartDetailView.body.getter:TopPartDetailView.swift">
          <PersistentStrings>
             <PersistentString
@@ -125,10 +53,83 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #1 in closure #1 in NomenclatureView.body.getter:NomenclatureView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "loaderFull.nomenclature.Image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CatalogView.body.getter:CatalogView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "isGroups">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in closure #1 in SearchCatalogView.body.getter:SearchCatalogView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nom5">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in getData(hService:completion:):NetworkService.swift">
          <PersistentStrings>
             <PersistentString
                value = "httpResponse">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in NomenclatureFullDataLoader.loadFullNomenclatureData(idNomenclature:shop:):NomenclatureFullDataLoader.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "shop.selectedNomenclature">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in OneBasketView.body.getter:OneBasketView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "basketOrder">
+            </PersistentString>
+            <PersistentString
+               value = "descrNomenclature">
+            </PersistentString>
+            <PersistentString
+               value = "nomenclature">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in TopPartDetailView.body.getter:TopPartDetailView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "shop.selectedNomenclature?.Image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in closure #1 in HomePageListNomenclature.body.getter:HomePageListNomenclature.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "_nomenclatures.count">
+            </PersistentString>
+            <PersistentString
+               value = "IDGroup">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in closure #2 in OneBasketView.body.getter:OneBasketView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "basketOrder.Count">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -147,9 +148,6 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "getData(hService:completion:):NetworkService.swift">
-      </ContextState>
-      <ContextState
          contextName = "closure #2 in closure #1 in closure #1 in closure #1 in closure #1 in HomePageView.body.getter:HomePageView.swift">
          <PersistentStrings>
             <PersistentString
@@ -161,15 +159,39 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "closure #1 in GroupManager.loadNomenclatures():GroupManager.swift">
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in closure #1 in closure #1 in SearchCatalogView.body.getter:SearchCatalogView.swift">
+         contextName = "closure #1 in HomePageNomenclature.body.getter:HomePageNomenclature.swift">
          <PersistentStrings>
             <PersistentString
-               value = "nom5">
+               value = "nomenclature3.Nomenclature">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in NomenclatureView.body.getter:NomenclatureView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedNomenclature.Details == nil">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in HomePageGroup.body.getter:HomePageGroup.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "isLoadingNom">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in GroupManager.loadNomenclatures():GroupManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "nomenclatures">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in GroupManager.loadNomenclatures():GroupManager.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

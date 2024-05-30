@@ -106,22 +106,31 @@ struct QuantityFavouriteDetailView: View {
     
     private func changeCounter(counter_: Int){
         
-        updateQualityInServer(groupID: IDGroup, nomenclatureID: IDNomenclature, characteristicID: IDCharacteristic, count: counter_){
-            modified in
-            if let basketReply = modified{
+//        updateQualityInServer(groupID: IDGroup, nomenclatureID: IDNomenclature, characteristicID: IDCharacteristic, count: counter_){
+        if let nameCharacteristic = characteristic?.Characteristic {
+            
+           var isCharacteristic = false
+           if let isCharacteristic_ = characteristic?.isCharacteristic {
+                isCharacteristic = isCharacteristic_
+           }
+            updateQualityInServer(groupID: IDGroup, nomenclatureID: IDNomenclature, isCharacteristic: isCharacteristic, characteristicName: nameCharacteristic, count: counter_){
                 
-                counter = basketReply.Count
-                characteristic?.Price = basketReply.Price
-                price = characteristic?.Price ?? 0.0
-                sumOrder = Double(counter) * price
-                
-                GroupManager.shared.setQualityAndPriceCharacteristic(groupID: IDGroup, nomenclatureID: IDNomenclature, characteristicID: IDCharacteristic, orderedQuality: counter, price: basketReply.Price)
-                              
+                modified in
+                if let basketReply = modified{
+                    
+                    counter = basketReply.Count
+                    characteristic?.Price = basketReply.Price
+                    price = characteristic?.Price ?? 0.0
+                    sumOrder = Double(counter) * price
+                    /*
+                     GroupManager.shared.setQualityAndPriceCharacteristic(groupID: IDGroup, nomenclatureID: IDNomenclature, characteristicID: IDCharacteristic, orderedQuality: counter, price: basketReply.Price)
+                     */
+                    GroupManager.shared.setQualityAndPriceCharacteristic(groupID: IDGroup, nomenclatureID: IDNomenclature, characteristicName: basketReply.NameCharacteristic, orderedQuality: counter, price: basketReply.Price)
+                }
             }
         }
-         
     }
-         
+    
 }
 
 

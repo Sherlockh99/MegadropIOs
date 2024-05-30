@@ -12,7 +12,6 @@ struct BasketView: View {
     
     var body: some View {
         VStack{
-            
             ScrollView(.vertical, showsIndicators: false){
                 if !viewModelBasketManager.isLoadingBasketManager{
                     ForEach(basket,id: \.self){
@@ -25,19 +24,9 @@ struct BasketView: View {
             }
             .onAppear{
                 viewModelBasketManager.loadBasket()
-                /*
-                //Получить корзину из базы
-                nomenclatureFullDataLoader.loadFullNomenclatureData(
-                    groupID: IDGroup,
-                    idNomenclature: selectedNomenclature.IDNomenclature)
-                 */
             }
-             
-
-            Text("Basket")
         }
     }
-        
 }
 
 #Preview {

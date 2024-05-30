@@ -44,27 +44,41 @@ func getPicturesNomenclature(nom1: Nomenclature2, completion: @escaping (Nomencl
     }
 }
 
-func updateQualityInServer(groupID: String, nomenclatureID: String, characteristicID: Int, count: Int, completion: @escaping (BasketReply?) ->Void){
+//func updateQualityInServer(groupID: String, nomenclatureID: String, characteristicID: Int, count: Int, completion: @escaping (BasketReply?) ->Void){
     //var qualityOrder: Int = 0
-    
+func updateQualityInServer(groupID: String, nomenclatureID: String, isCharacteristic: Bool, characteristicName: String, count: Int, completion: @escaping (BasketReply?) ->Void){
     var basketReply: BasketReply?
     
-    if let characteristic = GroupManager.shared.getCharacteristic(groupID: groupID, nomenclatureID: nomenclatureID, characteristicID: characteristicID){
-        let nameCharacteristic =  characteristic.Characteristic
+    var DROP_SHIPPING_DOMAIN = ""
+    if isCharacteristic {
+        DROP_SHIPPING_DOMAIN = "/nomenclature/addnomenclaturetorecyclewithcharacteristic/" +
+        nomenclatureID + "/" +
+        characteristicName + "/" +
+        count.formatted()
+    } else {
+        DROP_SHIPPING_DOMAIN = "/nomenclature/addnomenclaturetorecyclewithoutcharacteristic/" +
+        nomenclatureID + "/" +
+        count.formatted()
+    }
+    
+    //if let characteristic = GroupManager.shared.getCharacteristic(groupID: groupID, nomenclatureID: nomenclatureID, characteristicID: characteristicID){
+    /*
+    if let characteristic = GroupManager.shared.getCharacteristicName(groupID: groupID, nomenclatureID: nomenclatureID, nameCharacteristic: characteristicName){
+        //let nameCharacteristic =  characteristic.Characteristic
         let isCharacteristic = characteristic.isCharacteristic
 
         var DROP_SHIPPING_DOMAIN = ""
         if(isCharacteristic){
             DROP_SHIPPING_DOMAIN = "/nomenclature/addnomenclaturetorecyclewithcharacteristic/" +
             nomenclatureID + "/" +
-            nameCharacteristic + "/" + 
+            characteristicName + "/" + 
             count.formatted()
         }else{
             DROP_SHIPPING_DOMAIN = "/nomenclature/addnomenclaturetorecyclewithoutcharacteristic/" +
             nomenclatureID + "/" +
             count.formatted()
         }
-        
+       */
         getData(hService: DROP_SHIPPING_DOMAIN){
             modified in
             do{
@@ -79,5 +93,5 @@ func updateQualityInServer(groupID: String, nomenclatureID: String, characterist
                 print("Error")
             }
         }
-    }
+    //}
 }
