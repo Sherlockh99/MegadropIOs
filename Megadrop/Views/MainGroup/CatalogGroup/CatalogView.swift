@@ -10,22 +10,6 @@ import SwiftUI
 struct CatalogView: View {
 
     @EnvironmentObject var shop: Shop
-
-    //let items = Array(1...30)  // Массив чисел от 1 до 30
-
-    /*
-    let columns: [GridItem] = [
-        GridItem(.fixed(100)),
-        GridItem(.fixed(100)),
-        GridItem(.fixed(100))
-    ] */
-    
-    /*
-    let columns: [GridItem] = [
-        GridItem(.fixed(100)),
-        GridItem(.fixed(100))
-    ]
-    */
     
     var body: some View {
         if shop.isNomenclatureCatalog {

@@ -12,6 +12,8 @@ struct NavigationBarDetailView: View {
     // MARK: - PROPERTY
     
     @EnvironmentObject var shop: Shop
+    @EnvironmentObject var shopRecycle: ShopRecycle
+    
     @State private var isAnimated: Bool = false
     // MARK: - BODY
     var body: some View {
@@ -23,6 +25,11 @@ struct NavigationBarDetailView: View {
                         shop.isNomenclatureCatalog = false
                         shop.selectedNomenclatureCatalog = nil
                         shop.isGroupCatalog = true
+                    }else if !shopRecycle.isNomenclatureRecycle && shopRecycle.selectedNomenclatureRecycle != nil{
+                        shopRecycle.isNomenclatureRecycle = true
+                    }else if shopRecycle.isBuy {
+                        shopRecycle.isNomenclatureRecycle = true
+                        shopRecycle.isBuy = false
                     } else {
                         shop.selectedProduct = nil
                         shop.showingProduct = false

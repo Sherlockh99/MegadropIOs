@@ -18,19 +18,21 @@ struct MainView: View {
         if(isLogged){
             TabView(selection: $selection){
                 HomePageView()
-                    .environmentObject(HomePageVM())
+                    .environmentObject(Shop())
                     .tabItem {
                         Label("Home", systemImage: "homekit")
                     }
                     .tag(Tab.main)
                 
                 CatalogView()
+                    .environmentObject(Shop())
                     .tabItem {
                         Label("Catalog", systemImage: "square.grid.2x2")
                     }
                     .tag(Tab.catalog)
                 
                 BasketView()
+                    .environmentObject(ShopRecycle())
                     .tabItem {
                         Label("Basket", systemImage: "basket")
                     }

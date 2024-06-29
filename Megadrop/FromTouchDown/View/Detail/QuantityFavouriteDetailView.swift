@@ -10,22 +10,19 @@ import SwiftUI
 struct QuantityFavouriteDetailView: View {
     let IDGroup: String
     let IDNomenclature: String
-    let IDCharacteristic: Int
-        
+    @State var characteristic: Characteristicses
+    
     // MARK: - PROPERTY
-    //@EnvironmentObject var shop: Shop
     @State private var counter: Int = 0
     @State private var price: Double = 0
     @State private var sumOrder: Double = 0
-
-    @State private var characteristic: Characteristicses?
-
+    
     // MARK: - BODY
     
     var body: some View {
         HStack{
             HStack{
-                Text(characteristic?.Characteristic ?? "Characteristic")
+                Text(characteristic.Characteristic)
                     .font(.system(.body, design: .rounded))
             }
             
@@ -36,7 +33,7 @@ struct QuantityFavouriteDetailView: View {
                     Spacer()
                     Text("Цена: ")
                     //Spacer()
-                    Text(String(characteristic?.Price ?? 0.00))
+                    Text(String(characteristic.Price))
                 }
                 .font(.system(.body, design: .rounded))
                 
@@ -86,51 +83,43 @@ struct QuantityFavouriteDetailView: View {
             }
             .font(.system(.body, design: .rounded))
             //})
- 
+            
         }
         .font(.system(.title, design: .rounded))
         .foregroundColor(.black)
         .imageScale(.large)
         .onAppear{
-            
+            /*
             characteristic = GroupManager.shared.getCharacteristic(
                 groupID: IDGroup,
                 nomenclatureID: IDNomenclature,
-                characteristicID: IDCharacteristic)
-             
-            counter = characteristic?.OrderedQuality ?? 0
-            price = characteristic?.Price ?? 0.0
+                characteristicID: characteristic.IDCharacteristic)
+            */
+            counter = characteristic.OrderedQuality
+            price = characteristic.Price
             sumOrder = Double(counter) * price
         }
     }
     
     private func changeCounter(counter_: Int){
         
-//        updateQualityInServer(groupID: IDGroup, nomenclatureID: IDNomenclature, characteristicID: IDCharacteristic, count: counter_){
-        if let nameCharacteristic = characteristic?.Characteristic {
+        updateQualityInServer(groupID: IDGroup, nomenclatureID: IDNomenclature, isCharacteristic: characteristic.isCharacteristic, characteristicName: characteristic.Characteristic, count: counter_){
             
-           var isCharacteristic = false
-           if let isCharacteristic_ = characteristic?.isCharacteristic {
-                isCharacteristic = isCharacteristic_
-           }
-            updateQualityInServer(groupID: IDGroup, nomenclatureID: IDNomenclature, isCharacteristic: isCharacteristic, characteristicName: nameCharacteristic, count: counter_){
+            modified in
+            if let basketReply = modified{
                 
-                modified in
-                if let basketReply = modified{
-                    
-                    counter = basketReply.Count
-                    characteristic?.Price = basketReply.Price
-                    price = characteristic?.Price ?? 0.0
-                    sumOrder = Double(counter) * price
-                    /*
-                     GroupManager.shared.setQualityAndPriceCharacteristic(groupID: IDGroup, nomenclatureID: IDNomenclature, characteristicID: IDCharacteristic, orderedQuality: counter, price: basketReply.Price)
-                     */
-                    GroupManager.shared.setQualityAndPriceCharacteristic(groupID: IDGroup, nomenclatureID: IDNomenclature, characteristicName: basketReply.NameCharacteristic, orderedQuality: counter, price: basketReply.Price)
-                }
+                counter = basketReply.Count
+                characteristic.Price = basketReply.Price
+                price = characteristic.Price
+                //?? 0.0
+                sumOrder = Double(counter) * price
+                /*
+                 GroupManager.shared.setQualityAndPriceCharacteristic(groupID: IDGroup, nomenclatureID: IDNomenclature, characteristicID: IDCharacteristic, orderedQuality: counter, price: basketReply.Price)
+                 */
+                GroupManager.shared.setQualityAndPriceCharacteristic(groupID: IDGroup, nomenclatureID: IDNomenclature, characteristicName: basketReply.NameCharacteristic, orderedQuality: counter, price: basketReply.Price)
             }
         }
     }
-    
 }
 
 
@@ -138,6 +127,9 @@ struct QuantityFavouriteDetailView: View {
     QuantityFavouriteDetailView(
         IDGroup: ModelData().groupsWithNomenclatures[0].IDGroup,
         IDNomenclature: ModelData().groupsWithNomenclatures[0].Nomenclatures![2].IDNomenclature,
-        IDCharacteristic: 2)
+        characteristic: ModelData().groupsWithNomenclatures[0].Nomenclatures![2].Characteristics![0])
+    //,
+
+      //  IDCharacteristic: 2)
 }
 

@@ -74,3 +74,7 @@ struct CabinetView: View {
         //}
     }
 }
+
+#Preview {
+    CabinetView()
+}

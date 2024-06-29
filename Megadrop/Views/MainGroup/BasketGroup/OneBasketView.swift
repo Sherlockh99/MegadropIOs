@@ -52,7 +52,15 @@ struct OneBasketView: View {
                     Text("Count: ") + Text(String(counter))
                 }
             }
-            
+            .onTapGesture {
+                feedback.impactOccurred()
+                
+                withAnimation(.easeOut) {
+                    //shop.selectedNomenclatureCatalog = key
+                    //shop.isGroupCatalog = false
+                    //shop.isNomenclatureCatalog = true
+                }
+            }
             VStack{
                 Button(action: {
                     if counter < 999 {
@@ -102,9 +110,6 @@ struct OneBasketView: View {
                     }
                     isLoaded = true
                 }
-                
-                counter = basketOrder.Count
-                
                 if nom.Details != nil || nom.Details != "" {
                     //counter = nom.Details.count
                 }else{
@@ -129,6 +134,7 @@ struct OneBasketView: View {
                 isLoaded = true
             }
             
+            counter = basketOrder.Count
             descrNomenclature = basketOrder.NameNomenclaure
             if basketOrder.isCharacteristic {
                 descrNomenclature = descrNomenclature + "; " + basketOrder.NameCharacteristic

@@ -12,7 +12,7 @@ struct DetailsView: View {
     @State var nom3: Nomenclature2
     @EnvironmentObject var shop: Shop
     @StateObject private var nomenclatureFullDataLoaderSNDFL = NomenclatureFullDataLoader.sharedNFDL
-    
+
     var body: some View {
         VStack(alignment: .center, spacing: 0, content: {
             ScrollView(.vertical, showsIndicators: false, content: {
@@ -35,7 +35,8 @@ struct DetailsView: View {
                         QuantityFavouriteDetailView(
                             IDGroup: IDGroup,
                             IDNomenclature: nom3.IDNomenclature,
-                            IDCharacteristic: key.IDCharacteristic)
+                            characteristic: key)
+                            //IDCharacteristic: key.IDCharacteristic)
                     }
                 }
                 

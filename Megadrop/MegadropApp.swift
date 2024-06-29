@@ -25,5 +25,6 @@ struct ContentViewModel: View{
     var body: some View{
         MainView()
             .environmentObject(Shop())
+            .environmentObject(ShopRecycle())
     }
 }

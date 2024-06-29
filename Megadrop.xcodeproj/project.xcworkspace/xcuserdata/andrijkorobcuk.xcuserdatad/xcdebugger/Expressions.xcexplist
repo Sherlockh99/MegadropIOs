@@ -96,13 +96,13 @@
          contextName = "closure #2 in OneBasketView.body.getter:OneBasketView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "basketOrder">
+               value = "nomenclature">
             </PersistentString>
             <PersistentString
                value = "descrNomenclature">
             </PersistentString>
             <PersistentString
-               value = "nomenclature">
+               value = "basketOrder">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -148,13 +148,24 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #1 in closure #1 in closure #1 in NavigationBarDetailView.body.getter:NavigationBarDetailView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "shopRecycle.selectedNomenclatureRecycle != nil">
+            </PersistentString>
+            <PersistentString
+               value = "!shopRecycle.isNomenclatureRecycle">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #2 in closure #1 in closure #1 in closure #1 in closure #1 in HomePageView.body.getter:HomePageView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "loader.dataList.count">
+               value = "GroupManager.shared.groupWithNomenclatures.count">
             </PersistentString>
             <PersistentString
-               value = "GroupManager.shared.groupWithNomenclatures.count">
+               value = "loader.dataList.count">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

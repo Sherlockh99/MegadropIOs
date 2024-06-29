@@ -17,11 +17,12 @@ struct HomePageView: View {
     var body: some View {
         ZStack{
             if shop.showingNomenclature == false && shop.selectedNomenclature == nil {
+                //VStack(spacing: 0) {
                 VStack{
                     NavigationBarHomeView()
                         .padding(.horizontal, 15)
                         .padding(.bottom)
-                        .background(Color.white)
+                        //.background(Color.white)
                         .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
                     
                         ScrollView(.vertical, showsIndicators: false){
@@ -32,7 +33,7 @@ struct HomePageView: View {
                                 }
                             }
                         }
-                        .onAppear() {
+                        .onAppear {
                             
                             if groupWithNomenclatures.count==0 {
                                 GroupManager.shared.loadGroupWithNomenclatures()
@@ -42,10 +43,11 @@ struct HomePageView: View {
 
                         }
                 }
+                .background(colorBackground.ignoresSafeArea(.all, edges: .all))
             } else {
                 NomenclatureView(IDGroup: shop.IDGroup, nomenclature: shop.selectedNomenclature ?? ModelData().groupsWithNomenclatures[0].Nomenclatures![0])
             }
-        }
+        } //: ZSTACK
     }
 }
 
