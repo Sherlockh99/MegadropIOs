@@ -80,6 +80,8 @@
 		C5B8A0172BD316BD00F85BCE /* BasketReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B8A0162BD316BD00F85BCE /* BasketReply.swift */; };
 		C5C4B0982BF5DEBF00FF0C98 /* NavigationBarHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C4B0972BF5DEBF00FF0C98 /* NavigationBarHomeView.swift */; };
 		C5C4B09A2BF5E50F00FF0C98 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C4B0992BF5E50F00FF0C98 /* DetailsView.swift */; };
+		C5CE9C0F2C32120C00F3305C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CE9C0E2C32120C00F3305C /* User.swift */; };
+		C5CE9C112C3212DA00F3305C /* BuyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CE9C102C3212DA00F3305C /* BuyViewModel.swift */; };
 		C5CFBBB42BB76A340087B6EA /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBBB32BB76A340087B6EA /* ImageLoader.swift */; };
 		C5CFBBB62BB76AA80087B6EA /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBBB52BB76AA80087B6EA /* ImageData.swift */; };
 		C5CFBBB82BB76EEA0087B6EA /* NomenclatureFullDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBBB72BB76EEA0087B6EA /* NomenclatureFullDataLoader.swift */; };
@@ -168,6 +170,8 @@
 		C5B8A0162BD316BD00F85BCE /* BasketReply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketReply.swift; sourceTree = "<group>"; };
 		C5C4B0972BF5DEBF00FF0C98 /* NavigationBarHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarHomeView.swift; sourceTree = "<group>"; };
 		C5C4B0992BF5E50F00FF0C98 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		C5CE9C0E2C32120C00F3305C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C5CE9C102C3212DA00F3305C /* BuyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewModel.swift; sourceTree = "<group>"; };
 		C5CFBBB32BB76A340087B6EA /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		C5CFBBB52BB76AA80087B6EA /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		C5CFBBB72BB76EEA0087B6EA /* NomenclatureFullDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomenclatureFullDataLoader.swift; sourceTree = "<group>"; };
@@ -471,6 +475,7 @@
 				C5B170542BDC7A500068411D /* OneBasketView.swift */,
 				C540B2682B6594370050B9C1 /* BasketView.swift */,
 				C51E72DA2C30239700ED1FCC /* BuyView.swift */,
+				C5CE9C102C3212DA00F3305C /* BuyViewModel.swift */,
 			);
 			path = BasketGroup;
 			sourceTree = "<group>";
@@ -544,6 +549,7 @@
 				C5EF5C842BDE795400623F9D /* Old */,
 				C5EF5C832BDE791800623F9D /* GroupsAndNomenclatures */,
 				C5D732FC2B8F058B002D770F /* PictureNomenclature.swift */,
+				C5CE9C0E2C32120C00F3305C /* User.swift */,
 				C5CFBBB52BB76AA80087B6EA /* ImageData.swift */,
 				C5B8A0162BD316BD00F85BCE /* BasketReply.swift */,
 				C5B170582BDC883D0068411D /* Basket.swift */,
@@ -666,6 +672,7 @@
 				C59548612BFC9FA1002F2BD6 /* NavigationBarSearchListNomenclatureView.swift in Sources */,
 				C540B2722B65A4720050B9C1 /* ModelData.swift in Sources */,
 				C58F7D212BA62E7400307B63 /* TopPartDetailView.swift in Sources */,
+				C5CE9C0F2C32120C00F3305C /* User.swift in Sources */,
 				C53973682B829A7800628EC3 /* YourViewModel.swift in Sources */,
 				C5E6BE642C01D5C900C54E5F /* GroupCatalogView.swift in Sources */,
 				C58F7D152BA61E6F00307B63 /* Shop.swift in Sources */,
@@ -707,6 +714,7 @@
 				C52479202B95240600B591FA /* ContentViewTest.swift in Sources */,
 				C539736A2B829B7B00628EC3 /* Tab.swift in Sources */,
 				C5A063572BCC2C0B005A48DA /* NomenclatureManager.swift in Sources */,
+				C5CE9C112C3212DA00F3305C /* BuyViewModel.swift in Sources */,
 				C58F7D2E2BA63E4200307B63 /* LogoView.swift in Sources */,
 				C51E72DB2C30239700ED1FCC /* BuyView.swift in Sources */,
 				C540B25C2B658A300050B9C1 /* MainLoginView.swift in Sources */,

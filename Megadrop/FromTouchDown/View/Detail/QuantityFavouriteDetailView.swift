@@ -42,6 +42,7 @@ struct QuantityFavouriteDetailView: View {
                     Spacer()
                     Text("Количество:")
                 }
+                
                 HStack{
                     //Spacer()
                     

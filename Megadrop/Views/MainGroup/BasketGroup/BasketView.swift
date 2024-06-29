@@ -10,6 +10,7 @@ import SwiftUI
 struct BasketView: View {
     @ObservedObject private var viewModelBasketManager = BasketManager.sharedBasketManager
     @EnvironmentObject var shopRecycle: ShopRecycle
+    @EnvironmentObject var shop: Shop
     
     var body: some View {
         if shopRecycle.isBuy {
@@ -36,7 +37,7 @@ struct BasketView: View {
                                     }
                             }
                         }
-                    }
+                    }//END: SCROLL_VIEW
                     
                     Button {
                         shopRecycle.isBuy = true
@@ -62,6 +63,13 @@ struct BasketView: View {
                 .onAppear{
                     viewModelBasketManager.loadBasket()
                 }
+                .padding(.horizontal, 15)
+                .background(
+                   Color(
+                       red: shop.selectedProduct?.red ?? sampleProduct.red,
+                        green: shop.selectedProduct?.green ?? sampleProduct.green,
+                       blue: shop.selectedProduct?.blue ?? sampleProduct.blue
+                   ).ignoresSafeArea(.all, edges: .all))
             }else{
                 if let nom = shopRecycle.selectedNomenclatureRecycle {
                     NomenclatureView(IDGroup: shopRecycle.idGroupCatalog, nomenclature: nom)
@@ -84,4 +92,5 @@ struct BasketView: View {
 #Preview {
     BasketView()
         .environmentObject(ShopRecycle())
+        .environmentObject(Shop())
 }
