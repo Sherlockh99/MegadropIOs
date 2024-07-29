@@ -27,7 +27,7 @@ struct CabinetView: View {
         //}else{
             NavigationSplitView{
                 LogoImage(image: Image("logo"))
-                Text("Cabinet")
+                Text(Profile.profileShared.nickname)
                 NavigationLink{
                     MyOrdersView()
                 }label: {

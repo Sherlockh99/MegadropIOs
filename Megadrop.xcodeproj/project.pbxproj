@@ -39,6 +39,8 @@
 		C5443DDF2B5D8C150082BE6F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5443DDE2B5D8C150082BE6F /* Profile.swift */; };
 		C5443DE22B5DAFC50082BE6F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5443DE12B5DAFC50082BE6F /* MainView.swift */; };
 		C54FEE8C2B81897400AE8DEC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FEE8B2B81897400AE8DEC /* LoginView.swift */; };
+		C55D7FB72C4EC7A4001285DC /* DeliveryXDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D7FB62C4EC7A4001285DC /* DeliveryXDTO.swift */; };
+		C55D7FB92C4F074A001285DC /* NovaPoshtaBranchesOfCityXDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D7FB82C4F074A001285DC /* NovaPoshtaBranchesOfCityXDTO.swift */; };
 		C5755CE92B8AA582005318A7 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5755CE82B8AA582005318A7 /* ImageModel.swift */; };
 		C5755CEB2B8AA5F4005318A7 /* ImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5755CEA2B8AA5F4005318A7 /* ImageViewer.swift */; };
 		C58AF1A12B854B84008B0CCF /* Nomenclature2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58AF1A02B854B84008B0CCF /* Nomenclature2.swift */; };
@@ -86,6 +88,8 @@
 		C5CFBBB62BB76AA80087B6EA /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBBB52BB76AA80087B6EA /* ImageData.swift */; };
 		C5CFBBB82BB76EEA0087B6EA /* NomenclatureFullDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CFBBB72BB76EEA0087B6EA /* NomenclatureFullDataLoader.swift */; };
 		C5D732FD2B8F058B002D770F /* PictureNomenclature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D732FC2B8F058B002D770F /* PictureNomenclature.swift */; };
+		C5E26EF42C51A3E30056F137 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E26EF32C51A3E30056F137 /* ContentViewModel.swift */; };
+		C5E26EF62C51A6960056F137 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E26EF52C51A6960056F137 /* Constants.swift */; };
 		C5E6BE622C01C90100C54E5F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E6BE612C01C90100C54E5F /* SearchView.swift */; };
 		C5E6BE642C01D5C900C54E5F /* GroupCatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E6BE632C01D5C900C54E5F /* GroupCatalogView.swift */; };
 		C5E6BE662C01E95800C54E5F /* GroupsCatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E6BE652C01E95800C54E5F /* GroupsCatalogView.swift */; };
@@ -127,6 +131,8 @@
 		C5443DDE2B5D8C150082BE6F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		C5443DE12B5DAFC50082BE6F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C54FEE8B2B81897400AE8DEC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C55D7FB62C4EC7A4001285DC /* DeliveryXDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryXDTO.swift; sourceTree = "<group>"; };
+		C55D7FB82C4F074A001285DC /* NovaPoshtaBranchesOfCityXDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaPoshtaBranchesOfCityXDTO.swift; sourceTree = "<group>"; };
 		C5755CE82B8AA582005318A7 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		C5755CEA2B8AA5F4005318A7 /* ImageViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewer.swift; sourceTree = "<group>"; };
 		C58AF19F2B853DF4008B0CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -176,6 +182,8 @@
 		C5CFBBB52BB76AA80087B6EA /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		C5CFBBB72BB76EEA0087B6EA /* NomenclatureFullDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NomenclatureFullDataLoader.swift; sourceTree = "<group>"; };
 		C5D732FC2B8F058B002D770F /* PictureNomenclature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureNomenclature.swift; sourceTree = "<group>"; };
+		C5E26EF32C51A3E30056F137 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		C5E26EF52C51A6960056F137 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C5E6BE612C01C90100C54E5F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		C5E6BE632C01D5C900C54E5F /* GroupCatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCatalogView.swift; sourceTree = "<group>"; };
 		C5E6BE652C01E95800C54E5F /* GroupsCatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsCatalogView.swift; sourceTree = "<group>"; };
@@ -335,6 +343,8 @@
 				C5A063562BCC2C0B005A48DA /* NomenclatureManager.swift */,
 				C5A063582BCC3B3E005A48DA /* GroupManager.swift */,
 				C5EF5C812BDCF32500623F9D /* BasketManager.swift */,
+				C5E26EF32C51A3E30056F137 /* ContentViewModel.swift */,
+				C5E26EF52C51A6960056F137 /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -553,6 +563,8 @@
 				C5CFBBB52BB76AA80087B6EA /* ImageData.swift */,
 				C5B8A0162BD316BD00F85BCE /* BasketReply.swift */,
 				C5B170582BDC883D0068411D /* Basket.swift */,
+				C55D7FB62C4EC7A4001285DC /* DeliveryXDTO.swift */,
+				C55D7FB82C4F074A001285DC /* NovaPoshtaBranchesOfCityXDTO.swift */,
 			);
 			path = XDTO;
 			sourceTree = "<group>";
@@ -673,6 +685,7 @@
 				C540B2722B65A4720050B9C1 /* ModelData.swift in Sources */,
 				C58F7D212BA62E7400307B63 /* TopPartDetailView.swift in Sources */,
 				C5CE9C0F2C32120C00F3305C /* User.swift in Sources */,
+				C55D7FB92C4F074A001285DC /* NovaPoshtaBranchesOfCityXDTO.swift in Sources */,
 				C53973682B829A7800628EC3 /* YourViewModel.swift in Sources */,
 				C5E6BE642C01D5C900C54E5F /* GroupCatalogView.swift in Sources */,
 				C58F7D152BA61E6F00307B63 /* Shop.swift in Sources */,
@@ -682,7 +695,9 @@
 				C5443DE22B5DAFC50082BE6F /* MainView.swift in Sources */,
 				C5CFBBB62BB76AA80087B6EA /* ImageData.swift in Sources */,
 				C5D732FD2B8F058B002D770F /* PictureNomenclature.swift in Sources */,
+				C55D7FB72C4EC7A4001285DC /* DeliveryXDTO.swift in Sources */,
 				C5E6BE622C01C90100C54E5F /* SearchView.swift in Sources */,
+				C5E26EF62C51A6960056F137 /* Constants.swift in Sources */,
 				C5E8D5F22B95A5660032F0BD /* Nomenclature3.swift in Sources */,
 				C5B40C142B4B47EF00847EE4 /* LogoImage.swift in Sources */,
 				C53973662B8295A600628EC3 /* ExView.swift in Sources */,
@@ -706,6 +721,7 @@
 				C5930DEF2B9C719700287F48 /* CustomBackgroundView.swift in Sources */,
 				C5B40C042B4B3CCB00847EE4 /* MegadropApp.swift in Sources */,
 				C5EF5C822BDCF32500623F9D /* BasketManager.swift in Sources */,
+				C5E26EF42C51A3E30056F137 /* ContentViewModel.swift in Sources */,
 				C58F7D292BA63BB300307B63 /* CustomShape.swift in Sources */,
 				C5CFBBB82BB76EEA0087B6EA /* NomenclatureFullDataLoader.swift in Sources */,
 				C5B4D8392B66A839009CE4A1 /* HomePageListNomenclature.swift in Sources */,

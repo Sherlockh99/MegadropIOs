@@ -15,7 +15,6 @@ class ImageLoader: ObservableObject {
         
         let hService = "/nomenclature/getdefaultpicture/" + idNomenclature
         let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs" + hService
-        //let s = "http://77.52.194.194/itpeople/hs/nomenclature/getdefaultpicture/00000002381"
         
         guard let url = URL(string: DROP_SHIPPING_DOMAIN) else { return }
         
@@ -23,11 +22,11 @@ class ImageLoader: ObservableObject {
         var request = URLRequest(url: url)
         
         // Учетные данные пользователя
-        let username = "z0002"
-        let password = "1"
+        let login = Profile.profileShared.username
+        let password = Profile.profileShared.password
         
         // Кодируем учетные данные в формате Base64
-        let loginString = "\(username):\(password)"
+        let loginString = "\(login):\(password)"
         guard let loginData = loginString.data(using: .utf8) else { return }
         let base64LoginString = loginData.base64EncodedString()
         
@@ -55,8 +54,6 @@ class ImageLoader: ObservableObject {
                  if let decodedResponse = try? JSONDecoder().decode(ImageData.self, from: data){
                      self.decodeImage(fromBase64: decodedResponse.Image)
                  }
-                 //let imageData = Data(base64Encoded: base64String, options: .ignoreUnknownCharacters)
-               // completion(data)
              }
          }.resume()
         
@@ -69,7 +66,6 @@ class ImageLoader: ObservableObject {
                 print("Decode Image Next")
                 DispatchQueue.main.async {
                     self.image = UIImage(data: imageData)
-                    //guard let data = Data(base64Encoded: imageDataString, options: .ignoreUnknownCharacters) else { return }
                 }
             }
         }

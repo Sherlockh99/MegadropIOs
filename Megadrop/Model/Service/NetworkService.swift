@@ -19,23 +19,12 @@ final class NetworkService{
             do{
                 let decoder = JSONDecoder()
                 let userData = try decoder.decode([GroupWithNomenclatures].self, from: modified)
-                //print("all ok")
                 groupsWithNomenclatures = userData
-                //nom.Details = userData.Details
-                //nom.Image = userData.Image ?? ""
-                //completion(nom)
-                //return userData
             }catch{
-                //let userData = GroupWithNomenclatures
                 print("Error")
             }
         }
-         
-        //return a
-        //return userData
         return groupsWithNomenclatures
-        //return Product.mockData()
-        //URLSession.shared.dataTask(with: URLRequest, completionHandler: (Data?, URLResponse?, Error?) -> Void)
     }
     
     
@@ -46,10 +35,8 @@ final class NetworkService{
 }
 
 func getData(hService: String, completion: @escaping (Data)->Void){
-    //var nom = nomenclature
     
     let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs" + hService
-    //nomenclature/getfulldatanomenclature/" + nomenclature.IDNomenclature
     
     guard let url = URL(string: DROP_SHIPPING_DOMAIN) else {
         print("Некорректный URL")
@@ -60,11 +47,12 @@ func getData(hService: String, completion: @escaping (Data)->Void){
     var request = URLRequest(url: url)
     
     // Учетные данные пользователя
-    let username = "z0002"
-    let password = "1"
+    
+    let login = Profile.profileShared.username
+    let password = Profile.profileShared.password
     
     // Кодируем учетные данные в формате Base64
-    let loginString = "\(username):\(password)"
+    let loginString = "\(login):\(password)"
     guard let loginData = loginString.data(using: .utf8) else { return }
     let base64LoginString = loginData.base64EncodedString()
     

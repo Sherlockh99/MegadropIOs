@@ -28,14 +28,7 @@ func load<T: Decodable>(_ filename: String) -> T {
     guard let data = try? Data(contentsOf: file) else {
       fatalError("Failed to load \(file) from bundle.")
     }
-    
-    /*
-    do {
-        data = try Data(contentsOf: file)
-    } catch {
-        fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
-    }
-    */
+
     
     // 3. Create a decoder
     let decoder = JSONDecoder()
@@ -44,14 +37,6 @@ func load<T: Decodable>(_ filename: String) -> T {
     guard let decodedData = try? decoder.decode(T.self, from: data) else {
       fatalError("Failed to decode \(file) from bundle.")
     }
-    /*
-    do {
-        let decoder = JSONDecoder()
-        return try decoder.decode(T.self, from: data)
-    } catch {
-        fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
-    }
-     */
     
     // 5. Return the ready-to-use data
     return decodedData

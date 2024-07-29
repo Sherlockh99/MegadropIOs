@@ -8,7 +8,15 @@
 import SwiftUI
 
 struct MainLoginView: View {
+    //@State private var username = ""
+    //@State private var password = ""
     @AppStorage("onboarding") var isLogged = false
+    //@State private var isLogged = false
+    @StateObject private var viewModel = ContentViewModel()
+    
+    //@AppStorage("onboarding") var isLogged = false
+    @ObservedObject var profile = Profile.profileShared
+    //@StateObject private var viewModel = ContentViewModel()
     
     var body: some View {
         ZStack {
@@ -19,7 +27,15 @@ struct MainLoginView: View {
                 ProfileLoginView().padding()
                 
                 Button {
-                    isLogged = true
+                    viewModel.checkAuthorization(login: profile.username, password: profile.password) { isAuthorized in
+                        if isAuthorized {
+                            profile.save()
+                            isLogged = true
+                        } else {
+                            // Handle failed authorization, e.g., show an alert
+                            print("Authorization failed")
+                        }
+                    }
                 } label: {
                     Text("Login")
                         .font(.title2)
@@ -37,10 +53,11 @@ struct MainLoginView: View {
                         .shadow(color: .black.opacity(0.25), radius: 0.25, x: 1, y: 2)
                 }
                 .buttonStyle(GradientButton())
-            }
+            } //END: VStack
+            .padding()
             
         }
-        .frame(width: 350,height: 700)
+        //.frame(width: 350,height: 700)
     }
 }
 

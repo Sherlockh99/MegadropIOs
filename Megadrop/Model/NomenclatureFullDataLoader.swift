@@ -16,7 +16,6 @@ class NomenclatureFullDataLoader: ObservableObject{
     private init() {}
     
     func loadFullNomenclatureData(groupID: String, idNomenclature: String) {
-        //self.isLoadedNDFL = false
         let hService = "/nomenclature/getfulldatanomenclature/" + idNomenclature
         let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs" + hService
         
@@ -26,11 +25,11 @@ class NomenclatureFullDataLoader: ObservableObject{
         var request = URLRequest(url: url)
         
         // Учетные данные пользователя
-        let username = "z0002"
-        let password = "1"
+        let login = Profile.profileShared.username
+        let password = Profile.profileShared.password
         
         // Кодируем учетные данные в формате Base64
-        let loginString = "\(username):\(password)"
+        let loginString = "\(login):\(password)"
         guard let loginData = loginString.data(using: .utf8) else { return }
         let base64LoginString = loginData.base64EncodedString()
         
@@ -43,14 +42,12 @@ class NomenclatureFullDataLoader: ObservableObject{
              // Проверяем наличие ошибки
              if let error = error {
                  print("Ошибка запроса данных: \(error.localizedDescription)")
-                 //self.isLoadedNDFL = true
                  return
              }
              
              // Проверяем HTTP статус код и наличие данных
              guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200, let data = data else {
                  print("Нет данных или ошибка HTTP")
-                 //self.isLoadedNDFL = true
                  return
              }
 
@@ -60,8 +57,6 @@ class NomenclatureFullDataLoader: ObservableObject{
                  if let decodedResponse = try? JSONDecoder().decode(Nomenclature2.self, from: data){
                      self.decodeNomenclature(groupID: groupID, nomenclature: decodedResponse)
                  }
-                 //self.isLoadedNDFL = true
-               // completion(data)
              }
          }.resume()
         

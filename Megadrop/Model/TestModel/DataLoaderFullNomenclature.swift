@@ -17,11 +17,11 @@ class DataLoaderFullNomenclature: ObservableObject{
         var request = URLRequest(url: url)
         
         // Учетные данные пользователя
-        let username = "z0002"
-        let password = "1"
+        let login = Profile.profileShared.username
+        let password = Profile.profileShared.password
         
         // Кодируем учетные данные в формате Base64
-        let loginString = "\(username):\(password)"
+        let loginString = "\(login):\(password)"
         guard let loginData = loginString.data(using: .utf8) else { return }
         let base64LoginString = loginData.base64EncodedString()
         

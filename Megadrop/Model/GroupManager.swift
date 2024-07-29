@@ -9,10 +9,7 @@ import Foundation
 import SwiftUI
 class GroupManager: ObservableObject{
     static let shared = GroupManager()
-    //@Published var groupWithNomenclatures: [GroupWithNomenclatures] = []
     @Published var isLoading = false
-    //@Published var isLoadingNomenclature = false
-    //@Published var isPictureLoaded = false
     @Published var isUpdatedQuality = false
     
     
@@ -29,11 +26,13 @@ class GroupManager: ObservableObject{
         var request = URLRequest(url: url)
         
         // Учетные данные пользователя
-        let username = "z0002"
+        //let login = Profile.profileShared.username
+        //let password = Profile.profileShared.password
+        let login = "z0002"
         let password = "1"
-        
+
         // Кодируем учетные данные в формате Base64
-        let loginString = "\(username):\(password)"
+        let loginString = "\(login):\(password)"
         guard let loginData = loginString.data(using: .utf8) else { return nil}
         let base64LoginString = loginData.base64EncodedString()
         
@@ -60,9 +59,7 @@ class GroupManager: ObservableObject{
                     let groupWithNomenclaturesJSON = try JSONDecoder().decode([GroupWithNomenclatures].self, from: data)
                     DispatchQueue.main.async {
                         // Обновление массива в NomenclatureManager
-                        //self.groupWithNomenclatures.append(contentsOf: groupWithNomenclaturesJSON)
                         groupWithNomenclatures.append(contentsOf: groupWithNomenclaturesJSON)
-                        //self.isLoading = false
                         self.loadNomenclatures()
                     }
                 } catch {
@@ -74,9 +71,6 @@ class GroupManager: ObservableObject{
     }
     
     func loadNomenclatures(){
-        //self.isLoadingNomenclature = true
-        //self.isLoading = true
-        //let semaphore = DispatchSemaphore(value: 0)
         let aGroup = DispatchGroup()
         
         groupWithNomenclatures.forEach { key in
@@ -84,11 +78,8 @@ class GroupManager: ObservableObject{
             let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getNomenclaturesGroup/" + key.IDGroup
             if let request = getRequest(DROP_SHIPPING_DOMAIN: DROP_SHIPPING_DOMAIN){
                 URLSession.shared.dataTask(with: request) { data, response, error in
-                    //defer { group.leave() }
-                    guard let data = data, error == nil else {
+                     guard let data = data, error == nil else {
                         print("Ошибка запроса: \(error?.localizedDescription ?? "No error description")")
-                        //self.isLoadingNomenclature = false
-                        //semaphore.signal()
                         aGroup.leave()
                         return
                     }
@@ -97,7 +88,6 @@ class GroupManager: ObservableObject{
                         // Десериализация JSON в массив экземпляров Nomenclature2
                         let nomenclaturesJSON = try JSONDecoder().decode([Nomenclature2].self, from: data)
                         DispatchQueue.main.async {
-                            //nomenclatures.append(contentsOf: nomenclaturesJSON)
                             self.addNomenclatures(groupID: key.IDGroup, nom2: nomenclaturesJSON)
                         }
                         aGroup.leave()
@@ -105,18 +95,11 @@ class GroupManager: ObservableObject{
                         print("Ошибка десериализации JSON: \(error.localizedDescription)")
                         aGroup.leave()
                     }
-                    
-                    //semaphore.signal()
-                    
                 }.resume()
             }
-            //semaphore.wait() // Ожидаем сигнала
         }
-        
-        //semaphore.wait()
-        // Этот блок кода выполнится после завершения всех задач в группе
+         // Этот блок кода выполнится после завершения всех задач в группе
        aGroup.notify(queue: DispatchQueue.main) {
-            //self.isLoadingNomenclature = false
             self.isLoading = false
         }
     }
@@ -127,22 +110,9 @@ class GroupManager: ObservableObject{
         
         let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getGroupsAndNomenclatures"
         if let request = getRequest(DROP_SHIPPING_DOMAIN: DROP_SHIPPING_DOMAIN){
-            
-            // Создание конфигурации сессии
-            //let configuration = URLSessionConfiguration.default
-
-            // Задание таймаута для ожидания данных
-            //configuration.timeoutIntervalForRequest = 30 // 10 секунд для таймаута запроса
-
-            // Задание таймаута для ожидания ресурса
-            //configuration.timeoutIntervalForResource = 30 // 20 секунд для таймаута ресурса
-
-            // Создание сессии с указанной конфигурацией
-            //let session = URLSession(configuration: configuration)
 
             URLSession.shared.dataTask(with: request) { data, response, error in
-            //session.dataTask(with: request) { data, response, error in
-                guard let data = data, error == nil else {
+                 guard let data = data, error == nil else {
                     print("Ошибка запроса: \(error?.localizedDescription ?? "No error description")")
                     self.isLoading = false
                     return
@@ -154,7 +124,6 @@ class GroupManager: ObservableObject{
                     let groupWithNomenclaturesJSON = try JSONDecoder().decode([GroupWithNomenclatures].self, from: data)
                     DispatchQueue.main.async {
                         // Обновление массива в NomenclatureManager
-                        //self.groupWithNomenclatures.append(contentsOf: groupWithNomenclaturesJSON)
                         print("Start")
                         groupWithNomenclatures.append(contentsOf: groupWithNomenclaturesJSON)
                         
@@ -185,15 +154,6 @@ class GroupManager: ObservableObject{
         return ""
 
     }
-    
-    //TODO: изменить characteristicID на nameCharacteristic
-    /*
-    func setQualityAndPriceCharacteristic(groupID: String,
-                                          nomenclatureID: String,
-                                          characteristicID: Int,
-                                          orderedQuality: Int,
-                                          price: Double){
-        */
     
     func setQualityAndPriceCharacteristic(groupID: String,
                                           nomenclatureID: String,

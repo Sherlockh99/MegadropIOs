@@ -1,20 +1,25 @@
 import SwiftUI
 
 struct BuyView: View {
+    
     @StateObject private var viewModel = BuyViewModel()
-    @State private var selectedDelivery: String = "Нова Пошта" // Переменная для хранения выбранной службы доставки
-    @State private var city: String = "" // Переменная для хранения населенного пункта
+    @State private var selectedDelivery: String = "Укрпошта" // Переменная для хранения выбранной службы доставки
     @State private var branchNumber: String = "" // Переменная для хранения номера отделения
-    @State private var isCityDisabled: Bool = false // Переменная для отслеживания доступности поля населенного пункта
+    @State private var isCityDisabled: Bool = true // Переменная для отслеживания доступности поля населенного пункта
     @State private var selectedPaymentMethod: String = "Предоплата" // Переменная для хранения выбранного типа оплаты
     @State private var paymentAmount: String = "" // Переменная для хранения суммы наложенного платежа
     @State private var sendWithMyInvoice: Bool = false // Переменная для чекбокса "Відправити по моїй накладній"
     @State private var invoiceNumber: String = "" // Переменная для номера накладной
     @State private var comment: String = "" // Переменная для комментария
 
+    @State private var txtMessage = ""
+    
+    @EnvironmentObject var shopRecycle: ShopRecycle
+    
     let deliveries = ["Нова Пошта", "Укрпошта"] // Опции для служб доставки
     let paymentMethods = ["Предоплата", "Оплата з балансу", "Накладеним платежем"] // Опции для типов оплаты
 
+	
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
@@ -59,35 +64,76 @@ struct BuyView: View {
                     .pickerStyle(MenuPickerStyle())
                     .onChange(of: selectedDelivery) { newValue in
                         if newValue == "Укрпошта" {
-                            city = "" // Очищаем поле населенного пункта
-                            isCityDisabled = true // Делаем поле населенного пункта недоступным
+                            isCityDisabled = true
+                            viewModel.city = ""
+                            branchNumber = ""
                         } else {
-                            isCityDisabled = false // Делаем поле населенного пункта доступным
+                            viewModel.fetchCities()
+                            isCityDisabled = false
+                            branchNumber = ""
                         }
                     }
                     .padding()
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
                     .padding(.bottom, 10)
+                }
 
-                    Text("Введіть населений пункт:")
-                        .font(.headline)
-                    TextField("Населений пункт", text: $city)
-                        .padding()
-                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
-                        .padding(.bottom, 10)
-                        .disabled(isCityDisabled)
+                Group {
+                    if selectedDelivery == "Укрпошта" {
+                        Text("Населений пункт:")
+                            .font(.headline)
+                        TextField("Населений пункт", text: $viewModel.city)
+                            .disabled(true)
+                            .padding()
+                            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
+                            .padding(.bottom, 10)
+                            .onChange(of: viewModel.city) { newValue in
+                                //TODO получить отделения Новой почты
+                                //viewModel.fetch___(query: newValue)
+                            }
+  
+                        Text("Введіть номер відділення:")
+                            .font(.headline)
+                        TextField("Номер відділення", text: $branchNumber)
+                            .keyboardType(.numberPad)
+                            .padding()
+                            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
+                            .padding(.bottom, 10)
+                            .onChange(of: branchNumber) { newValue in
+                                if newValue.count == 5 {
+                                    viewModel.fetchCityByBranch(branch: newValue)
+                                }
+                            }
+                    }else {
+                        if !viewModel.cities.isEmpty {
+                            Text("Виберіть населений пункт зі списку:")
+                                .font(.headline)
+                            Picker("Виберіть населений пункт", selection: $viewModel.city) {
+                                ForEach(viewModel.cities, id: \.self) { city in
+                                    Text(city).tag(city)
+                                }
+                            }
+                            .pickerStyle(MenuPickerStyle())
+                            .padding(.bottom, 10)
+                        }
+                        
+                        if !viewModel.branches.isEmpty {
+                            Text("Виберіть відділення:")
+                                .font(.headline)
+                            Picker("Виберіть відділення", selection: $branchNumber) {
+                                ForEach(viewModel.branches, id: \.self) { branch in
+                                    Text(branch).tag(branch)
+                                }
+                            }
+                            .pickerStyle(MenuPickerStyle())
+                            .padding(.bottom, 10)
+                        }
 
-                    Text("Введіть номер відділення:")
-                        .font(.headline)
-                    TextField("Номер відділення", text: $branchNumber)
-                        .keyboardType(.numberPad)
-                        .padding()
-                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
-                        .padding(.bottom, 10)
-
+                    }
+                }
+                Group{
                     Text("Виберіть тип оплати:")
                         .font(.headline)
-                    
                     Picker("Виберіть тип оплати", selection: $selectedPaymentMethod) {
                         ForEach(paymentMethods, id: \.self) { method in
                             Text(method).tag(method)
@@ -97,45 +143,29 @@ struct BuyView: View {
                     .padding()
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
                     .padding(.bottom, 10)
-
+                    
                     if selectedPaymentMethod == "Накладеним платежем" {
                         Text("Введіть суму платежу:")
                             .font(.headline)
-                        TextField("Сума платежу", text: Binding(
-                            get: {
-                                paymentAmount
-                            },
-                            set: { newValue in
-                                let filtered = newValue.filter { "0123456789.".contains($0) }
-                                if filtered.components(separatedBy: ".").count <= 2 {
-                                    paymentAmount = filtered
-                                }
-                            }
-                        ))
-                        .keyboardType(.decimalPad)
-                        .padding()
-                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
-                        .padding(.bottom, 10)
-                    }
-
-                    Toggle(isOn: $sendWithMyInvoice) {
-                        Text("Відправити по моїй накладній")
-                            .font(.headline)
-                    }
-                    .padding()
-                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
-                    .padding(.bottom, 10)
-
-                    if sendWithMyInvoice {
-                        Text("Введіть номер накладної:")
-                            .font(.headline)
-                        TextField("Номер накладної", text: $invoiceNumber)
-                            .keyboardType(.numberPad)
+                        TextField("Сума платежу", text: $paymentAmount)
+                            .keyboardType(.decimalPad)
                             .padding()
                             .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
                             .padding(.bottom, 10)
                     }
-
+                    
+                    Toggle("Відправити по моїй накладній", isOn: $sendWithMyInvoice)
+                        .padding(.bottom, 10)
+                    
+                    if sendWithMyInvoice {
+                        Text("Введіть номер накладної:")
+                            .font(.headline)
+                        TextField("Номер накладної", text: $invoiceNumber)
+                            .padding()
+                            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
+                            .padding(.bottom, 10)
+                    }
+                    
                     Text("Коментар:")
                         .font(.headline)
                     TextField("Коментар", text: $comment)
@@ -143,32 +173,83 @@ struct BuyView: View {
                         .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
                         .padding(.bottom, 10)
                 }
-                
+                if viewModel.shopRecycleIsBuy {
+                    Text("Order confirmed!")
+                        .onAppear {
+                            shopRecycle.isBuy = false
+                        }
+                }
+                //if (showToast){
+                if !txtMessage.isEmpty{
+                    
+                    Text(txtMessage)
+                        .foregroundColor(.red)
+                        
+                }
                 Button(action: {
-                    viewModel.confirmOrder(
-                        deliveryService: selectedDelivery,
-                        city: city,
-                        branchNumber: branchNumber,
-                        paymentMethod: selectedPaymentMethod,
-                        paymentAmount: paymentAmount,
-                        sendWithMyInvoice: sendWithMyInvoice,
-                        invoiceNumber: invoiceNumber,
-                        comment: comment
-                    )
+                    confirmOrder()
                 }) {
                     Text("ЗАКАЗ ПІДТВЕРДЖУЮ")
                         .font(.headline)
                         .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
                         .padding()
                         .background(Color.blue)
                         .cornerRadius(10)
                 }
                 .padding(.top, 20)
-                
-                Spacer() // Для отступа между элементами
-            }
-            .padding() // Отступы для всего VStack
+            } //END: VSTACK
+            .padding()
+        }//END: ScrollView
+    }
+    
+    func confirmOrder(){
+        
+        txtMessage = ""
+        
+        if viewModel.phoneNumber.count < 10 {
+            txtMessage = txtMessage + "Phone number must be at least 10 digits long. "
         }
+
+        if viewModel.lastName.isEmpty {
+            txtMessage = txtMessage + "\nНе вказана фамілія. "
+        }
+
+        if viewModel.firstName.isEmpty {
+            txtMessage = txtMessage + "\nНе вказане імʼя. "
+        }
+        
+        if viewModel.middleName.isEmpty {
+            txtMessage = txtMessage + "\nНе вказано по-батькові. "
+        }
+
+        if viewModel.city.isEmpty {
+            txtMessage = txtMessage + "\nНе вказаний населений пункт. "
+        }
+
+        if branchNumber.isEmpty {
+            txtMessage = txtMessage + "\nНе вказан номер відділення. "
+        }
+
+        if (sendWithMyInvoice){
+            if invoiceNumber.isEmpty {
+                txtMessage = txtMessage + "\nНе вказан номер Вашої накладної."
+            }
+        }
+
+        if txtMessage.isEmpty {
+            viewModel.confirmOrder(
+                deliveryService: selectedDelivery,
+                city: viewModel.city,
+                branchNumber: branchNumber,
+                paymentMethod: selectedPaymentMethod,
+                paymentAmount: paymentAmount,
+                sendWithMyInvoice: sendWithMyInvoice,
+                invoiceNumber: invoiceNumber,
+                comment: comment)
+        }
+
+        
     }
 }
 

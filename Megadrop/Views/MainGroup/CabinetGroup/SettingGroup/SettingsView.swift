@@ -10,6 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     @AppStorage("onboarding") var isLogged = true
     @State private var showFavoritesOnly = false
+    @ObservedObject var profile = Profile.profileShared
     //@State private var isExit = false
     
     var body: some View {
@@ -29,6 +30,10 @@ struct SettingsView: View {
                 }
                 Spacer()
                 Button{
+                    profile.username = ""
+                    profile.password = ""
+                    profile.nickname = ""
+                    profile.save()
                     isLogged = false
                 } label: {
                     HStack{

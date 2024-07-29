@@ -15,9 +15,6 @@ class ImageModel: ObservableObject {
     
     init(imageDataString: String) {
         self.imageDataString = imageDataString
-        //if self.imageDataString.contains(",") {
-       //     self.imageDataString = self.imageDataString.components(separatedBy: ",").last ?? ""
-        //}
     }
     
     func loadImage() {
