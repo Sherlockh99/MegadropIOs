@@ -9,12 +9,10 @@ import SwiftUI
 
 @main
 struct MegadropApp: App {
-   //@StateObject var viewModel = YourViewModel()
     
     var body: some Scene {
         WindowGroup {
-            ContentViewModel_()
-                //.environmentObject(viewModel)
+            ContentView()
         }
     }
 }
@@ -46,7 +44,6 @@ struct ContentView: View {
 }
 
 struct ContentViewModel_: View{
-    //@EnvironmentObject var viewModel: YourViewModel
     
     var body: some View{
         MainView()

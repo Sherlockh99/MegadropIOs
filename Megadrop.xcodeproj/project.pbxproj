@@ -8,8 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		C51E72DB2C30239700ED1FCC /* BuyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51E72DA2C30239700ED1FCC /* BuyView.swift */; };
+		C523CB5B2C584B0500CEA641 /* MyOrdersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C523CB5A2C584B0500CEA641 /* MyOrdersViewModel.swift */; };
 		C524791E2B95224B00B591FA /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524791D2B95224B00B591FA /* DataLoader.swift */; };
 		C52479202B95240600B591FA /* ContentViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C524791F2B95240600B591FA /* ContentViewTest.swift */; };
+		C5257BE92C5C248100D6F1C1 /* Balance.json in Resources */ = {isa = PBXBuildFile; fileRef = C5257BE82C5C248100D6F1C1 /* Balance.json */; };
+		C52C74722C59792D00262B87 /* OrderXDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52C74712C59792D00262B87 /* OrderXDTO.swift */; };
+		C52C74762C5985D900262B87 /* Orders.json in Resources */ = {isa = PBXBuildFile; fileRef = C52C74752C5985D900262B87 /* Orders.json */; };
+		C52C74782C59941F00262B87 /* BalanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52C74772C59941F00262B87 /* BalanceViewModel.swift */; };
+		C52C747A2C59954C00262B87 /* SaleXDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52C74792C59954C00262B87 /* SaleXDTO.swift */; };
+		C52C747C2C5997E100262B87 /* OneBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52C747B2C5997E100262B87 /* OneBalanceView.swift */; };
 		C53973662B8295A600628EC3 /* ExView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53973652B8295A600628EC3 /* ExView.swift */; };
 		C53973682B829A7800628EC3 /* YourViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53973672B829A7800628EC3 /* YourViewModel.swift */; };
 		C539736A2B829B7B00628EC3 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53973692B829B7B00628EC3 /* Tab.swift */; };
@@ -100,8 +107,15 @@
 
 /* Begin PBXFileReference section */
 		C51E72DA2C30239700ED1FCC /* BuyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyView.swift; sourceTree = "<group>"; };
+		C523CB5A2C584B0500CEA641 /* MyOrdersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersViewModel.swift; sourceTree = "<group>"; };
 		C524791D2B95224B00B591FA /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		C524791F2B95240600B591FA /* ContentViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTest.swift; sourceTree = "<group>"; };
+		C5257BE82C5C248100D6F1C1 /* Balance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Balance.json; sourceTree = "<group>"; };
+		C52C74712C59792D00262B87 /* OrderXDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderXDTO.swift; sourceTree = "<group>"; };
+		C52C74752C5985D900262B87 /* Orders.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Orders.json; sourceTree = "<group>"; };
+		C52C74772C59941F00262B87 /* BalanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewModel.swift; sourceTree = "<group>"; };
+		C52C74792C59954C00262B87 /* SaleXDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleXDTO.swift; sourceTree = "<group>"; };
+		C52C747B2C5997E100262B87 /* OneBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneBalanceView.swift; sourceTree = "<group>"; };
 		C53973652B8295A600628EC3 /* ExView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExView.swift; sourceTree = "<group>"; };
 		C53973672B829A7800628EC3 /* YourViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourViewModel.swift; sourceTree = "<group>"; };
 		C53973692B829B7B00628EC3 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
@@ -260,6 +274,8 @@
 		C540B2702B65A2C30050B9C1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C5257BE82C5C248100D6F1C1 /* Balance.json */,
+				C52C74752C5985D900262B87 /* Orders.json */,
 				C5B1705C2BDC911E0068411D /* Basket.json */,
 				C540B27E2B65B0290050B9C1 /* GroupsAndNomenclatures2.json */,
 				C540B2752B65AA220050B9C1 /* GroupsAndNomenclatures.json */,
@@ -279,6 +295,7 @@
 		C54345662B798597001D60DE /* MyOrdersGroup */ = {
 			isa = PBXGroup;
 			children = (
+				C523CB5A2C584B0500CEA641 /* MyOrdersViewModel.swift */,
 				C54345672B7985B6001D60DE /* MyOrderView.swift */,
 				C543456D2B798F5E001D60DE /* MyOrdersView.swift */,
 			);
@@ -309,6 +326,8 @@
 			isa = PBXGroup;
 			children = (
 				C54345702B79937C001D60DE /* BalanceView.swift */,
+				C52C747B2C5997E100262B87 /* OneBalanceView.swift */,
+				C52C74772C59941F00262B87 /* BalanceViewModel.swift */,
 			);
 			path = BalanceGroup;
 			sourceTree = "<group>";
@@ -565,6 +584,8 @@
 				C5B170582BDC883D0068411D /* Basket.swift */,
 				C55D7FB62C4EC7A4001285DC /* DeliveryXDTO.swift */,
 				C55D7FB82C4F074A001285DC /* NovaPoshtaBranchesOfCityXDTO.swift */,
+				C52C74712C59792D00262B87 /* OrderXDTO.swift */,
+				C52C74792C59954C00262B87 /* SaleXDTO.swift */,
 			);
 			path = XDTO;
 			sourceTree = "<group>";
@@ -648,10 +669,12 @@
 			files = (
 				C5B40C0B2B4B3CCD00847EE4 /* Preview Assets.xcassets in Resources */,
 				C540B27F2B65B0290050B9C1 /* GroupsAndNomenclatures2.json in Resources */,
+				C5257BE92C5C248100D6F1C1 /* Balance.json in Resources */,
 				C540B2762B65AA220050B9C1 /* GroupsAndNomenclatures.json in Resources */,
 				C5B40C082B4B3CCD00847EE4 /* Assets.xcassets in Resources */,
 				C58F7D182BA61EFB00307B63 /* product.json in Resources */,
 				C5B1705D2BDC911E0068411D /* Basket.json in Resources */,
+				C52C74762C5985D900262B87 /* Orders.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,10 +705,13 @@
 				C5A55C062C08FA7200DAE949 /* ShopRecycle.swift in Sources */,
 				C5930DF22B9C720F00287F48 /* ColorExtention.swift in Sources */,
 				C59548612BFC9FA1002F2BD6 /* NavigationBarSearchListNomenclatureView.swift in Sources */,
+				C523CB5B2C584B0500CEA641 /* MyOrdersViewModel.swift in Sources */,
+				C52C74782C59941F00262B87 /* BalanceViewModel.swift in Sources */,
 				C540B2722B65A4720050B9C1 /* ModelData.swift in Sources */,
 				C58F7D212BA62E7400307B63 /* TopPartDetailView.swift in Sources */,
 				C5CE9C0F2C32120C00F3305C /* User.swift in Sources */,
 				C55D7FB92C4F074A001285DC /* NovaPoshtaBranchesOfCityXDTO.swift in Sources */,
+				C52C747A2C59954C00262B87 /* SaleXDTO.swift in Sources */,
 				C53973682B829A7800628EC3 /* YourViewModel.swift in Sources */,
 				C5E6BE642C01D5C900C54E5F /* GroupCatalogView.swift in Sources */,
 				C58F7D152BA61E6F00307B63 /* Shop.swift in Sources */,
@@ -701,6 +727,7 @@
 				C5E8D5F22B95A5660032F0BD /* Nomenclature3.swift in Sources */,
 				C5B40C142B4B47EF00847EE4 /* LogoImage.swift in Sources */,
 				C53973662B8295A600628EC3 /* ExView.swift in Sources */,
+				C52C747C2C5997E100262B87 /* OneBalanceView.swift in Sources */,
 				C5B4D8352B669C3C009CE4A1 /* HomePageNomenclature.swift in Sources */,
 				C540B25A2B64F5520050B9C1 /* LogoImageCircle.swift in Sources */,
 				C53F43762B9E50D500A6E0FA /* Characteristics.swift in Sources */,
@@ -722,6 +749,7 @@
 				C5B40C042B4B3CCB00847EE4 /* MegadropApp.swift in Sources */,
 				C5EF5C822BDCF32500623F9D /* BasketManager.swift in Sources */,
 				C5E26EF42C51A3E30056F137 /* ContentViewModel.swift in Sources */,
+				C52C74722C59792D00262B87 /* OrderXDTO.swift in Sources */,
 				C58F7D292BA63BB300307B63 /* CustomShape.swift in Sources */,
 				C5CFBBB82BB76EEA0087B6EA /* NomenclatureFullDataLoader.swift in Sources */,
 				C5B4D8392B66A839009CE4A1 /* HomePageListNomenclature.swift in Sources */,
@@ -893,7 +921,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				NEW_SETTING = "";
-				PRODUCT_BUNDLE_IDENTIFIER = sherlock.Megadrop;
+				PRODUCT_BUNDLE_IDENTIFIER = sherlock.MegaDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -924,7 +952,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				NEW_SETTING = "";
-				PRODUCT_BUNDLE_IDENTIFIER = sherlock.Megadrop;
+				PRODUCT_BUNDLE_IDENTIFIER = sherlock.MegaDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -11,6 +11,9 @@ import Foundation
 class ModelData{
     var groupsWithNomenclatures: [GroupWithNomenclatures] = load("GroupsAndNomenclatures2.json")
     var basketModelData: [Basket] = load("Basket.json")
+    var ordersModelData: [OrdersXDTO] = load("Orders.json")
+    var balanceModelData: [SaleXDTO] = load("Balance.json")
+    
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

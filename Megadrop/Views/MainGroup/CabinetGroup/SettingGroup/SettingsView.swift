@@ -9,51 +9,43 @@ import SwiftUI
 
 struct SettingsView: View {
     @AppStorage("onboarding") var isLogged = true
-    @State private var showFavoritesOnly = false
+    @AppStorage("showAviableOnly") private var showAviableOnly = false
     @ObservedObject var profile = Profile.profileShared
-    //@State private var isExit = false
     
     var body: some View {
-        //if (isExit) {
-            //MainLoginView()
-        //}else{
-            NavigationSplitView{
-                Text("Settings")
-                Spacer()
-                Toggle(isOn: $showFavoritesOnly) {
-                    Text("Только доступные")
-                }
-                NavigationLink{
-                    //MyOrdersView()
-                }label: {
-                    Text("Изменить язык приложения")
-                }
-                Spacer()
-                Button{
-                    profile.username = ""
-                    profile.password = ""
-                    profile.nickname = ""
-                    profile.save()
-                    isLogged = false
-                } label: {
-                    HStack{
-                        Spacer()
-                        Text("Выйти")
-                        Spacer()
-                    }
-                    //.font(.system(.title2, design: .rounded, weight: .bold))
-                }
-                NavigationLink{
-                    AboutView()
-                }label: {
-                    Text("О приложении")
-                }
-                
-            }detail: {
-                Text("!")
+        NavigationSplitView{
+            Text("Налаштування")
+                .font(.system(size: 22, weight: .black))
+
+            Toggle(isOn: $showAviableOnly) {
+                Text("Тільки в наявності")
+                    .font(.system(size: 14))
             }
-            .padding()
-        //}
+            
+            Spacer()
+            Button{
+                profile.username = ""
+                profile.password = ""
+                profile.nickname = ""
+                profile.save()
+                isLogged = false
+            } label: {
+                HStack{
+                    Spacer()
+                    Text("Выйти")
+                    Spacer()
+                }
+            }
+            NavigationLink{
+                
+                //AboutView()
+            }label: {
+                Text("О приложении")
+            }
+        } detail: {
+            Text("!")
+        }
+        .padding()
     }
 }
 

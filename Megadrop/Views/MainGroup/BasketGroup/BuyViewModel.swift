@@ -241,7 +241,7 @@ class BuyViewModel: ObservableObject {
                 return
             }
             
-            guard let data = data else {
+            guard data != nil else {
                 print("No data received.")
                 return
             }

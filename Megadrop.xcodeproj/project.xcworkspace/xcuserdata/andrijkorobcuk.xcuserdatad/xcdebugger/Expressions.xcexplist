@@ -96,13 +96,13 @@
          contextName = "closure #2 in OneBasketView.body.getter:OneBasketView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "basketOrder">
+               value = "descrNomenclature">
             </PersistentString>
             <PersistentString
                value = "nomenclature">
             </PersistentString>
             <PersistentString
-               value = "descrNomenclature">
+               value = "basketOrder">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -170,10 +170,10 @@
          contextName = "closure #2 in closure #1 in closure #1 in closure #1 in closure #1 in HomePageView.body.getter:HomePageView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "loader.dataList.count">
+               value = "GroupManager.shared.groupWithNomenclatures.count">
             </PersistentString>
             <PersistentString
-               value = "GroupManager.shared.groupWithNomenclatures.count">
+               value = "loader.dataList.count">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -211,6 +211,14 @@
       </ContextState>
       <ContextState
          contextName = "closure #1 in GroupManager.loadNomenclatures():GroupManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in BalanceView.body.getter:BalanceView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "balanceViewModel.isLoadingBalanceSum">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

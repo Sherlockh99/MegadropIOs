@@ -1,0 +1,30 @@
+[
+    {
+        "Link": "Заказ покупателя 00000000012 от 20.08.2023 23:52:00",
+        "DateTime": "20.08.2023 23:52:00",
+        "Date": "20.08.2023",
+        "Time": "23:52:00",
+        "Contractor": "Holmes Sherlock SH",
+        "AmountDocument": 1975,
+        "AmountNovaPoshta": 0,
+        "Duty": 1975,
+        "AmountContractor": 0,
+        "Field3": "",
+        "AmountDebt": 1975,
+        "TypeOfPayment": 1
+    },
+    {
+        "Link": "Заказ покупателя 00000000018 от 23.10.2023 3:18:45",
+        "DateTime": "23.10.2023 3:18:45",
+        "Date": "23.10.2023",
+        "Time": "3:18:45",
+        "Contractor": "Holmes Sherlock SH",
+        "AmountDocument": 1485,
+        "AmountNovaPoshta": 0,
+        "Duty": 1485,
+        "AmountContractor": 0,
+        "Field3": "оплачено с баланса",
+        "AmountDebt": 1485,
+        "TypeOfPayment": 3
+    }
+]

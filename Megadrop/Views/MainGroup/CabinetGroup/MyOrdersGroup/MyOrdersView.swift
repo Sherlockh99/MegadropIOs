@@ -8,8 +8,41 @@
 import SwiftUI
 
 struct MyOrdersView: View {
+    @ObservedObject private var viewModelMyOrdersManager = MyOrdersViewModel.sharedMyOrdersManager
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            VStack{
+                Text("Мої замовлення")
+                Spacer()
+                if !viewModelMyOrdersManager.isLoadingMyOrdersManager{
+                    ScrollView(.vertical, showsIndicators: false){
+                        ForEach(orders,id: \.self){
+                            key in
+                                MyOrderView(myOrder: key)
+                            /*
+                            OneBasketView(basketOrder: key)
+                                .onTapGesture {
+                                    feedback.impactOccurred()
+                                    
+                                    withAnimation(.easeOut) {
+                                        let nom = GroupManager.shared.getNomenclature(groupID: key.IDGroup, nomenclatureID: key.IDNomenclature)
+                                        
+                                        shopRecycle.isNomenclatureRecycle = false
+                                        shopRecycle.selectedNomenclatureRecycle = nom
+                                        shopRecycle.idGroupCatalog = key.IDGroup
+                                        
+                                    }
+                                }
+                            */
+                        } //END: ForEach
+                    } //END: ScrollView
+                }
+            }
+        }
+        .onAppear{
+            viewModelMyOrdersManager.loadMyOrders()
+        }
     }
 }
 

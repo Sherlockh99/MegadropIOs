@@ -47,7 +47,7 @@ struct BasketView: View {
                                             }
                                         }
                                 }
-                            }
+                            } //END: IF
                         } //END: SCROLL_VIEW
                         
                         Button {

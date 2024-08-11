@@ -26,10 +26,10 @@ class GroupManager: ObservableObject{
         var request = URLRequest(url: url)
         
         // Учетные данные пользователя
-        //let login = Profile.profileShared.username
-        //let password = Profile.profileShared.password
-        let login = "z0002"
-        let password = "1"
+        let login = Profile.profileShared.username
+        let password = Profile.profileShared.password
+        //let login = "z0002"
+        //let password = "1"
 
         // Кодируем учетные данные в формате Base64
         let loginString = "\(login):\(password)"
@@ -107,8 +107,12 @@ class GroupManager: ObservableObject{
     func loadGroupWithNomenclatures() {
         self.isLoading = true
         
+        @AppStorage("showAviableOnly") var showAviableOnly = false
+        var DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getGroupsAndNomenclatures"
+        if showAviableOnly{
+            DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getGroupsAndNomenclatures"
+        }
         
-        let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getGroupsAndNomenclatures"
         if let request = getRequest(DROP_SHIPPING_DOMAIN: DROP_SHIPPING_DOMAIN){
 
             URLSession.shared.dataTask(with: request) { data, response, error in

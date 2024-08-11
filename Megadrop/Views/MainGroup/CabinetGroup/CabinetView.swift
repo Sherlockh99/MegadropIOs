@@ -14,7 +14,6 @@ struct CabinetView: View {
 
     enum TabCabinet {
         case main
-        case myOrders
         case catalog
         case basket
         case cabinet
@@ -31,7 +30,7 @@ struct CabinetView: View {
                 NavigationLink{
                     MyOrdersView()
                 }label: {
-                    Text("Мои заказы")
+                    Text("Мої замовлення")
                 }
                 NavigationLink{
                     BalanceView()

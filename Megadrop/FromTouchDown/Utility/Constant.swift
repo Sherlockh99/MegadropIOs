@@ -42,7 +42,9 @@ let feedback = UIImpactFeedbackGenerator(style: .medium)
 var groupWithNomenclatures: [GroupWithNomenclatures] = []
 //var nomenclatures: [Nomenclature2] = []
 var basket: [Basket] = []
-
+var orders: [OrdersXDTO] = []
+var balances_: [SaleXDTO] = []
+var balanceSum: [SaleXDTO] = []
 // API
 // IMAGE
 // FONT
