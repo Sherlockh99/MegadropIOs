@@ -19,8 +19,8 @@ class BalanceViewModel: ObservableObject{
     
     func loadBalance() {
         self.isLoadingBalance = true
-        
-        let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs"+"/SHAPI/SH"+"/Balance"
+        let DROP_SHIPPING_DOMAIN = Constants.DROP_SHIPPING_DOMAIN + "/SHAPI/SH"+"/Balance"
+        //let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs"+"/SHAPI/SH"+"/Balance"
         if let request = GroupManager.shared.getRequest(DROP_SHIPPING_DOMAIN: DROP_SHIPPING_DOMAIN){
             URLSession.shared.dataTask(with: request) { data, response, error in
                 guard let data = data, error == nil else {
@@ -46,8 +46,8 @@ class BalanceViewModel: ObservableObject{
     
     func loadBalanceSum() {
         self.isLoadingBalanceSum = true
-        
-        let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs"+"/SHAPI/SH"+"/BalanceSum"
+        let DROP_SHIPPING_DOMAIN = Constants.DROP_SHIPPING_DOMAIN + "/SHAPI/SH" + "/BalanceSum"
+        //let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs"+"/SHAPI/SH"+"/BalanceSum"
         if let request = GroupManager.shared.getRequest(DROP_SHIPPING_DOMAIN: DROP_SHIPPING_DOMAIN){
             URLSession.shared.dataTask(with: request) { data, response, error in
                 guard let data = data, error == nil else {

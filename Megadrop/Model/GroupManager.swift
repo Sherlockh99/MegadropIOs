@@ -45,7 +45,8 @@ class GroupManager: ObservableObject{
     func loadGroups(){
         self.isLoading = true
 
-        let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getGroups"
+        let DROP_SHIPPING_DOMAIN = Constants.DROP_SHIPPING_DOMAIN + "/nomenclature/getGroups"
+        //let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getGroups"
         if let request = getRequest(DROP_SHIPPING_DOMAIN: DROP_SHIPPING_DOMAIN){
             URLSession.shared.dataTask(with: request) { data, response, error in
                 guard let data = data, error == nil else {
@@ -75,7 +76,8 @@ class GroupManager: ObservableObject{
         
         groupWithNomenclatures.forEach { key in
             aGroup.enter() // Отметить начало задачи
-            let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getNomenclaturesGroup/" + key.IDGroup
+            let DROP_SHIPPING_DOMAIN = Constants.DROP_SHIPPING_DOMAIN + "/nomenclature/getNomenclaturesGroup/" + key.IDGroup
+            //let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getNomenclaturesGroup/" + key.IDGroup
             if let request = getRequest(DROP_SHIPPING_DOMAIN: DROP_SHIPPING_DOMAIN){
                 URLSession.shared.dataTask(with: request) { data, response, error in
                      guard let data = data, error == nil else {
@@ -108,9 +110,11 @@ class GroupManager: ObservableObject{
         self.isLoading = true
         
         @AppStorage("showAviableOnly") var showAviableOnly = false
-        var DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getGroupsAndNomenclatures"
+        var DROP_SHIPPING_DOMAIN = Constants.DROP_SHIPPING_DOMAIN + "/nomenclature/getGroupsAndNomenclatures"
+        //var DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getGroupsAndNomenclatures"
+        //var DROP_SHIPPING_DOMAIN = "http://192.168.0.243:43439/itpeople/hs/nomenclature/getGroupsAndNomenclatures"
         if showAviableOnly{
-            DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getGroupsAndNomenclatures"
+            //DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getGroupsAndNomenclatures"
         }
         
         if let request = getRequest(DROP_SHIPPING_DOMAIN: DROP_SHIPPING_DOMAIN){

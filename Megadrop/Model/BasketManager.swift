@@ -17,8 +17,8 @@ class BasketManager: ObservableObject{
     
     func loadBasket() {
         self.isLoadingBasketManager = true
-        
-        let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/basket/getBasketWithoutPicturesM"
+        let DROP_SHIPPING_DOMAIN = Constants.DROP_SHIPPING_DOMAIN + "/basket/getBasketWithoutPicturesM"
+        //let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/basket/getBasketWithoutPicturesM"
         if let request = GroupManager.shared.getRequest(DROP_SHIPPING_DOMAIN: DROP_SHIPPING_DOMAIN){
             URLSession.shared.dataTask(with: request) { data, response, error in
                 guard let data = data, error == nil else {

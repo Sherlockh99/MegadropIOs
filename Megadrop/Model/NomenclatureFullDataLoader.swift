@@ -17,7 +17,8 @@ class NomenclatureFullDataLoader: ObservableObject{
     
     func loadFullNomenclatureData(groupID: String, idNomenclature: String) {
         let hService = "/nomenclature/getfulldatanomenclature/" + idNomenclature
-        let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs" + hService
+        let DROP_SHIPPING_DOMAIN = Constants.DROP_SHIPPING_DOMAIN + hService
+        //let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs" + hService
         
         guard let url = URL(string: DROP_SHIPPING_DOMAIN) else { return }
         
