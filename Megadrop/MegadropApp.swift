@@ -21,6 +21,7 @@ struct ContentView: View {
     @AppStorage("onboarding") var isLogged = false
     @StateObject private var viewModel = ContentViewModel()
     @ObservedObject var profile = Profile.profileShared
+    @AppStorage("showAviableOnly") private var showAviableOnly = false
     
     var body: some View {
             Group {
@@ -32,6 +33,7 @@ struct ContentView: View {
                                     isLogged = false
                                 }
                             }
+                            isAviableOnly = showAviableOnly
                         }
                         .environmentObject(Shop())
                         .environmentObject(ShopRecycle())

@@ -364,6 +364,7 @@
 				C5EF5C812BDCF32500623F9D /* BasketManager.swift */,
 				C5E26EF32C51A3E30056F137 /* ContentViewModel.swift */,
 				C5E26EF52C51A6960056F137 /* Constants.swift */,
+				C58F7D1C2BA61FC100307B63 /* Constant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -428,7 +429,6 @@
 			isa = PBXGroup;
 			children = (
 				C58F7D142BA61E6F00307B63 /* Shop.swift */,
-				C58F7D1C2BA61FC100307B63 /* Constant.swift */,
 				C58F7D282BA63BB300307B63 /* CustomShape.swift */,
 				C5A55C052C08FA7200DAE949 /* ShopRecycle.swift */,
 			);

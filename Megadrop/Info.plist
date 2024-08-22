@@ -6,12 +6,12 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>77.52.194.194</key>
+			<key>31.172.137.244</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
 				<true/>
 			</dict>
-			<key>31.172.137.244</key>
+			<key>77.52.194.194</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>
 				<true/>

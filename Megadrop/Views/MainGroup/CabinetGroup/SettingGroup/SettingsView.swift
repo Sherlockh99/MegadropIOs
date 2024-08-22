@@ -21,6 +21,13 @@ struct SettingsView: View {
                 Text("Тільки в наявності")
                     .font(.system(size: 14))
             }
+            .onReceive([self.showAviableOnly].publisher.first()) { newValue in
+                if newValue != isAviableOnly {
+                    isAviableOnly = newValue
+                    groupWithNomenclatures = []
+                    GroupManager.shared.loadGroupWithNomenclatures()
+                }
+            }
             
             Spacer()
             Button{

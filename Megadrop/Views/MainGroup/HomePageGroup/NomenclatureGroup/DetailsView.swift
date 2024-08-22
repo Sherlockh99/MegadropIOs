@@ -30,15 +30,18 @@ struct DetailsView: View {
 
                 Spacer()
 
-                if let characteristics = nom3.Characteristics{
-                    ForEach(characteristics,id: \.self){key in
-                        QuantityFavouriteDetailView(
-                            IDGroup: IDGroup,
-                            IDNomenclature: nom3.IDNomenclature,
-                            characteristic: key)
-                            //IDCharacteristic: key.IDCharacteristic)
+                if nom3.Available {
+                    if let characteristics = nom3.Characteristics{
+                        ForEach(characteristics,id: \.self){key in
+                            QuantityFavouriteDetailView(
+                                IDGroup: IDGroup,
+                                IDNomenclature: nom3.IDNomenclature,
+                                characteristic: key)
+                                //IDCharacteristic: key.IDCharacteristic)
+                        }
                     }
                 }
+
                 
             })//: SCROLL
         })//: VSTACK

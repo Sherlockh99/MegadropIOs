@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import SwiftUI
+
 final class NetworkService{
     static let shared = NetworkService()
     
@@ -13,8 +15,13 @@ final class NetworkService{
     
     func downloadDataGroupWithNomenclature() async -> [GroupWithNomenclatures]?{
         var groupsWithNomenclatures: [GroupWithNomenclatures] = []
+        @AppStorage("showAviableOnly") var showAviableOnly = false
         
-         getData(hService: "nomenclature/getGroupsAndNomenclatures"){
+        var hServiceS = "nomenclature/getGroupsAndNomenclatures"
+        if showAviableOnly {
+            hServiceS = "/nomenclature/getgroupsandnomenclatureavailable"
+        }
+        getData(hService: hServiceS){
             modified in
             do{
                 let decoder = JSONDecoder()

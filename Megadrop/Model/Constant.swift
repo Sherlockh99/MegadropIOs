@@ -45,6 +45,7 @@ var basket: [Basket] = []
 var orders: [OrdersXDTO] = []
 var balances_: [SaleXDTO] = []
 var balanceSum: [SaleXDTO] = []
+var isAviableOnly: Bool = false
 // API
 // IMAGE
 // FONT

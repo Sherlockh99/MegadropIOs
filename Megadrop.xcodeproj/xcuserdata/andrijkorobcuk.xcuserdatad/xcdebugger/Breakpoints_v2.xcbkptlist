@@ -14,8 +14,8 @@
             filePath = "Megadrop/MegadropApp.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -377,8 +377,8 @@
             filePath = "Megadrop/MegadropApp.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -466,17 +466,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F3D13EA9-FB1A-4085-AFF3-153B2A8B560D"
-            shouldBeEnabled = "No"
+            uuid = "8F37EF86-48FC-4C02-A29A-62638771348F"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Megadrop/Views/MainGroup/CabinetGroup/SettingGroup/SettingsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "8F37EF86-48FC-4C02-A29A-62638771348F - b0604fd2238cb94e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.onReceive&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.Publisher, &#x3c4;_1_0.Failure == Swift.Never&gt;(_: &#x3c4;_1_0, perform: (&#x3c4;_1_0.Output) -&gt; ()) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, SwiftUI.Button&lt;SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Spacer, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, SwiftUI.EmptyView&gt;)&gt; in Megadrop.SettingsView.body.getter : some"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/SettingGroup/SettingsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "8F37EF86-48FC-4C02-A29A-62638771348F - b0604fd2238ca68c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.onReceive&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Combine.Publisher, &#x3c4;_1_0.Failure == Swift.Never&gt;(_: &#x3c4;_1_0, perform: (&#x3c4;_1_0.Output) -&gt; ()) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, SwiftUI.Button&lt;SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Spacer, SwiftUI.Text, SwiftUI.Spacer)&gt;&gt;&gt;, SwiftUI.NavigationLink&lt;SwiftUI.Text, SwiftUI.EmptyView&gt;)&gt; in Megadrop.SettingsView.body.getter : some"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/SettingGroup/SettingsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
