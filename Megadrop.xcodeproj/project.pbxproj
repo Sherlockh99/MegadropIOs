@@ -103,6 +103,9 @@
 		C5E6BE682C038AED00C54E5F /* SearchCatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E6BE672C038AED00C54E5F /* SearchCatalogView.swift */; };
 		C5E8D5F22B95A5660032F0BD /* Nomenclature3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E8D5F12B95A5660032F0BD /* Nomenclature3.swift */; };
 		C5EF5C822BDCF32500623F9D /* BasketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EF5C812BDCF32500623F9D /* BasketManager.swift */; };
+		C5FC725A2C77DC67001EF6B5 /* SaveJSONFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FC72592C77DC67001EF6B5 /* SaveJSONFileView.swift */; };
+		C5FC725C2C77DF2E001EF6B5 /* OrdersFileXDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FC725B2C77DF2E001EF6B5 /* OrdersFileXDTO.swift */; };
+		C5FC725E2C77E0CF001EF6B5 /* SaveJSONFileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FC725D2C77E0CF001EF6B5 /* SaveJSONFileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,6 +207,9 @@
 		C5E6BE672C038AED00C54E5F /* SearchCatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCatalogView.swift; sourceTree = "<group>"; };
 		C5E8D5F12B95A5660032F0BD /* Nomenclature3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nomenclature3.swift; sourceTree = "<group>"; };
 		C5EF5C812BDCF32500623F9D /* BasketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketManager.swift; sourceTree = "<group>"; };
+		C5FC72592C77DC67001EF6B5 /* SaveJSONFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveJSONFileView.swift; sourceTree = "<group>"; };
+		C5FC725B2C77DF2E001EF6B5 /* OrdersFileXDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersFileXDTO.swift; sourceTree = "<group>"; };
+		C5FC725D2C77E0CF001EF6B5 /* SaveJSONFileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveJSONFileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -517,6 +523,8 @@
 				C543456F2B799364001D60DE /* BalanceGroup */,
 				C54345722B7993F3001D60DE /* SettingGroup */,
 				C54345752B79957E001D60DE /* AboutApplication */,
+				C5FC72592C77DC67001EF6B5 /* SaveJSONFileView.swift */,
+				C5FC725D2C77E0CF001EF6B5 /* SaveJSONFileViewModel.swift */,
 			);
 			path = CabinetGroup;
 			sourceTree = "<group>";
@@ -586,6 +594,7 @@
 				C55D7FB82C4F074A001285DC /* NovaPoshtaBranchesOfCityXDTO.swift */,
 				C52C74712C59792D00262B87 /* OrderXDTO.swift */,
 				C52C74792C59954C00262B87 /* SaleXDTO.swift */,
+				C5FC725B2C77DF2E001EF6B5 /* OrdersFileXDTO.swift */,
 			);
 			path = XDTO;
 			sourceTree = "<group>";
@@ -688,6 +697,7 @@
 				C540B2742B65A5B10050B9C1 /* GroupWithNomenclatures.swift in Sources */,
 				C5C4B09A2BF5E50F00FF0C98 /* DetailsView.swift in Sources */,
 				C540B2692B6594370050B9C1 /* BasketView.swift in Sources */,
+				C5FC725C2C77DF2E001EF6B5 /* OrdersFileXDTO.swift in Sources */,
 				C5966FB22B7777B100A0A693 /* NetworkService.swift in Sources */,
 				C58F7D272BA63ADF00307B63 /* AddToCartDetailView.swift in Sources */,
 				C58F7D232BA637B700307B63 /* RatingsSizesDetailView.swift in Sources */,
@@ -710,6 +720,7 @@
 				C540B2722B65A4720050B9C1 /* ModelData.swift in Sources */,
 				C58F7D212BA62E7400307B63 /* TopPartDetailView.swift in Sources */,
 				C5CE9C0F2C32120C00F3305C /* User.swift in Sources */,
+				C5FC725E2C77E0CF001EF6B5 /* SaveJSONFileViewModel.swift in Sources */,
 				C55D7FB92C4F074A001285DC /* NovaPoshtaBranchesOfCityXDTO.swift in Sources */,
 				C52C747A2C59954C00262B87 /* SaleXDTO.swift in Sources */,
 				C53973682B829A7800628EC3 /* YourViewModel.swift in Sources */,
@@ -731,6 +742,7 @@
 				C5B4D8352B669C3C009CE4A1 /* HomePageNomenclature.swift in Sources */,
 				C540B25A2B64F5520050B9C1 /* LogoImageCircle.swift in Sources */,
 				C53F43762B9E50D500A6E0FA /* Characteristics.swift in Sources */,
+				C5FC725A2C77DC67001EF6B5 /* SaveJSONFileView.swift in Sources */,
 				C58F7D1F2BA62BFE00307B63 /* HeaderDetailView.swift in Sources */,
 				C540B2672B6593D60050B9C1 /* CatalogView.swift in Sources */,
 				C5B170552BDC7A500068411D /* OneBasketView.swift in Sources */,

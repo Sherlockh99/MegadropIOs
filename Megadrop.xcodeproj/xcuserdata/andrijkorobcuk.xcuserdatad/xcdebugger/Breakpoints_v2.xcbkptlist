@@ -511,5 +511,385 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F61021D-BE0E-489F-BE6A-C2A327A59D59"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Megadrop/Views/MainGroup/CabinetGroup/SaveJSONFileView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "saveAndShareFileFromJSON2()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8F61021D-BE0E-489F-BE6A-C2A327A59D59 - cdbd6a2200c3d462"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Megadrop.SaveJSONFileView.saveAndShareFileFromJSON2() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/SaveJSONFileView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "8F61021D-BE0E-489F-BE6A-C2A327A59D59 - cdbd6a2200c3d462"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Megadrop.SaveJSONFileView.saveAndShareFileFromJSON2() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/SaveJSONFileView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "324">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC76CD7B-DBD7-4ABC-9843-5D9205B6DE2C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Megadrop/Views/MainGroup/CabinetGroup/SaveJSONFileViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "loadFileJSON()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CC76CD7B-DBD7-4ABC-9843-5D9205B6DE2C - 53ebfb47deceb78a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Megadrop.SaveJSONFileViewModel.loadFileJSON() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/SaveJSONFileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "CC76CD7B-DBD7-4ABC-9843-5D9205B6DE2C - 53ebfb47deceb7ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Megadrop.SaveJSONFileViewModel.loadFileJSON() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/SaveJSONFileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "CC76CD7B-DBD7-4ABC-9843-5D9205B6DE2C - 53ebfb47deceb7e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Megadrop.SaveJSONFileViewModel.loadFileJSON() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/SaveJSONFileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2319D26E-3B01-4CAC-8D0C-6DCABBDA6769"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Megadrop/Views/MainGroup/CabinetGroup/SaveJSONFileViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "loadFileJSON()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2319D26E-3B01-4CAC-8D0C-6DCABBDA6769 - 5d2bb55b8b54249f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Megadrop.SaveJSONFileViewModel.loadFileJSON() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/SaveJSONFileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "560">
+               </Location>
+               <Location
+                  uuid = "2319D26E-3B01-4CAC-8D0C-6DCABBDA6769 - 53ebfb47deceb78a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Megadrop.SaveJSONFileViewModel.loadFileJSON() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/SaveJSONFileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "2319D26E-3B01-4CAC-8D0C-6DCABBDA6769 - 53ebfb47deceb7ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Megadrop.SaveJSONFileViewModel.loadFileJSON() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/SaveJSONFileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "2319D26E-3B01-4CAC-8D0C-6DCABBDA6769 - 5d2bb55b8b54249f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Megadrop.SaveJSONFileViewModel.loadFileJSON() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/SaveJSONFileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "592">
+               </Location>
+               <Location
+                  uuid = "2319D26E-3B01-4CAC-8D0C-6DCABBDA6769 - 53ebfb47deceb7e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Megadrop.SaveJSONFileViewModel.loadFileJSON() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/SaveJSONFileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A0C9551-A30D-4E69-B2B7-ADC52E229505"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Megadrop/Views/MainGroup/CabinetGroup/CabinetView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "fetchFileFromServer()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1A0C9551-A30D-4E69-B2B7-ADC52E229505 - f297458d2457f572"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Megadrop.CabinetView.fetchFileFromServer() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/CabinetView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "1528">
+               </Location>
+               <Location
+                  uuid = "1A0C9551-A30D-4E69-B2B7-ADC52E229505 - f4d395835e38ecf1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Megadrop.CabinetView.fetchFileFromServer() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/CabinetView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "400">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B03FFD4-D2DC-4CFD-88CB-F8B13F93D6B3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Megadrop/Views/MainGroup/CabinetGroup/CabinetView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "fetchFileFromServer()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "169B6875-4C54-4036-BFE4-4E22811EB948"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Megadrop/Views/MainGroup/CabinetGroup/CabinetView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "fetchFileFromServer()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "169B6875-4C54-4036-BFE4-4E22811EB948 - f4d395835e38ee9f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Megadrop.CabinetView.fetchFileFromServer() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/CabinetView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "1756">
+               </Location>
+               <Location
+                  uuid = "169B6875-4C54-4036-BFE4-4E22811EB948 - f4d395835e38ee9f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Megadrop.CabinetView.fetchFileFromServer() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/CabinetView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "1236">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E756BE90-3FA4-4F5E-9AAD-723AE34FB8CC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Megadrop/Views/MainGroup/CabinetGroup/CabinetView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "fetchFileFromServer()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E756BE90-3FA4-4F5E-9AAD-723AE34FB8CC - f4d395835e38ecf1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Megadrop.CabinetView.fetchFileFromServer() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/CabinetView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "123"
+                  endingLineNumber = "123"
+                  offsetFromSymbolStart = "400">
+               </Location>
+               <Location
+                  uuid = "E756BE90-3FA4-4F5E-9AAD-723AE34FB8CC - f297458d2457f515"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Megadrop.CabinetView.fetchFileFromServer() -&gt; ()"
+                  moduleName = "Megadrop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrijkorobcuk/Desktop/Ptojects/Megadrop/Megadrop/Views/MainGroup/CabinetGroup/CabinetView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "1216">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "018098B6-9191-4C0F-A379-5745AB01D361"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Megadrop/Views/MainGroup/CabinetGroup/CabinetView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "fetchFileFromServer()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
