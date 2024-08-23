@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct OrdersFileXDTO: Codable, Hashable{
+struct FileDataXDTO: Codable, Hashable{
     let FileName: String
     let FileData: String
 }
