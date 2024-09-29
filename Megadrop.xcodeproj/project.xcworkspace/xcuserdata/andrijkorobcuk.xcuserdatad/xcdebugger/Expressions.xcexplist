@@ -107,10 +107,10 @@
          contextName = "closure #2 in OneBasketView.body.getter:OneBasketView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "nomenclature">
+               value = "descrNomenclature">
             </PersistentString>
             <PersistentString
-               value = "descrNomenclature">
+               value = "nomenclature">
             </PersistentString>
             <PersistentString
                value = "basketOrder">
@@ -175,6 +175,9 @@
             <PersistentString
                value = "!shopRecycle.isNomenclatureRecycle">
             </PersistentString>
+            <PersistentString
+               value = "shopSettings">
+            </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
@@ -182,6 +185,9 @@
          <PersistentStrings>
             <PersistentString
                value = "login">
+            </PersistentString>
+            <PersistentString
+               value = "fileDataBase64">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

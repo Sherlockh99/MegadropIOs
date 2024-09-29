@@ -24,25 +24,25 @@ struct ContentView: View {
     @AppStorage("showAviableOnly") private var showAviableOnly = false
     
     var body: some View {
-            Group {
-                if isLogged {
-                    MainView()
-                        .onAppear {
-                            viewModel.checkAuthorization(login: profile.username, password: profile.password){isAuthorized in
-                                if !isAuthorized {
-                                    isLogged = false
-                                }
+        Group {
+            if isLogged {
+                MainView()
+                    .onAppear {
+                        viewModel.checkAuthorization(login: profile.username, password: profile.password){isAuthorized in
+                            if !isAuthorized {
+                                isLogged = false
                             }
-                            isAviableOnly = showAviableOnly
                         }
-                        .environmentObject(Shop())
-                        .environmentObject(ShopRecycle())
-                } else {
-                    MainLoginView()
-                }
+                        isAviableOnly = showAviableOnly
+                    }
+                    .environmentObject(Shop())
+                    .environmentObject(ShopRecycle())
+                    .environmentObject(ShopSettings())
+            } else {
+                MainLoginView()
             }
         }
-    
+    }
 }
 
 struct ContentViewModel_: View{

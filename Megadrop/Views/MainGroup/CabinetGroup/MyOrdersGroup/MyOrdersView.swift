@@ -9,10 +9,12 @@ import SwiftUI
 
 struct MyOrdersView: View {
     @ObservedObject private var viewModelMyOrdersManager = MyOrdersViewModel.sharedMyOrdersManager
+    @EnvironmentObject var shopSettings: ShopSettings
     
     var body: some View {
         ZStack{
             VStack{
+                NavigationBarDetailView()
                 Text("Мої замовлення")
                 Spacer()
                 if !viewModelMyOrdersManager.isLoadingMyOrdersManager{
@@ -20,21 +22,6 @@ struct MyOrdersView: View {
                         ForEach(orders,id: \.self){
                             key in
                                 MyOrderView(myOrder: key)
-                            /*
-                            OneBasketView(basketOrder: key)
-                                .onTapGesture {
-                                    feedback.impactOccurred()
-                                    
-                                    withAnimation(.easeOut) {
-                                        let nom = GroupManager.shared.getNomenclature(groupID: key.IDGroup, nomenclatureID: key.IDNomenclature)
-                                        
-                                        shopRecycle.isNomenclatureRecycle = false
-                                        shopRecycle.selectedNomenclatureRecycle = nom
-                                        shopRecycle.idGroupCatalog = key.IDGroup
-                                        
-                                    }
-                                }
-                            */
                         } //END: ForEach
                     } //END: ScrollView
                 }
@@ -48,4 +35,5 @@ struct MyOrdersView: View {
 
 #Preview {
     MyOrdersView()
+        .environmentObject(ShopSettings())
 }

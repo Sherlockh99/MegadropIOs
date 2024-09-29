@@ -13,6 +13,8 @@ struct NavigationBarDetailView: View {
     
     @EnvironmentObject var shop: Shop
     @EnvironmentObject var shopRecycle: ShopRecycle
+    @EnvironmentObject var shopSettings: ShopSettings
+
     
     @State private var isAnimated: Bool = false
     // MARK: - BODY
@@ -30,6 +32,18 @@ struct NavigationBarDetailView: View {
                     }else if shopRecycle.isBuy {
                         shopRecycle.isNomenclatureRecycle = true
                         shopRecycle.isBuy = false
+                    } else if shopSettings.isMyOrders {
+                        shopSettings.isMyOrders = false
+                        shopSettings.isMain = true
+                    } else if shopSettings.isBalance {
+                        shopSettings.isBalance = false
+                        shopSettings.isMain = true
+                    } else if shopSettings.isAbout {
+                        shopSettings.isAbout = false
+                        shopSettings.isSettings = true
+                    } else if shopSettings.isSettings {
+                        shopSettings.isSettings = false
+                        shopSettings.isMain = true
                     } else {
                         shop.selectedProduct = nil
                         shop.showingProduct = false
@@ -40,7 +54,7 @@ struct NavigationBarDetailView: View {
             }, label: {
                 Image(systemName: "chevron.left")
                     .font(.title)
-                    .foregroundColor(.white)
+                    //.foregroundColor(.white)
             })
             
             Spacer()
@@ -55,12 +69,13 @@ struct NavigationBarDetailView: View {
               })
             
             Spacer()
-            
+            /*
             Button(action:{},label: {
                 Image(systemName: "cart")
                     .font(.title)
                     .foregroundColor(.white)
             })
+             */
         } //: HSTACK
     }
 }
@@ -70,5 +85,5 @@ struct NavigationBarDetailView: View {
         .environmentObject(Shop())
         .previewLayout(.sizeThatFits)
         .padding()
-        .background(Color.gray)
+        //.background(Color.gray)
 }

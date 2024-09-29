@@ -26,7 +26,7 @@ struct LoginView: View {
                         Text("ЛОГИН")
                         Spacer()
                     }
-                    .font(.system(.title2, design: .rounded, weight: .bold))
+                    //.font(.system(.title2, design: .rounded, weight: .bold))
                 }
                 Spacer()
             }

@@ -21,7 +21,6 @@ class DataLoader: ObservableObject {
         if showAviableOnly {
             DROP_SHIPPING_DOMAIN = Constants.DROP_SHIPPING_DOMAIN + "/nomenclature/getgroupsandnomenclatureavailable"
         }
-        //let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs/nomenclature/getGroupsAndNomenclatures"
         
         guard let url = URL(string: DROP_SHIPPING_DOMAIN) else { return }
        

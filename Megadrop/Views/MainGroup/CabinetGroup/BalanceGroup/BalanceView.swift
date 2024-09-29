@@ -12,6 +12,7 @@ struct BalanceView: View {
     
     var body: some View {
         VStack{
+            NavigationBarDetailView()
             Text(Profile.profileShared.nickname)
             if !balanceViewModel.isLoadingBalanceSum{
                 Text(String(balanceSum[0].AmountDocument))

@@ -7,8 +7,9 @@
 
 import Foundation
 struct Constants {
-    //static let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs"
-    static let DROP_SHIPPING_DOMAIN = "http://192.168.0.243:43439/itpeople/hs"
+    //static let DROP_SHIPPING_DOMAIN = "http://192.168.0.243:43439/itpeople/hs"
     //static let DROP_SHIPPING_DOMAIN = "http://31.172.137.244:43439/itpeople/hs"
+    static let DROP_SHIPPING_DOMAIN = "https://droptyt.com/drops/hs"
+
     static let MEGA_DROP_LOGIN = "/SHLogin/Login"
 }

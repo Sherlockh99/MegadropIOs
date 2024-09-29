@@ -40,6 +40,7 @@ struct MainLoginView: View {
                     Text("Login")
                         .font(.title2)
                         .fontWeight(.heavy)
+                    /*
                         .foregroundStyle(
                             LinearGradient(
                                 colors: [
@@ -50,6 +51,7 @@ struct MainLoginView: View {
                                 endPoint: .bottom
                             )
                         )
+                     */
                         .shadow(color: .black.opacity(0.25), radius: 0.25, x: 1, y: 2)
                 }
                 .buttonStyle(GradientButton())

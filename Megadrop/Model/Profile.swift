@@ -8,9 +8,6 @@
 import Foundation
 
 class Profile: ObservableObject{
-    //@Published var username: String
-    //@Published var password: String
-    //@Published var nickname: String
     var username: String
     var password: String
     var nickname: String

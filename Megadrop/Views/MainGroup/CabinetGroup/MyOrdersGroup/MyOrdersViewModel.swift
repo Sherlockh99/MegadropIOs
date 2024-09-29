@@ -14,7 +14,6 @@ class MyOrdersViewModel: ObservableObject{
     func loadMyOrders() {
         self.isLoadingMyOrdersManager = true
         let DROP_SHIPPING_DOMAIN = Constants.DROP_SHIPPING_DOMAIN + "/orders"+"/getallorders"
-        //let DROP_SHIPPING_DOMAIN = "http://77.52.194.194/itpeople/hs"+"/orders"+"/getallorders"
         if let request = GroupManager.shared.getRequest(DROP_SHIPPING_DOMAIN: DROP_SHIPPING_DOMAIN){
             URLSession.shared.dataTask(with: request) { data, response, error in
                 guard let data = data, error == nil else {
