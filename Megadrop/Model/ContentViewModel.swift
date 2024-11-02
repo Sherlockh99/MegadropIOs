@@ -39,8 +39,12 @@ class ContentViewModel: ObservableObject{
             // Обработка строки ответа от сервера
             if !responseString.isEmpty {
                 print(responseString)
-                Profile.profileShared.nickname = responseString
-                completion(true)
+                if responseString.contains("<!DOCTYPE html") {
+                    completion(false)
+                }else{
+                    Profile.profileShared.nickname = responseString
+                    completion(true)
+                }
             } else {
                 completion(false)
             }

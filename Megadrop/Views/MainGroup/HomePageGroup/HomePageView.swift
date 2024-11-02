@@ -17,8 +17,8 @@ struct HomePageView: View {
     var body: some View {
         ZStack{
             if shop.showingNomenclature == false && shop.selectedNomenclature == nil {
-                //VStack(spacing: 0) {
-                VStack{
+                VStack(spacing: 0) {
+                //LazyVStack{
                     NavigationBarHomeView()
                         .padding(.horizontal, 15)
                         .padding(.bottom)

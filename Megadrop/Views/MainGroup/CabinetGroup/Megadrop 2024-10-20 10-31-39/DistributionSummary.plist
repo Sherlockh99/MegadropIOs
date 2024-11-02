@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Megadrop.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1.2</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>C9AB5DCB0792BDF136ED51FB77D4A516D5EBAF9E</string>
+				<key>dateExpires</key>
+				<string>24.09.2025</string>
+				<key>type</key>
+				<string>Cloud Managed Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>BV44N68X47.com.sh.it.megadrop</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>BV44N68X47</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>Megadrop.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>377946d0-b15f-4e4d-be9c-c50c51f44dbe</string>
+				<key>dateExpires</key>
+				<string>24.09.2025</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: com.sh.it.megadrop</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>BV44N68X47</string>
+				<key>name</key>
+				<string>Yurii Yudin</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

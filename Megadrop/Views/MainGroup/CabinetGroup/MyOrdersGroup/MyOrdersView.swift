@@ -15,6 +15,7 @@ struct MyOrdersView: View {
         ZStack{
             VStack{
                 NavigationBarDetailView()
+                    //.padding(5)
                 Text("Мої замовлення")
                 Spacer()
                 if !viewModelMyOrdersManager.isLoadingMyOrdersManager{
@@ -26,6 +27,7 @@ struct MyOrdersView: View {
                     } //END: ScrollView
                 }
             }
+            .padding()
         }
         .onAppear{
             viewModelMyOrdersManager.loadMyOrders()

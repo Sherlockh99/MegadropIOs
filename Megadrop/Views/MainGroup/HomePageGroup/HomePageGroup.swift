@@ -12,13 +12,15 @@ struct HomePageGroup: View {
     @ObservedObject private var viewModel = GroupManager.shared
 
     var body: some View {
-        Section(header: Text(groupWithNomenclatures.NameGroup)){
-            HomePageListNomenclature(groupsWithNomenclatures_: groupWithNomenclatures)
+        LazyVStack{
+            Section(header: Text(groupWithNomenclatures.NameGroup)){
+                HomePageListNomenclature(groupsWithNomenclatures_: groupWithNomenclatures)
+            }
+            .font(.headline)
+            .padding(.leading, 15)
+            .padding(.top, 5)
+            .foregroundColor(.primary)
         }
-        .font(.headline)
-        .padding(.leading, 15)
-        .padding(.top, 5)
-        .foregroundColor(.primary)
     }
 }
 

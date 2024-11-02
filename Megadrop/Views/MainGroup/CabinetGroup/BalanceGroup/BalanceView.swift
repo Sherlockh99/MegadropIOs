@@ -46,6 +46,7 @@ struct BalanceView: View {
         .onAppear{
             balanceViewModel.loadBalanceAll()
         }
+        .padding()
     }
 }
 

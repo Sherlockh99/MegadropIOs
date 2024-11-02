@@ -14,8 +14,6 @@ struct SettingsView: View {
     @State private var statePage: Int = 0
     
     var body: some View {
-        VStack{
-        }
         if statePage == 0 {
             VStack{
                 NavigationBarDetailView()
@@ -27,7 +25,8 @@ struct SettingsView: View {
                     Text("Тільки в наявності")
                         .font(.system(size: 14))
                 }
-                
+                Spacer()
+                /*
                 Button{
                     statePage = 1
                 }label: {
@@ -35,7 +34,7 @@ struct SettingsView: View {
                     Text("Про додаток")
                     Spacer()
                 }
-                
+                */
                 Button{
                     profile.username = ""
                     profile.password = ""
@@ -49,9 +48,10 @@ struct SettingsView: View {
                         Spacer()
                     }
                 }
-                Spacer()
+                //Spacer()
                 
             }
+            .padding()
             .onReceive([self.showAviableOnly].publisher.first()) { newValue in
                 if newValue != isAviableOnly {
                     isAviableOnly = newValue
@@ -63,6 +63,7 @@ struct SettingsView: View {
             //} else if(shopSettings.isAbout){
             VStack{
                 AboutApplicationView()
+                    .padding()
                 Spacer()
                 Button{
                     statePage = 0

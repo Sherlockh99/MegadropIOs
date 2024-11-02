@@ -17,10 +17,11 @@ struct MainLoginView: View {
     //@AppStorage("onboarding") var isLogged = false
     @ObservedObject var profile = Profile.profileShared
     //@StateObject private var viewModel = ContentViewModel()
+    @State private var showNotification = false
     
     var body: some View {
         ZStack {
-            CustomBackgroundView()
+            //CustomBackgroundView()
             
             VStack {
                 LogoCircleImage(image: Image("logo"))
@@ -34,6 +35,16 @@ struct MainLoginView: View {
                         } else {
                             // Handle failed authorization, e.g., show an alert
                             print("Authorization failed")
+                            withAnimation(.easeInOut) {
+                                showNotification.toggle()
+                            }
+                            
+                            // Автоматическое скрытие через 2 секунды
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                withAnimation(.easeInOut) {
+                                    showNotification = false
+                                }
+                            }
                         }
                     }
                 } label: {
@@ -59,6 +70,20 @@ struct MainLoginView: View {
             .padding()
             
         }
+        .overlay(
+            Group {
+                if showNotification {
+                    Text("Incorrect login or password!")
+                        .padding()
+                        .background(Color.black.opacity(0.6))
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .padding(.bottom, 50)
+                        .transition(.move(edge: .bottom))
+                        //.animation(.easeInOut)
+                }
+            }
+        )
         //.frame(width: 350,height: 700)
     }
 }

@@ -51,7 +51,7 @@ struct CabinetView: View {
                     Button{
                         getPrice()
                     }label: {
-                        Text("Получить прайс")
+                        Text("Отримати прайс")
                     }
                     
                     /*
