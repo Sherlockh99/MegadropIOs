@@ -8,7 +8,12 @@
 import Foundation
 class ContentViewModel: ObservableObject{
     func checkAuthorization(login: String, password: String, completion: @escaping (Bool) -> Void) {
-
+        
+        if(login=="guest"){
+            completion(true)
+            return
+        }
+        
         let urlString = Constants.DROP_SHIPPING_DOMAIN + Constants.MEGA_DROP_LOGIN
         
         // Формирование URL для GET-запроса

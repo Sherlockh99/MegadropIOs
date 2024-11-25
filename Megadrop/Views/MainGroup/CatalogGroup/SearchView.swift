@@ -23,7 +23,7 @@ struct SearchView: View {
                     HStack {
                         
                         Image(systemName: "")
-                            .foregroundColor(.gray)
+                            .foregroundColor(.primary)
                             .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                             .padding(.leading, 8)
                         
@@ -44,7 +44,7 @@ struct SearchView: View {
                         
                         }) {
                             Image(systemName: "magnifyingglass")
-                                .foregroundColor(.gray)
+                                .foregroundColor(.primary)
                                 .padding(.trailing, 8)
                         } //END: BUTTON
                     } //END: HSTACK

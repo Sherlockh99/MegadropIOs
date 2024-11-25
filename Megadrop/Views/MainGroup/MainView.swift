@@ -14,37 +14,39 @@ struct MainView: View {
     
     var body: some View {
         if(isLogged){
-            TabView(selection: $selection){
-                HomePageView()
-                    .environmentObject(Shop())
-                    .tabItem {
-                        Label("Home", systemImage: "homekit")
-                    }
-                    .tag(Tab.main)
-                
-                CatalogView()
-                    .environmentObject(Shop())
-                    .tabItem {
-                        Label("Catalog", systemImage: "square.grid.2x2")
-                    }
-                    .tag(Tab.catalog)
-                
-                BasketView()
-                    .environmentObject(ShopRecycle())
-                    .tabItem {
-                        Label("Basket", systemImage: "basket")
-                    }
-                    .tag(Tab.basket)
-
-                CabinetView()
-                    .tabItem {
-                        Label("Cabinet", systemImage: "gearshape")
-                    }
-                    .tag(Tab.cabinet)
+            ZStack{
+                TabView(selection: $selection){
+                    HomePageView()
+                        .environmentObject(Shop())
+                        .tabItem {
+                            Label("Home", systemImage: "homekit")
+                        }
+                        .tag(Tab.main)
+                    
+                    CatalogView()
+                        .environmentObject(Shop())
+                        .tabItem {
+                            Label("Catalog", systemImage: "square.grid.2x2")
+                        }
+                        .tag(Tab.catalog)
+                    
+                    BasketView()
+                        .environmentObject(ShopRecycle())
+                        .tabItem {
+                            Label("Basket", systemImage: "basket")
+                        }
+                        .tag(Tab.basket)
+                    
+                    CabinetView()
+                        .tabItem {
+                            Label("Cabinet", systemImage: "gearshape")
+                        }
+                        .tag(Tab.cabinet)
+                }
             }
        }else{
             MainLoginView()
-        }
+       }
     }
 }
 

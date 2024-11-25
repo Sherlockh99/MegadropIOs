@@ -13,7 +13,7 @@ struct LogoView: View {
           Text("MEGA".uppercased())
             .font(.title3)
             .fontWeight(.black)
-            .foregroundColor(.black)
+            .foregroundColor(.primary)
           
           Image("logo")
             .resizable()
@@ -23,7 +23,7 @@ struct LogoView: View {
           Text("DROP".uppercased())
             .font(.title3)
             .fontWeight(.black)
-            .foregroundColor(.black)
+            .foregroundColor(.primary)
         } //: HSTACK
     }
 }

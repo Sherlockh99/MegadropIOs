@@ -40,7 +40,7 @@ struct OneBalanceView: View {
             }
             Rectangle()
                 .frame(height: 2) // Установка высоты для горизонтальной линии
-                .foregroundColor(.black) // Установка цвета
+                .foregroundColor(.blue) // Установка цвета
         }
     }
 }

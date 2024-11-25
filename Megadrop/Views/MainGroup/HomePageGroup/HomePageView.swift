@@ -18,11 +18,9 @@ struct HomePageView: View {
         ZStack{
             if shop.showingNomenclature == false && shop.selectedNomenclature == nil {
                 VStack(spacing: 0) {
-                //LazyVStack{
                     NavigationBarHomeView()
                         .padding(.horizontal, 15)
                         .padding(.bottom)
-                        //.background(Color.white)
                         .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
                     
                         ScrollView(.vertical, showsIndicators: false){
@@ -43,7 +41,8 @@ struct HomePageView: View {
 
                         }
                 }
-                .background(colorBackground.ignoresSafeArea(.all, edges: .all))
+                .padding(.bottom)
+                //.background(colorBackground.ignoresSafeArea(.all, edges: .all))
             } else {
                 NomenclatureView(IDGroup: shop.IDGroup, nomenclature: shop.selectedNomenclature ?? ModelData().groupsWithNomenclatures[0].Nomenclatures![0])
             }

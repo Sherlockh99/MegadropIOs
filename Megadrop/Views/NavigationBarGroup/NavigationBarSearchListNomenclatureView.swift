@@ -29,7 +29,7 @@ struct NavigationBarSearchListNomenclatureView: View {
             }, label: {
                 Image(systemName: "chevron.left")
                     .font(.title)
-                    .foregroundColor(.white)
+                    .foregroundColor(.primary)
             })
             
             Spacer()
@@ -43,13 +43,6 @@ struct NavigationBarSearchListNomenclatureView: View {
                 }
               })
             Spacer()
-           /*
-            Button(action:{},label: {
-                Image(systemName: "cart")
-                    .font(.title)
-                    .foregroundColor(.white)
-            })
-            */
         } //: HSTACK
     }
 }

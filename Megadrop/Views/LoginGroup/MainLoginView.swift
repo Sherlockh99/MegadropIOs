@@ -8,21 +8,14 @@
 import SwiftUI
 
 struct MainLoginView: View {
-    //@State private var username = ""
-    //@State private var password = ""
     @AppStorage("onboarding") var isLogged = false
-    //@State private var isLogged = false
     @StateObject private var viewModel = ContentViewModel()
     
-    //@AppStorage("onboarding") var isLogged = false
     @ObservedObject var profile = Profile.profileShared
-    //@StateObject private var viewModel = ContentViewModel()
     @State private var showNotification = false
     
     var body: some View {
         ZStack {
-            //CustomBackgroundView()
-            
             VStack {
                 LogoCircleImage(image: Image("logo"))
                 ProfileLoginView().padding()
@@ -76,7 +69,7 @@ struct MainLoginView: View {
                     Text("Incorrect login or password!")
                         .padding()
                         .background(Color.black.opacity(0.6))
-                        .foregroundColor(.white)
+                        .foregroundColor(.primary)
                         .cornerRadius(10)
                         .padding(.bottom, 50)
                         .transition(.move(edge: .bottom))
@@ -84,7 +77,6 @@ struct MainLoginView: View {
                 }
             }
         )
-        //.frame(width: 350,height: 700)
     }
 }
 

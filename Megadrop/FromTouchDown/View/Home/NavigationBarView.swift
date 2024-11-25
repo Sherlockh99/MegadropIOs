@@ -20,7 +20,7 @@ struct NavigationBarView: View {
             Button(action: {}, label: {
                 Image(systemName: "magnifyingglass")
                     .font(.title)
-                    .foregroundColor(.black)
+                    .foregroundColor(.primary)
             }) //: BUTTON
             
             Spacer()
@@ -40,7 +40,7 @@ struct NavigationBarView: View {
               ZStack {
                 Image(systemName: "cart")
                   .font(.title)
-                  .foregroundColor(.black)
+                  .foregroundColor(.primary)
                 
                 Circle()
                   .fill(Color.red)

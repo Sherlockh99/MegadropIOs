@@ -30,7 +30,7 @@ struct BalanceView: View {
             */
             Rectangle()
                 .frame(height: 3) // Установка высоты для горизонтальной линии
-                .foregroundColor(.black) // Установка цвета
+                .foregroundColor(.blue) // Установка цвета
             Spacer()
             
             if !balanceViewModel.isLoadingBalance{

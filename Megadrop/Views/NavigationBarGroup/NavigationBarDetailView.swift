@@ -69,13 +69,6 @@ struct NavigationBarDetailView: View {
               })
             
             Spacer()
-            /*
-            Button(action:{},label: {
-                Image(systemName: "cart")
-                    .font(.title)
-                    .foregroundColor(.white)
-            })
-             */
         } //: HSTACK
     }
 }

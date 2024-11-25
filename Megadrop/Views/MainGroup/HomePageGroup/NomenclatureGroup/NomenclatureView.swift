@@ -25,17 +25,14 @@ struct NomenclatureView: View {
                 NavigationBarDetailView()
                     .padding(.horizontal)
                     .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
-               
-                
-                //HEADER
-                //HeaderDetailView()
-                //    .padding(.horizontal)
                 
                 // DETAIL TOP PART
                 TopPartDetailView(IDGroup: IDGroup, nomenclature: nomenclature)
                     .padding(.horizontal)
                     .zIndex(1)
+                    .foregroundColor(.black)
                 DetailsView(IDGroup: IDGroup, nom3: nomenclature)
+                    .foregroundColor(.black)
             })//: VSTACK
             .zIndex(0)
             .ignoresSafeArea(.all, edges: .all)
